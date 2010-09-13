@@ -38,7 +38,7 @@ class AuthController < ApplicationController
     if @user.nil?
       @user = User.create(params[:user])
       session[:user] = @user.id
-      dest = params[:dest] || home_path
+      dest = params[:dest] || root_url
       redirect_to dest
     else
       flash[:notice] = "Could not create user - user name already taken"
