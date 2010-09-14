@@ -38,6 +38,7 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     forgery (0.3.4)
+    gem_plugin (0.2.3)
     i18n (0.4.1)
     jdbc-sqlite3 (3.6.3.054)
     mail (2.2.6.1)
@@ -45,6 +46,8 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
+    mongrel (1.1.5-java)
+      gem_plugin (>= 0.2.3)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -77,6 +80,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
   forgery
+  mongrel
   rails (= 3.0.0)
   sqlite3-ruby
   will_paginate (~> 3.0.pre2)
