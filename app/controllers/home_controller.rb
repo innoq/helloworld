@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-  layout 'home'
   before_filter :setup_context
 
   def dashboard
