@@ -1,0 +1,44 @@
+<div id="header">
+
+  <div id="logo">
+    <%= image_tag 'logo.png', :alt => 'HelloWorld' %>
+  </div>
+  <!-- /logo -->
+
+  <div id="claim">
+    <%= image_tag 'claim.png', :alt => 'The demo community by innoQ' %>
+  </div>
+  <!-- /logo -->
+
+  <div id="meta">
+    <ul>
+      <li><%= link_to "Logout", :controller => 'auth', :action => 'logout' %></li>
+      <li><a href="">Imprint</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+  </div>
+  <!-- /meta -->
+
+  <div id="search">
+
+  </div>
+  <!-- /search -->
+
+  <ul id="menu">
+    <li><%= link_to "Dashboard", dashboard_path, :class => "first" %></li>
+    <li><%= link_to "Messages (#{@message_count})", messages_path %></li>
+    <li><%= link_to "Contacts", contacts_path %></li>
+    <li><%= link_to "Profile", myprofile_path %></li>
+    <li><%= link_to "About", about_path, :class => "last" %></li>
+  </ul>
+  <!-- /menu -->
+
+
+</div>	
+<!-- /header -->
+
+
+
+
+
+

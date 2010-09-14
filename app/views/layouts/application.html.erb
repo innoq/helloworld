@@ -1,14 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Helloworld</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<%= yield %>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
 
-</body>
+  <head>
+
+    <title>Helloworld</title>
+    <%= csrf_meta_tag %>
+    <!-- css -->
+
+    <%= stylesheet_link_tag 'reset', 'main', 'dropdown' %>
+    <!-- override for IE-->
+
+    <!--[if IE 6]>
+	<style type="text/css" media="all">@import "/stylesheets/ie6.css";</style>
+  	<![endif]-->
+
+    <!--[if IE 7]>
+    <style type="text/css" media="all">@import "/stylesheets/ie7.css";</style>
+    <![endif]-->
+
+    <%= javascript_include_tag :defaults %>
+  </head>
+  <body>
+    <a name="tothetop"></a>
+    <div id="main">
+      <%= render :partial => 'layouts/header' %>
+
+      <div id="content-holder">
+        <%= yield %>
+      </div>
+      <!-- /content-holder -->
+    </div>
+    <!-- /main -->
+
+
+    <%= render :partial => 'layouts/footer' %>
+
+  </body>
 </html>
