@@ -35,12 +35,23 @@ end
 
 def create_profile_attributes
   attrs = []
-  5.times { maybe { attrs << (ProfileAttribute.new :attr_type => rand_type, :value => Forgery::Internet.email_address) } }
+  attrs << (ProfileAttribute.new :attr_type => "company_email",
+                                :value => Forgery::Internet.email_address)
+  attrs << (ProfileAttribute.new :attr_type => "private_email",
+                                :value => Forgery::Internet.email_address)
+  attrs << (ProfileAttribute.new :attr_type => "company_phone",
+                                :value => Forgery(:address).phone)
+  attrs << (ProfileAttribute.new :attr_type => "mobile_phone",
+                                :value => Forgery(:address).phone)
+  attrs << (ProfileAttribute.new :attr_type => "private_phone",
+                                :value => Forgery(:address).phone)
+
+
   attrs
 end
 
 def create_address 
-  Address.create!  :street => Forgery::Address.street_name,
+  Address.create!  :street => Forgery::Address.street_address,
                    :city => Forgery::Address.city,
                    :zip => Forgery::Address.zip,
                    :country => Forgery::Address.country
