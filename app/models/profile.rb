@@ -25,4 +25,11 @@ class Profile < ActiveRecord::Base
   def image
     "user.png"
   end
+
+  %w(company_email private_email company_phone mobile_phone private_phone).each do |m|
+    define_method m do
+      profile_attributes.find_by_attr_type(m)
+    end
+  end
+
 end

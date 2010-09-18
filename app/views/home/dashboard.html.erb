@@ -27,41 +27,25 @@
 				<div class="profile-center">
 					
 					<h3><%= @profile.full_name %></h3>
-					<p>UserTitle</p>
 					
 					<div class="profile-center-company">
-						<strong>Company Name</strong><br />
-						Street 4001<br />
-						1000 Cityname
+					  <p><%= @profile.profession %> at <strong><%= @profile.company %></strong><br /></p>
+					  <%= render :partial => 'address', 
+                                                     :collection => [@profile.business_address,
+					                             @profile.private_address] %>
+
 					</div>
 					
 					<h4>About Me</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					<p><%= @profile.about %></p>
 					
 					<h4>Contact Data</h4>
-    <%= yield %>
 					
-					<div class="profile-center-contact-label">Telephone</div>
-					<div class="profile-center-contact-data">0241 400 85 662</div>
-					<div class="clear"></div>
-					<!-- /item -->
-					<div class="profile-center-contact-label">Telephone</div>
-					<div class="profile-center-contact-data">0241 400 85 662</div>
-					<div class="clear"></div>
-					<!-- /item -->
-					<div class="profile-center-contact-label">Telephone</div>
-					<div class="profile-center-contact-data">0241 400 85 662</div>
-					<div class="clear"></div>
-					<!-- /item -->
-					<div class="profile-center-contact-label">Telephone</div>
-					<div class="profile-center-contact-data">0241 400 85 662</div>
-					<div class="clear"></div>
-					<!-- /item -->
-					<div class="profile-center-contact-label">Telephone</div>
-					<div class="profile-center-contact-data">0241 400 85 662</div>
-					<div class="clear"></div>
-					<!-- /item -->
-					
+					<%= contact_data(@profile, "company_email") %>
+					<%= contact_data(@profile, "private_email") %>
+					<%= contact_data(@profile, "company_phone") %>
+					<%= contact_data(@profile, "mobile_phone") %>
+					<%= contact_data(@profile, "private_phone") %>
 				</div>
 				
 				<a href="#" title="" class="button-blue">Send Message</a>
