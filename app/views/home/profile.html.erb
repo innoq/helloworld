@@ -1,11 +1,105 @@
-<% div_for @profile do %>
-<p class="profession"><span class="label">Profession:</span><%= @profile.profession %></p>
-<p class="company"><span class="label">Company:</span><%= @profile.company %></p>
-<p class="about"><span class="label">About <%= @profile.first_name %>:</span><%= @profile.about %></p>
-<p class="created-at"><span class="label">Created:</span><%= @profile.created_at %></p>
-<p class="updated-at"><span class="label">Updated:</span><%= @profile.updated_at %></p>
-<p class="contact-count"><span class="label"># of Contacts:</span><%= @profile.contact_count %></p>
-<p><%= link_to "Public Profile", profile_path(@profile) %>
+			<h1>Profile</h1>
+		
+			<div id="col-one">
+				
+				<div class="profile-image">
+				<img src='<%= image_path(@profile.image) %>' alt="<%= @profile.full_name %>" />
+				</div>
+				<!-- /profile-image -->
+				
+				<div class="profile-actions">
+					<a href="#" title="">&raquo; Upload new image</a>
+					<a href="#" title="">&raquo; Edit profile</a>
+				</div>
+				<!-- /profile-actions -->
+				
+				<h2>User's profile updates (<%= @profile.statuses.count %>)</h2>
+					
+				<div class="profile-stream">
+				  <%= render :partial => 'status', :collection => @profile.statuses %>
+				</div>
+				<!-- /profile-stream -->
+				
+			</div>
+			<!-- /col-one -->
+			
+			<div id="col-two">
+				<div class="profile-center">
+					
+					<h3><%= @profile.full_name %></h3>
+					
+					<div class="profile-center-company">
+					  <p><%= @profile.profession %> at <strong><%= @profile.company %></strong><br /></p>
+					  <%= render :partial => 'address', 
+                                                     :collection => [@profile.business_address,
+					                             @profile.private_address] %>
 
-<% end %>
+					</div>
+					
+					<h4>About Me</h4>
+					<p><%= @profile.about %></p>
+					
+					<h4>Contact Data</h4>
+					
+					<%= contact_data(@profile, "company_email") %>
+					<%= contact_data(@profile, "private_email") %>
+					<%= contact_data(@profile, "company_phone") %>
+					<%= contact_data(@profile, "mobile_phone") %>
+					<%= contact_data(@profile, "private_phone") %>
+				</div>
+				
+				<a href="#" title="" class="button-blue">Send Message</a>
+				
+			</div>
+			<!-- /col-two -->
+			
+			<div id="col-three">
+				
+				<h2>User's contacts (<%= @contact_count %>)</h2>
+				
+				<div class="contact-list-small">
+				  <%= render :partial => 'contact', :collection => @profile.contacts %>
+				
+
+					<div class="contact-list-small-item">
+						<div class="contact-list-small-img">
+							<a href="#" title=""><img src="img/user-small.jpg" alt="user-small" width="61" height="61" /></a>					
+						</div>
+						<div class="contact-list-small-text">
+							<div class="contact-list-small-username">Mandy Nuss</div>
+							<div class="contact-list-small-title">CEO LUSTIG AG</div>
+							<div class="contact-list-small-email"><a href="#" title="mailto:test@test.de">test@test.de</a></div>
+						</div>
+						<div class="clear"><!-- clear --></div>
+					</div>
+					<!-- /contact-list-small-item -->
+					<div class="contact-list-small-item">
+						<div class="contact-list-small-img">
+							<a href="#" title=""><img src="img/user-small.jpg" alt="user-small" width="61" height="61" /></a>					
+						</div>
+						<div class="contact-list-small-text">
+							<div class="contact-list-small-username">Mandy Nuss</div>
+							<div class="contact-list-small-title">CEO LUSTIG AG</div>
+							<div class="contact-list-small-email"><a href="#" title="mailto:test@test.de">test@test.de</a></div>
+						</div>
+						<div class="clear"><!-- clear --></div>
+					</div>
+					<!-- /contact-list-small-item -->
+				
+				
+				</div>
+				<!-- /contact-list-small -->
+			</div>
+			<!-- /col-three -->
+			
+			<div class="clear"><!-- clear --></div>
+			
+
+
+
+
+
+
+<!--<p class="message-count"><span class="label"># of --
+  --Messages:</span><%= @message_count %></p> -->
 

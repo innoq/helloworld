@@ -1,9 +1,6 @@
 class HomeController < ApplicationController
   before_filter :setup_context
 
-  def dashboard
-  end
-
   def messages
     @messages = Message.where(:to_id => @profile.id).paginate :page => params[:page], 
                                                            :per_page => 5,

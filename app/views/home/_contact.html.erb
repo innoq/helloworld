@@ -1,4 +1,12 @@
-<% content_tag_for(:li, contact) do %>
-<p class="name"><%= link_to(contact.full_name, contact) %></p>
-<p class="company"><span class="label">Company:</span><%= contact.company %></p>
-<% end %>
+<div class="contact-list-small-item">
+  <div class="contact-list-small-img">
+    <a href="#" title=""><img src="img/user-small.jpg" alt="user-small" width="61" height="61" /></a>
+  </div>
+  <div class="contact-list-small-text">
+    <div class="contact-list-small-username"><%= link_to(contact.full_name, contact) %></div>
+    <div class="contact-list-small-title"><%= contact.profession %> at <strong><%= contact.company %></strong></div>
+    <div class="contact-list-small-email"><a href="#" title="mailto:test@test.de">test@test.de</a></div>
+  </div>
+  <div class="clear"><!-- clear --></div>
+</div>
+<!-- /contact-list-small-item -->
