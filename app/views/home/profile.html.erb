@@ -5,7 +5,7 @@
 <p class="created-at"><span class="label">Created:</span><%= @profile.created_at %></p>
 <p class="updated-at"><span class="label">Updated:</span><%= @profile.updated_at %></p>
 <p class="contact-count"><span class="label"># of Contacts:</span><%= @profile.contact_count %></p>
-
+<p><%= link_to "Public Profile", profile_path(@profile) %>
 
 <% end %>
 
