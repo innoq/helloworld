@@ -1,7 +1,7 @@
-PROFILE_COUNT = ENV['USERS'] || 50
-RELATION_COUNT = ENV['RELATIONS'] || 20
-MESSAGE_COUNT = ENV['MESSAGES'] || 20
-STATUS_COUNT = ENV['STATUS'] || 50
+PROFILE_COUNT = (ENV['USERS'] || 10).to_i
+RELATION_COUNT = (ENV['RELATIONS']|| 3).to_i 
+MESSAGE_COUNT = (ENV['MESSAGES'] || 3).to_i
+STATUS_COUNT = (ENV['STATUS'] || 10).to_i
 
 def rand_time(days = 365)
   rand(days).days.ago - rand(24).hours - rand(60).minutes
