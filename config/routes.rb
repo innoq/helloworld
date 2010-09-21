@@ -1,4 +1,4 @@
-Helloworld::Application.routes.draw do |map|
+Helloworld::Application.routes.draw do
 
   resources :profiles
   resources :contacts
@@ -7,8 +7,9 @@ Helloworld::Application.routes.draw do |map|
   get "auth/login"
   get "auth/logout"
   get "auth/register"
-  map.register_user 'auth/register_user', :controller => 'auth', :action => 'register_user'
-  map.authenticate "auth/authenticate", :controller => 'auth', :action => 'authenticate'
+
+  match 'auth/register_user' => 'auth#register_user', :as => 'register_user'
+  match 'auth/authenticate' => 'auth#authenticate', :as => 'authenticate'
 
   root :to => 'home#dashboard', :as => :dashboard
   match 'profile' => 'profiles#myprofile', :as => :myprofile
