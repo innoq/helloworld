@@ -1,9 +1,8 @@
 require 'test_helper'
 
 class HomeControllerTest < ActionController::TestCase
-  test "should get dashboard" do
+  test "private pages require login" do
     get :dashboard
-    assert_response :success
+    assert_redirected_to :controller => 'auth_controller', :action => 'login'
   end
-
 end
