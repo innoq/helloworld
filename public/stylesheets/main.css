@@ -7,7 +7,7 @@
 /********************************************************************/
 
 body {
-	background: #fff url(../img/bg.jpg) repeat-y;
+	background: #fff url(../images/bg.jpg) repeat-y;
 	color:#000;
 	font-size: 12px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
@@ -48,7 +48,7 @@ a img, img a {
 #main { 
 	position: relative;
 	width: 940px;
-/* 	background: #fff url(../img/.gif) repeat-x; */
+/* 	background: #fff url(../images/.gif) repeat-x; */
 	margin: 0 auto;
 } 
 
@@ -67,7 +67,7 @@ a img, img a {
 #header { 
 	position: relative;
 	height: 168px;
-	background: #fff url(../img/.gif) repeat-x;
+	background: #fff url(../images/.gif) repeat-x;
 } 
 
 #footer { 
@@ -151,7 +151,7 @@ a img, img a {
 a.button-blue {
 /* 	display:block; */
 	padding: 5px 20px;
-	background: transparent url(img/btn-blue.png) repeat-x;
+	background: transparent url(images/btn-blue.png) repeat-x;
 	font-size: 1.2em;
 	color:#fff;
 	text-decoration: none;
@@ -350,3 +350,15 @@ h4 {
 	top: -999px;
 	left: -999px;
 }
+
+
+/********************************************************************/
+/* Additions */
+/********************************************************************/
+
+.actions {
+/*   margin: 20px 30px 10px 10px;*/
+   margin-left: 100px;
+   margin-top: 10px;
+}
+

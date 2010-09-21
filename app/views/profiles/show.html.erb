@@ -5,7 +5,6 @@
 <p class="about"><span class="label">About <%= @profile.first_name %>:</span><%= @profile.about %></p>
 <p class="created-at"><span class="label">Member since:</span><%= @profile.created_at %></p>
 <p class="contact-count"><span class="label"># of Contacts:</span><%= @profile.contact_count %></p>
-
 <h3><%= @profile.full_name %>'s Contacts</h3>
 <ul id="contact-list">
 <%= render :partial => "contact", :collection => @contacts %>
