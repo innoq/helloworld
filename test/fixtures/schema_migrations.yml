@@ -1,0 +1,25 @@
+--- 
+schema_migrations_001: 
+  version: "20100827175907"
+schema_migrations_002: 
+  version: "20100827180913"
+schema_migrations_003: 
+  version: "20100827180941"
+schema_migrations_004: 
+  version: "20100827181314"
+schema_migrations_005: 
+  version: "20100827181440"
+schema_migrations_006: 
+  version: "20100827181607"
+schema_migrations_007: 
+  version: "20100827181642"
+schema_migrations_008: 
+  version: "20100827205227"
+schema_migrations_009: 
+  version: "20100827212716"
+schema_migrations_010: 
+  version: "20100827213034"
+schema_migrations_011: 
+  version: "20100827215717"
+schema_migrations_012: 
+  version: "20100829083627"

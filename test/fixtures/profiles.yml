@@ -1,21 +1,131 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  profession: MyString
-  company: MyString
-  image: MyString
-  about: MyText
-  user_id: 1
-  private_address_id: 1
-  business_address_id: 1
-
-two:
-  name: MyString
-  profession: MyString
-  company: MyString
-  image: MyString
-  about: MyText
-  user_id: 1
-  private_address_id: 1
-  business_address_id: 1
+--- 
+profiles_001: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: ~
+  company: Layo
+  created_at: "2010-02-09 17:56:44.394436"
+  first_name: Jennifer
+  id: 226
+  image: ~
+  last_name: Hughes
+  private_address_id: ~
+  profession: CIO
+  updated_at: "2010-09-21 19:10:44.503104"
+  user_id: 226
+profiles_002: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: 237
+  company: Flashdog
+  created_at: "2010-02-14 16:45:44.505825"
+  first_name: Roger
+  id: 227
+  image: ~
+  last_name: James
+  private_address_id: 236
+  profession: Manager
+  updated_at: "2010-09-21 19:10:44.538943"
+  user_id: 227
+profiles_003: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: ~
+  company: Jetpulse
+  created_at: "2009-12-12 12:06:44.541856"
+  first_name: Cynthia
+  id: 228
+  image: ~
+  last_name: Chapman
+  private_address_id: ~
+  profession: Manager
+  updated_at: "2010-09-21 19:10:44.560429"
+  user_id: 228
+profiles_004: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: ~
+  company: Oodoo
+  created_at: "2009-10-22 06:49:44.562930"
+  first_name: Gerald
+  id: 229
+  image: ~
+  last_name: Russell
+  private_address_id: 238
+  profession: Developer
+  updated_at: "2010-09-21 19:10:44.585105"
+  user_id: 229
+profiles_005: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: 239
+  company: Skyndu
+  created_at: "2010-02-24 15:14:44.587563"
+  first_name: Louis
+  id: 230
+  image: ~
+  last_name: Webb
+  private_address_id: ~
+  profession: Entrepreneur
+  updated_at: "2010-09-21 19:10:44.609751"
+  user_id: 230
+profiles_006: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: 240
+  company: Photojam
+  created_at: "2009-10-12 20:26:44.612484"
+  first_name: Sharon
+  id: 231
+  image: ~
+  last_name: Wheeler
+  private_address_id: ~
+  profession: Developer
+  updated_at: "2010-09-21 19:10:44.634591"
+  user_id: 231
+profiles_007: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: 241
+  company: Devshare
+  created_at: "2010-06-23 17:23:44.637361"
+  first_name: Diane
+  id: 232
+  image: ~
+  last_name: Fowler
+  private_address_id: ~
+  profession: Entrepreneur
+  updated_at: "2010-09-21 19:10:44.658984"
+  user_id: 232
+profiles_008: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: ~
+  company: Zoonoodle
+  created_at: "2009-10-31 17:18:44.661737"
+  first_name: Tammy
+  id: 233
+  image: ~
+  last_name: Burton
+  private_address_id: 242
+  profession: Entrepreneur
+  updated_at: "2010-09-21 19:10:44.690713"
+  user_id: 233
+profiles_009: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: ~
+  company: Gabspot
+  created_at: "2010-04-06 01:43:44.696059"
+  first_name: Raymond
+  id: 234
+  image: ~
+  last_name: Ruiz
+  private_address_id: ~
+  profession: CEO
+  updated_at: "2010-09-21 19:10:44.757935"
+  user_id: 234
+profiles_010: 
+  about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus."
+  business_address_id: ~
+  company: Demimbu
+  created_at: "2010-05-24 15:31:44.762241"
+  first_name: Andrew
+  id: 235
+  image: ~
+  last_name: Hawkins
+  private_address_id: ~
+  profession: Photographer
+  updated_at: "2010-09-21 19:10:44.834888"
+  user_id: 235
