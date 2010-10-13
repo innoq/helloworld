@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
   create_table "messages", :force => true do |t|
     t.string   "subject"
     t.text     "body"
-    t.integer  "from_id"
-    t.integer  "to_id"
+    t.integer  "from_id",    :limit => 0
+    t.integer  "to_id",      :limit => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
   create_table "profile_attributes", :force => true do |t|
     t.string  "attr_type"
     t.string  "value"
-    t.integer "profile_id"
+    t.integer "profile_id", :limit => 0
   end
 
   create_table "profiles", :force => true do |t|
@@ -39,9 +39,9 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
     t.string   "company"
     t.string   "image"
     t.text     "about"
-    t.integer  "user_id"
-    t.integer  "private_address_id"
-    t.integer  "business_address_id"
+    t.integer  "user_id",             :limit => 0
+    t.integer  "private_address_id",  :limit => 0
+    t.integer  "business_address_id", :limit => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "first_name"
@@ -49,8 +49,8 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
   end
 
   create_table "relations", :force => true do |t|
-    t.integer  "source_id"
-    t.integer  "destination_id"
+    t.integer  "source_id",      :limit => 0
+    t.integer  "destination_id", :limit => 0
     t.string   "comment"
     t.boolean  "accepted"
     t.datetime "created_at"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
 
   create_table "statuses", :force => true do |t|
     t.text     "message"
-    t.integer  "profile_id"
+    t.integer  "profile_id", :limit => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

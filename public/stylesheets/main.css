@@ -7,7 +7,7 @@
 /********************************************************************/
 
 body {
-	background: #fff url(../images/bg.jpg) repeat-y;
+/*	background: #fff url(../img/bg.jpg) repeat-y;*/
 	color:#000;
 	font-size: 12px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
@@ -48,7 +48,7 @@ a img, img a {
 #main { 
 	position: relative;
 	width: 940px;
-/* 	background: #fff url(../images/.gif) repeat-x; */
+/* 	background: #fff url(../img/.gif) repeat-x; */
 	margin: 0 auto;
 } 
 
@@ -67,7 +67,7 @@ a img, img a {
 #header { 
 	position: relative;
 	height: 168px;
-	background: #fff url(../images/.gif) repeat-x;
+/*	background: #fff url(../img/.gif) repeat-x;*/
 } 
 
 #footer { 
@@ -98,6 +98,105 @@ a img, img a {
 	float:left;
 	width:215px;
 }
+
+.pager {
+	position:absolute;
+	top: 178px;
+	right:10px;
+	color:#4e9afa;
+}
+
+.pager a {
+	text-decoration:none;
+	color:#4e9afa;
+	font-weight:bold;
+}
+
+/********************************************************************/
+/* CONTACT LIST */
+/********************************************************************/
+
+
+textarea.message-body {
+	width:490px;
+	height: 260px;
+	display:block;
+	margin: 0 0 20px 0;
+	border: 1px solid #ccc;
+	font-size:13px;
+	color:#333;
+	font-family:inherit;
+}
+
+
+/********************************************************************/
+/* CONTACT LIST */
+/********************************************************************/
+
+.contact-list {
+	
+}
+
+.contact-list-item {
+	position:relative;
+	float:left;
+	width:450px;
+	height:120px;
+	border-bottom: 1px solid #ccc;
+	margin: 0 20px 10px 0;
+}
+	
+.contact-list-item h3 {
+	margin:0 0 4px 0;
+}
+
+
+.contact-list-item h3 a {
+	color:inherit;
+	text-decoration:none;
+}
+	
+.contact-list-item .address1 {
+	font-size:11px;
+	line-height: 135%;
+	color:#444;
+	position:absolute; 
+	top: 45px; 
+	left:130px;
+}
+
+.contact-list-item .address2 {
+	font-size:11px;
+	line-height: 135%;
+	color:#444;
+	position:absolute; 
+	top: 45px; 
+	left:274px;
+}
+
+.contact-list-item .address2 a {
+	color:inherit;
+	text-decoration:none;
+}
+
+
+.contact-list-item img.user-image {
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.contact-list-item-data {
+	margin: 0 0 0 130px;
+}
+
+.actions				{ position:absolute; top: 94px; left:130px; }
+.actions a 				{ text-decoration:none; font-weight:bold; }
+.actions a:hover		{ text-decoration:underline; }
+.actions a.message 		{ color:#1454a5; }
+.actions a.delete 		{ color:#e5144a; padding: 0 15px; }
+.actions a.export 		{ color:#33a514; }
 
 /********************************************************************/
 /* CONTACT LIST SMALL */
@@ -151,7 +250,7 @@ a img, img a {
 a.button-blue {
 /* 	display:block; */
 	padding: 5px 20px;
-	background: transparent url(images/btn-blue.png) repeat-x;
+	background: transparent url(img/btn-blue.png) repeat-x;
 	font-size: 1.2em;
 	color:#fff;
 	text-decoration: none;
@@ -350,15 +449,3 @@ h4 {
 	top: -999px;
 	left: -999px;
 }
-
-
-/********************************************************************/
-/* Additions */
-/********************************************************************/
-
-.actions {
-/*   margin: 20px 30px 10px 10px;*/
-   margin-left: 100px;
-   margin-top: 10px;
-}
-

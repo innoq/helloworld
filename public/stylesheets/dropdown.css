@@ -129,9 +129,9 @@ a.last {
 
 #menu :hover ul {
 	left:1px;
-	top:40px;
-	width:120px;
-	background:#ac0b0b;
+	top:36px;
+	width:188px;
+	background:#4e9afa;
 }
 
 
@@ -152,26 +152,26 @@ a.last {
 #menu :hover ul :hover ul {
 	left:142px;
 	top:-1px;
-	background:#ac0b0b;
+	background:#4e9afa;
 	white-space:nowrap;
-	width:140px;
+	width:188px;
 	z-index:200;
 	height:auto;
 }
 
 #menu :hover ul li {
 	margin:0;
-	border-top:1px solid #db3939;
+	border-top:1px solid #fff;
 }
 
 #menu :hover ul li a {
 	border-left-style:none;
 	border-right-style:none;
 	font-size:11px;
-	width:140px;
+	width:188px;
 	padding:0;
 	text-indent:10px;
-	background:#ac0b0b;
+	background:#67b0fa;
 	color:#fff;
 	height:25px;
 	line-height:25px;
@@ -184,8 +184,8 @@ a.last {
 }
 
 #menu :hover ul :hover {
-	background-color:#fff;
-	color:#69655e;
+	background-color:#99c6fa;
+/* 	color:#000; */
 }
 
 #menu :hover ul :hover a.fly {
