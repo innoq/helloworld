@@ -1,10 +1,8 @@
+# Note: this implementation is a security nightmare
+# and NOT intended for production use.
 class AuthController < ApplicationController
-  # Note: this implementation is a security nightmare 
-  # and NOT intended for production use.
 
-  def random_user
-    User.find(:first, :offset => rand(User.count))
-  end
+  skip_before_filter :check_login, :only => [:login, :authenticate, :register, :register_user]
 
   def login
     @user = User.new
@@ -42,8 +40,14 @@ class AuthController < ApplicationController
       redirect_to dest
     else
       flash[:notice] = "Could not create user - user name already taken"
-      redirect_to :action => :register
+      render :register
     end
+  end
+
+  protected
+
+  def random_user
+    User.find(:first, :offset => rand(User.count))
   end
 
 end
