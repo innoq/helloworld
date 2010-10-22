@@ -26,7 +26,7 @@
 
   <ul id="menu">
     <li><%= link_to "Dashboard", dashboard_path, :class => "first" %></li>
-    <li><%= link_to "Messages (#{current_user.profile.message_count})", messages_path %></li>
+    <li><%= link_to "Messages (#{(current_user && current_user.profile.message_count) || 0})", messages_path %></li>
     <li><%= link_to "Contacts", contacts_path %></li>
     <li><%= link_to "Profile", current_user && private_profile_path(current_user.profile) %></li>
     <li><%= link_to "About", about_path, :class => "last" %></li>

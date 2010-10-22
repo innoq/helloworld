@@ -1,4 +1,17 @@
-<ul id="contact-list">
-<%= render :partial => "contact", :collection => @contacts %>
-<%= will_paginate @contacts %>
-</ul> 
+<h1>My Contacts</h1>
+
+<div class="pager">
+  <%= will_paginate @contacts %>
+</div>
+
+
+<div class="contact-list">
+  <%= render :partial => "contact", :collection => @contacts %>
+  <!-- /items -->
+</div>
+<!-- contact-list -->
+
+<div class="clear"><!-- clear --></div>
+
+<br />
+<a class="button-blue" title="" href="#">Kontakt suchen</a>

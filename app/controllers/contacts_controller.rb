@@ -1,10 +1,9 @@
 class ContactsController < ApplicationController
-  before_filter :setup_context
 
   def index
-    @contacts = @profile.contacts.paginate :page => params[:page], 
-                                           :per_page => 5,
-                                           :order => 'updated_at DESC'
+    @contacts = current_user.profile.contacts.paginate :page => params[:page],
+      :per_page => 6,
+      :order => 'updated_at DESC'
   end
 
 
