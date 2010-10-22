@@ -247,7 +247,7 @@ textarea.message-body {
 /* LINKS */
 /********************************************************************/
 
-a.button-blue {
+.button-blue {
 /* 	display:block; */
 	padding: 5px 20px;
 	background: transparent url(img/btn-blue.png) repeat-x;
