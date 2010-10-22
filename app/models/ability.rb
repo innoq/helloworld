@@ -8,6 +8,10 @@ class Ability
     if user.present?
 
       can :update, Profile, :id => user.profile.id
+
+      can :show_private, Profile do |profile|
+        profile.user_id == user.id || profile.relations.select{|r| r.destination_id = user.profile.id}
+      end
       
     end
       

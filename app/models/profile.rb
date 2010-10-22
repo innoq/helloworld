@@ -9,6 +9,11 @@ class Profile < ActiveRecord::Base
   has_many :received_messages, :foreign_key => :to_id, :class_name => "Message"
   has_many :statuses
 
+  accepts_nested_attributes_for :private_address, :business_address, :allow_destroy => true
+
+  validates :last_name, :presence => true
+  validates :company, :presence => true
+
   has_attached_file :photo,
     :default_url => "/images/:attachment/missing_:style.png",
     :url => "/system/:attachment/:id/:style.:extension",

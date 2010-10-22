@@ -1,0 +1,53 @@
+<h1>Edit Profile</h1>
+
+<%= form_for @profile, :builder => Helloworld::FormBuilder do |f| %>
+  <%= render :partial => "/errors", :object => @profile.errors %>
+  <ul>
+
+    <%= f.block :first_name do %>
+      <label>First name:</label>
+      <%= f.text_field :first_name %>
+    <%- end -%>
+
+        <%= f.block :last_name do %>
+      <label>Last name:</label>
+      <%= f.text_field :last_name %>
+    <%- end -%>
+
+    <%= f.block :profession do %><label>Profession</label>
+      <%= f.text_field :profession %>
+    <%- end -%>
+
+    <%= f.block :company do %><label>Company:</label>
+      <%= f.text_field :company %>
+    <%- end -%>
+
+    <%= f.block :about do %><label>About me:</label>
+      <%= f.text_area :about %>
+    <%- end -%>
+
+    <%= f.block :business_address do %>
+      <fieldset>
+        <legend>Business address</legend>
+        <%= f.fields_for :business_address do |ba| %>
+          <%= render "edit_address", :address_form => ba %>
+        <%- end -%>
+      </fieldset>
+    <%- end -%>
+
+    <%= f.block :private_address do %>
+      <fieldset>
+        <legend>Private address</legend>
+        <%= f.fields_for :private_address do |pa| %>
+          <%= render "edit_address", :address_form => pa %>
+        <%- end -%>
+      </fieldset>
+    <%- end -%>
+
+    <li>
+      <%= f.submit %>
+    </li>
+
+  </ul>
+
+<%- end -%>
