@@ -26,9 +26,9 @@
   <div class="profile-center">
 
     <h3><%= @profile.full_name %></h3>
+    <p><%= @profile.profession %> at <strong><%= @profile.company %></strong></p>
 
     <div class="profile-center-company">
-      <p><%= @profile.profession %> at <strong><%= @profile.company %></strong><br /></p>
       <%= render :partial => 'address',
         :collection => [@profile.business_address,
         @profile.private_address] %>
@@ -53,7 +53,7 @@
 <!-- /col-two -->
 
 <div id="col-three">
-  <h2>User's contacts (<%= @contact_count %>)</h2>
+  <h2>User's contacts (<%= @profile.contact_count || 0 %>)</h2>
 
   <div class="contact-list-small">
     <%= render :partial => 'contact', :collection => @profile.contacts %>
