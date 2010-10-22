@@ -9,6 +9,12 @@ class Profile < ActiveRecord::Base
   has_many :received_messages, :foreign_key => :to_id, :class_name => "Message"
   has_many :statuses
 
+  has_attached_file :photo,
+    :default_url => "/images/:attachment/missing_:style.png",
+    :url => "/system/:attachment/:id/:style.:extension",
+    :path => ":rails_root/public/system/:attachment/:id/:style.:extension",
+    :styles => {:small => "61x61#", :medium => "113x108#", :normal => "231x290#"}
+
   def full_name 
     "#{first_name} #{last_name}"
   end
@@ -20,10 +26,6 @@ class Profile < ActiveRecord::Base
 
   def message_count
     received_messages.count
-  end
-
-  def image
-    "user.png"
   end
 
   %w(company_email private_email company_phone mobile_phone private_phone).each do |m|

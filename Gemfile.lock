@@ -35,6 +35,7 @@ GEM
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
+    cancan (1.4.0)
     cgi_multipart_eof_fix (2.5.0)
     daemons (1.1.0)
     erubis (2.6.6)
@@ -56,6 +57,9 @@ GEM
       gem_plugin (>= 0.2.3)
     mongrel (1.1.5-java)
       gem_plugin (>= 0.2.3)
+    paperclip (2.3.4)
+      activerecord
+      activesupport
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -90,8 +94,10 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
+  cancan
   forgery
   mongrel
+  paperclip
   rails (= 3.0.0)
   sqlite3-ruby
   will_paginate (~> 3.0.pre2)

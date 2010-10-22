@@ -19,6 +19,10 @@ def maybe(&block)
   yield if random_boolean
 end
 
+def photo_file_names
+  @photo_file_names ||= Dir.glob(Rails.root.join('data/photos/*.{png,jpg,gif}'))
+end
+
 def rand_type 
   ProfileAttribute.types.random
 end
@@ -61,6 +65,7 @@ def create_profiles
    Profile.delete_all
    User.delete_all
    Address.delete_all
+   i=0
    PROFILE_COUNT.times do 
      p = Profile.create! :last_name => Forgery::Name.last_name,
                          :first_name => Forgery::Name.first_name,
@@ -74,10 +79,13 @@ def create_profiles
                            :created_at => rand_time,
                            :updated_at => rand_time
 
+    p.photo = File.new(photo_file_names[i % photo_file_names.count])
+
      maybe { p.private_address = create_address }
      maybe { p.business_address = create_address }
      p.profile_attributes << create_profile_attributes
      p.save!
+     i += 1
    end
 end
 

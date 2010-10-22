@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100829083627) do
+ActiveRecord::Schema.define(:version => 20101022114834) do
 
   create_table "addresses", :force => true do |t|
     t.string "street"
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
   create_table "messages", :force => true do |t|
     t.string   "subject"
     t.text     "body"
-    t.integer  "from_id",    :limit => 0
-    t.integer  "to_id",      :limit => 0
+    t.integer  "from_id"
+    t.integer  "to_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,26 +31,28 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
   create_table "profile_attributes", :force => true do |t|
     t.string  "attr_type"
     t.string  "value"
-    t.integer "profile_id", :limit => 0
+    t.integer "profile_id"
   end
 
   create_table "profiles", :force => true do |t|
     t.string   "profession"
     t.string   "company"
-    t.string   "image"
     t.text     "about"
-    t.integer  "user_id",             :limit => 0
-    t.integer  "private_address_id",  :limit => 0
-    t.integer  "business_address_id", :limit => 0
+    t.integer  "user_id"
+    t.integer  "private_address_id"
+    t.integer  "business_address_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
   end
 
   create_table "relations", :force => true do |t|
-    t.integer  "source_id",      :limit => 0
-    t.integer  "destination_id", :limit => 0
+    t.integer  "source_id"
+    t.integer  "destination_id"
     t.string   "comment"
     t.boolean  "accepted"
     t.datetime "created_at"
@@ -59,7 +61,7 @@ ActiveRecord::Schema.define(:version => 20100829083627) do
 
   create_table "statuses", :force => true do |t|
     t.text     "message"
-    t.integer  "profile_id", :limit => 0
+    t.integer  "profile_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
