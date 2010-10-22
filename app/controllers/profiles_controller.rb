@@ -18,8 +18,8 @@ class ProfilesController < ApplicationController
     @profile = Profile.find(params[:id])
     authorize! :edit, @profile
 
-    @profile.private_address ||= Address.new
-    @profile.business_address ||= Address.new
+    @profile.ensure_addresses
+    @profile.ensure_all_profile_attributes
     respond_with @profile
   end
 
@@ -44,8 +44,8 @@ class ProfilesController < ApplicationController
     if @profile.update_attributes(params[:profile])
       redirect_to private_profile_url(@profile)
     else
-      @profile.private_address ||= Address.new
-      @profile.business_address ||= Address.new
+      @profile.ensure_addresses
+      @profile.ensure_all_profile_attributes
       render :edit
     end
     

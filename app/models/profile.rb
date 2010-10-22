@@ -9,7 +9,7 @@ class Profile < ActiveRecord::Base
   has_many :received_messages, :foreign_key => :to_id, :class_name => "Message"
   has_many :statuses
 
-  accepts_nested_attributes_for :private_address, :business_address, :allow_destroy => true
+  accepts_nested_attributes_for :profile_attributes, :private_address, :business_address, :allow_destroy => true
 
   validates :last_name, :presence => true
   validates :company, :presence => true
@@ -33,7 +33,22 @@ class Profile < ActiveRecord::Base
     received_messages.count
   end
 
-  %w(company_email private_email company_phone mobile_phone private_phone).each do |m|
+  # Forces private_address and business_address to hold an Address (which will
+  # be unsaved if none exsited before)
+  def ensure_addresses
+    self.private_address ||= Address.new
+    self.business_address ||= Address.new
+  end
+
+  # Forces :profile_attributes to hold a (possibly unsaved) ProfileAttribute of
+  # every attr_type
+  def ensure_all_profile_attributes
+    (ProfileAttribute.types - self.profile_attributes.all.map(&:attr_type)).each do |missing_pt|
+      self.profile_attributes.build(:attr_type => missing_pt)
+    end
+  end
+
+  ProfileAttribute.types.each do |m|
     define_method m do
       profile_attributes.find_by_attr_type(m)
     end

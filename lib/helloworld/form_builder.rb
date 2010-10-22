@@ -28,7 +28,7 @@ module Helloworld
 
     # Are there error messages for the given attribute?
     def errors_on?(method)
-      @object.errors[method.to_sym].present?
+      @object.respond_to?(:errors) && @object.errors[method.to_sym].present?
     end
   end
 end

@@ -9,7 +9,7 @@
       <%= f.text_field :first_name %>
     <%- end -%>
 
-        <%= f.block :last_name do %>
+    <%= f.block :last_name do %>
       <label>Last name:</label>
       <%= f.text_field :last_name %>
     <%- end -%>
@@ -24,6 +24,28 @@
 
     <%= f.block :about do %><label>About me:</label>
       <%= f.text_area :about %>
+    <%- end -%>
+
+    <%= f.block :profile_attributes do %>
+      <fieldset>
+        <legend>Contact data</legend>
+
+        <ul>
+          <%= f.fields_for :profile_attributes do |profile_attribute| %>
+            <%= profile_attribute.hidden_field :id %>
+            <%= profile_attribute.hidden_field :attr_type %>
+            <%= profile_attribute.block :value do %>
+              <label><%= profile_attribute.object.attr_type.humanize %>:</label>
+              <%- if profile_attribute.object.new_record? -%>
+                <%= profile_attribute.text_field :value %>
+              <%- else -%>
+                <%= profile_attribute.object.value %> <%= profile_attribute.check_box :_destroy %> Destroy?
+              <%- end -%>
+            <%- end -%>
+          <%- end -%>
+        </ul>
+
+      </fieldset>
     <%- end -%>
 
     <%= f.block :business_address do %>
