@@ -1,6 +1,10 @@
 Helloworld::Application.routes.draw do
 
-  resources :profiles
+  resources :profiles do
+    member do
+      get :private
+    end
+  end
   resources :contacts
   resources :messages
 
@@ -12,7 +16,6 @@ Helloworld::Application.routes.draw do
   match 'auth/authenticate' => 'auth#authenticate', :as => 'authenticate'
 
   root :to => 'home#dashboard', :as => :dashboard
-  match 'profile' => 'profiles#myprofile', :as => :myprofile
   match 'home/about' => 'home#about', :as => :about
 
   match 'public/:id(.:format)' => 'profiles#show_public'

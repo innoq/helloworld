@@ -1,4 +1,4 @@
-<h1>Public Profile</h1>
+<h1>Private Profile</h1>
 
 <div id="col-one">
 
@@ -8,7 +8,10 @@
   <!-- /profile-image -->
 
   <div class="profile-actions">
-
+    <%- if can? :edit, @profile -%>
+      <a href="#" title="">&raquo; Upload new image</a>
+      <a href="#" title="">&raquo; Edit profile</a>
+    <%- end -%>
   </div>
   <!-- /profile-actions -->
 
@@ -39,12 +42,12 @@
     <p><%= @profile.about %></p>
 
     <h4>Contact Data</h4>
+
     <%= contact_data(@profile, "company_email") %>
     <%= contact_data(@profile, "private_email") %>
     <%= contact_data(@profile, "company_phone") %>
     <%= contact_data(@profile, "mobile_phone") %>
     <%= contact_data(@profile, "private_phone") %>
-    
   </div>
 
   <a href="#" title="" class="button-blue">Send Message</a>
