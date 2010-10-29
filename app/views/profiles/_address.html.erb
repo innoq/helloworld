@@ -1,5 +1,7 @@
 <p>
-  <%= address.street %><br />
-  <%= address.city %> <%= address.zip %><br />
-  <%= address.country %>
+  <%- if address -%>
+    <%= address.street %><br />
+    <%= address.city %> <%= address.zip %><br />
+    <%= address.country %>
+  <%- end -%>
 </p>

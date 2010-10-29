@@ -9,9 +9,11 @@ class ProfilesController < ApplicationController
 
   def private
     @profile = Profile.find(params[:id])
-    authorize!(:show_private, @profile)
-
-    respond_with @profile
+    if can?(:show_private, @profile)
+      respond_with @profile
+    else
+      redirect_to profile_url(params[:id])
+    end
   end
 
   def edit

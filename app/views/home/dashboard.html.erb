@@ -9,3 +9,15 @@
   <p><a href="#">Update status</a></p>
 <% end %>
 
+<%- if current_user.profile.contacts.relation_not_accepted.any? -%>
+  <h2>Contacts waiting for confirmation</h2>
+  <div class="contact-list">
+    <%= render :partial => "layouts/contact", :collection => current_user.profile.contacts.relation_not_accepted %>
+    <!-- /items -->
+  </div>
+  <!-- contact-list -->
+
+<%- end -%>
+
+<div class="clear"><!-- clear --></div>
+

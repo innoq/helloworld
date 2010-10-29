@@ -16,10 +16,25 @@
 
     <div class="actions">
       <%= link_to "Send message", new_message_url(:to => contact.id), :class => "message showmessage" %>
-      <%- if current_user.profile.contact_ids.include?(contact.id) -%>
-        <%= link_to "Remove contact", contact_url(contact.id), :method => :delete, :class => "delete", :confirm => "Sure?" %>
+      <%- if relation = current_user.profile.relations.where(:destination_id => contact.id).last -%>
+        <% if relation.accepted %>
+          <%= form_tag contact_url(contact.id), :method => :delete do %>
+            <%= submit_tag "Remove contact", :class => "delete", :confirm => "Sure?" %>
+          <%- end -%>
+        <%- else -%>
+          <%= form_tag contact_url(contact.id), :method => :put do %>
+            <%= hidden_field_tag(:accepted, true) %>
+            <%= submit_tag "Accept", :class => "accept" %>
+          <%- end -%>
+          <%= form_tag contact_url(contact.id), :method => :delete do %>
+            <%= submit_tag "Reject", :class => "delete", :confirm => "Sure?" %>
+          <%- end -%>
+        <%- end -%>
       <%- else -%>
-        <%= link_to "Add to contact list", contact_url(contact.id), :class => "delete", :confirm => "Sure?" %>
+        <%= form_tag contacts_url, :method => :post do %>
+          <%= hidden_field_tag(:destination_id, contact.id) %>
+          <%= submit_tag "Add to contact list", :class => "add" %>
+        <%- end -%>
       <%- end -%>
       <!-- <a class="export" href="#">Vcard Export</a>-->
     </div>

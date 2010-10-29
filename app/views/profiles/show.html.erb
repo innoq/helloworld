@@ -53,10 +53,10 @@
 <!-- /col-two -->
 
 <div id="col-three">
-  <h2>User's contacts (<%= @profile.contact_count || 0 %>)</h2>
+  <h2>User's contacts (<%= @profile.contacts.relation_accepted.count || 0 %>)</h2>
 
   <div class="contact-list-small">
-    <%= render :partial => 'contact', :collection => @profile.contacts %>
+    <%= render :partial => 'contact', :collection => @profile.contacts.relation_accepted %>
   </div>
   <!-- /contact-list-small -->
 </div>

@@ -4,10 +4,20 @@ class Profile < ActiveRecord::Base
   belongs_to :business_address, :class_name => 'Address'
 
   has_many :profile_attributes
+
   has_many :relations, :foreign_key => :source_id
-  has_many :contacts, :through => :relations, :source => :destination
+  has_many :contacts, :through => :relations, :source => :destination do
+    def relation_accepted
+      where("1=1") & Relation.scoped.accepted
+    end
+    def relation_not_accepted
+      where("1=1") & Relation.scoped.not_accepted
+    end
+  end
+
   has_many :sent_messages, :foreign_key => :from_id, :class_name => "Message"
   has_many :received_messages, :foreign_key => :to_id, :class_name => "Message"
+
   has_many :statuses
 
   accepts_nested_attributes_for :profile_attributes, :private_address, :business_address, :allow_destroy => true

@@ -5,7 +5,6 @@ TODO:
 * Status
 * Dashboard
 * CSS
-* Search
 * Fotos + Namen aus Jax-HP klauen
 
 * Messages
