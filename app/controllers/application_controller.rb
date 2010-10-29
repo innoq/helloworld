@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    @current_user ||= session[:user].nil? ? nil : User.last(:conditions => {:id => session[:user]})
+    @current_user ||= session[:user].nil? ? nil : User.includes(:profile => :contacts).where(:id => session[:user]).last
   end
 
 end
