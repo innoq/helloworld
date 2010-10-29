@@ -11,13 +11,17 @@
 
     <div class="address2">
       <%= mail_to contact.company_email.value if contact.company_email %><br />
-	<%= mail_to contact.company_phone.value if contact.company_phone %>
+      <%= mail_to contact.company_phone.value if contact.company_phone %>
     </div>
 
     <div class="actions">
-      <%= link_to "Nachricht schreiben", new_message_url(:to => contact.id), :class => "message showmessage" %>
-      <%= link_to "Löschen", contact_url(contact.id), :method => :delete, :class => "delete", :confirm => "Sure?" %>
-      <a class="export" href="#">Vcard Export</a>
+      <%= link_to "Send message", new_message_url(:to => contact.id), :class => "message showmessage" %>
+      <%- if current_user.profile.contact_ids.include?(contact.id) -%>
+        <%= link_to "Remove contact", contact_url(contact.id), :method => :delete, :class => "delete", :confirm => "Sure?" %>
+      <%- else -%>
+        <%= link_to "Add to contact list", contact_url(contact.id), :class => "delete", :confirm => "Sure?" %>
+      <%- end -%>
+      <!-- <a class="export" href="#">Vcard Export</a>-->
     </div>
 
   </div>

@@ -56,7 +56,7 @@ class Profile < ActiveRecord::Base
   end
 
   def self.search(word)
-    where(arel_table[:last_name].matches(word).or(arel_table[:first_name].matches(word))).
+    where(arel_table[:last_name].matches(word).or(arel_table[:first_name].matches(word)).or(arel_table[:company].matches(word))).
       select(:id).
       map(&:id)
   end

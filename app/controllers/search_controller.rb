@@ -3,7 +3,7 @@ class SearchController < ApplicationController
 
   def search
     if params[:q].presence
-      words = params[:q].split(/[\w,]/).select{|w| w.present?}.map{|w| "%#{w}%"}
+      words = params[:q].split(/[\s,]/).select{|w| w.present?}.map{|w| "%#{w}%"}
       id_sets = []
       words.each do |word|
         id_sets << Profile.search(word)
