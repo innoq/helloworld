@@ -8,6 +8,8 @@ Helloworld::Application.routes.draw do
   resources :contacts
   resources :messages
 
+  get "search" => "search#search"
+
   get "auth/login"
   get "auth/logout"
   get "auth/register"

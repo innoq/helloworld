@@ -2,6 +2,7 @@ class Profile < ActiveRecord::Base
   belongs_to :user
   belongs_to :private_address, :class_name => 'Address'
   belongs_to :business_address, :class_name => 'Address'
+
   has_many :profile_attributes
   has_many :relations, :foreign_key => :source_id
   has_many :contacts, :through => :relations, :source => :destination
@@ -52,6 +53,12 @@ class Profile < ActiveRecord::Base
     define_method m do
       profile_attributes.find_by_attr_type(m)
     end
+  end
+
+  def self.search(word)
+    where(arel_table[:last_name].matches(word).or(arel_table[:first_name].matches(word))).
+      select(:id).
+      map(&:id)
   end
 
 end

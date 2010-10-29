@@ -1,0 +1,23 @@
+<h1>Search</h1>
+
+<div class="pager">
+  <%= will_paginate @results if @results %>
+</div>
+
+<%= form_tag search_url, :method => :get do %>
+  <ul>
+    <li>
+      <input type="search" name="q" class="search_term" value="<%= params[:q] %>" placeholder="Enter your search term here" />
+    </li>
+    <li><%= submit_tag "Search" %></li>
+  </ul>
+
+<%- end -%>
+
+<div class="contact-list">
+  <%= render :partial => "layouts/contact", :collection => @results %>
+  <!-- /items -->
+</div>
+<!-- contact-list -->
+
+<div class="clear"><!-- clear --></div>

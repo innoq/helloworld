@@ -6,7 +6,7 @@
 
 
 <div class="contact-list">
-  <%= render :partial => "contact", :collection => @contacts %>
+  <%= render :partial => "layouts/contact", :collection => @contacts %>
   <!-- /items -->
 </div>
 <!-- contact-list -->
@@ -14,4 +14,4 @@
 <div class="clear"><!-- clear --></div>
 
 <br />
-<a class="button-blue" title="" href="#">Kontakt suchen</a>
+<%= link_to "Seach contact", search_url(), :class => "button-blue" %>
