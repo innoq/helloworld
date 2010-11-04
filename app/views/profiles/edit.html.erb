@@ -1,5 +1,30 @@
 <h1>Edit Profile</h1>
 
+<div id="col-one">
+
+  <div class="profile-image">
+    <%= image_tag @profile.photo.url(), :alt => @profile.full_name %>
+  </div>
+  <!-- /profile-image -->
+
+  <div class="profile-actions">
+
+  </div>
+  <!-- /profile-actions -->
+
+  <h2>User's profile updates (<%= @profile.statuses.count %>)</h2>
+
+  <div class="profile-stream">
+    <%= render :partial => 'status', :collection => @profile.statuses %>
+  </div>
+  <!-- /profile-stream -->
+
+</div>
+<!-- /col-one -->
+
+<div id="col-two">
+  <div class="profile-center">
+
 <%= form_for @profile, :builder => Helloworld::FormBuilder do |f| %>
   <%= render :partial => "/errors", :object => @profile.errors %>
   <ul>
@@ -73,3 +98,9 @@
   </ul>
 
 <%- end -%>
+
+  </div>
+</div>
+
+
+<div class="clear"><!-- clear --></div>
