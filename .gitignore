@@ -5,3 +5,5 @@ nbproject
 tmp/**/*
 .DS_Store
 public/system
+data/photos/speaker/
+data/speaker.yml
