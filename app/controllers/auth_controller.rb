@@ -8,7 +8,7 @@ class AuthController < ApplicationController
     @user = User.new
     @dest ||= dashboard_path
     sample_user = random_user
-    @hint = "Try user '#{sample_user.login}' with password '#{sample_user.password}' to get started."
+    @hint = "Try user '#{sample_user.login}' with password '#{sample_user.password}' to get started." if sample_user
   end
 
   def authenticate
