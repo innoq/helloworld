@@ -1,6 +1,6 @@
 <div class="contact-list-small-item">
   <div class="contact-list-small-img">
-    <a title="" href="#"><%= image_tag @profile.photo.url(:small) %></a>
+    <a title="" href="#"><%= image_tag contact.photo.url(:small) %></a>
   </div>
   <div class="contact-list-small-text">
     <div class="contact-list-small-username"><%= link_to(contact.full_name, contact) %></div>
