@@ -1,12 +1,30 @@
 ## Sample App, more to follow, not yet useful for anything
 
+### Setup
+
+Install rails:
+    gem install rails
+
+Clone Helloworld:
+    git clone git@github.com:innoq/helloworld.git
+
+Bundle dependencies:
+    bundle install
+
+Create and Initialize Database
+    rake db:setup
+
+Popoulate some Data:
+    rake db:populate
+
+Run the server:
+    rails s
 
 ### TODO
 * Status
 * Layout & CSS
   * Dashboard
   * Forms
-* Fotos + Namen von Jax-HP
 
 #### Later:
 * Messages
