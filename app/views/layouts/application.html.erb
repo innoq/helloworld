@@ -28,6 +28,13 @@
       <%= render :partial => 'layouts/header' %>
 
       <div id="content-holder">
+
+        <div class="flash_messages">
+          <% flash.each do |information_class, message| %>
+            <div class="<%= information_class %>"><%= message %></div>
+          <% end %>
+        </div>
+
         <%= yield %>
       </div>
       <!-- /content-holder -->
