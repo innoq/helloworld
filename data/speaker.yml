@@ -1,0 +1,787 @@
+--- 
+- name: Dan Allen
+  company: JBoss
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4837.jpg
+  last_name: Allen
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4837.jpg
+  first_name: Dan
+- name: Dr. Michael Amann
+  company: Fabasoft
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5077.jpg
+  last_name: Amann
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5077.jpg
+  first_name: Michael
+- name: Pavlo Baron
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4432.jpg
+  last_name: Baron
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4432.jpg
+  first_name: Pavlo
+- name: Jyoti Bansal
+  company: AppDynamics
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5666.jpg
+  last_name: Bansal
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5666.jpg
+  first_name: Jyoti
+- name: Boris Bathow
+  company: Senacor Technologies AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5669.jpg
+  last_name: Bathow
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5669.jpg
+  first_name: Boris
+- name: Florian Benne
+  company: VMware
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5701.jpg
+  last_name: Benne
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5701.jpg
+  first_name: Florian
+- name: Bernhard Bensch
+  company: syngenio AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5615.jpg
+  last_name: Bensch
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5615.jpg
+  first_name: Bernhard
+- name: Adam Bien
+  company: adam-bien.com
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/690.jpg
+  last_name: Bien
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/690.jpg
+  first_name: Adam
+- name: Dr. Thomas Biskup
+  company: QuinScape GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2087.jpg
+  last_name: Biskup
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2087.jpg
+  first_name: Thomas
+- name: Jan Blankenhorn
+  company: Weigle Wilczek GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5281.jpg
+  last_name: Blankenhorn
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5281.jpg
+  first_name: Jan
+- name: Matthias Bohlen
+  company: IT-Berater
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/44.jpg
+  last_name: Bohlen
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/44.jpg
+  first_name: Matthias
+- name: Dr. Uwe Bombosch
+  company: Tata Consultancy Services Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5603.jpg
+  last_name: Bombosch
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5603.jpg
+  first_name: Uwe
+- name: Hans-Christian Boos
+  company: arago AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3835.jpg
+  last_name: Boos
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3835.jpg
+  first_name: Hans-Christian
+- name: Andy Bosch
+  company: "Unabh\xC3\xA4ngiger Berater und Trainer"
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1212.jpg
+  last_name: Bosch
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1212.jpg
+  first_name: Andy
+- name: Prof. Dr. Oliver Braun
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5292.jpg
+  last_name: Braun
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5292.jpg
+  first_name: Oliver
+- name: Christian Dedek
+  company: Orientation in Objects GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/40.jpg
+  last_name: Dedek
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/40.jpg
+  first_name: Christian
+- name: Konstantin Diener
+  company: COINOR AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5494.jpg
+  last_name: Diener
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5494.jpg
+  first_name: Konstantin
+- name: Christian Dupuis
+  company: SpringSource
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1312.jpg
+  last_name: Dupuis
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1312.jpg
+  first_name: Christian
+- name: Jasmin Dzaferovic
+  company: Union IT-Services GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5531.jpg
+  last_name: Dzaferovic
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5531.jpg
+  first_name: Jasmin
+- name: Jutta Eckstein
+  company: IT communication
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/338.jpg
+  last_name: Eckstein
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/338.jpg
+  first_name: Jutta
+- name: Sebastian Eichner
+  company: Freelancer
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5688.jpg
+  last_name: Eichner
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5688.jpg
+  first_name: Sebastian
+- name: Agim Emruli
+  company: mimacom
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2801.jpg
+  last_name: Emruli
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2801.jpg
+  first_name: Agim
+- name: "Bj\xC3\xB6rn Feustel"
+  company: Orientation in Objects GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3910.jpg
+  last_name: Feustel
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3910.jpg
+  first_name: !binary |
+    QmrDtnJu
+
+- name: Tim Fischer
+  company: Microsoft
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5049.jpg
+  last_name: Fischer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5049.jpg
+  first_name: Tim
+- name: Jakob Freund
+  company: camunda services GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2807.jpg
+  last_name: Freund
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2807.jpg
+  first_name: Jakob
+- name: Uwe Friedrichsen
+  company: codecentric AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1234.jpg
+  last_name: Friedrichsen
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1234.jpg
+  first_name: Uwe
+- name: Thilo Frotscher
+  company: Freelancer
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/156.jpg
+  last_name: Frotscher
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/156.jpg
+  first_name: Thilo
+- name: Robert Gimbel
+  company: camunda services GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5514.jpg
+  last_name: Gimbel
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5514.jpg
+  first_name: Robert
+- name: Kay Glahn
+  company: Mobile Technology Consultant
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/336.jpg
+  last_name: Glahn
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/336.jpg
+  first_name: Kay
+- name: Andreas Grabner
+  company: dynaTrace
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5625.jpg
+  last_name: Grabner
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5625.jpg
+  first_name: Andreas
+- name: Dr. Ralph Guderlei
+  company: eXXcellent solutions gmbh
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4120.jpg
+  last_name: Guderlei
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4120.jpg
+  first_name: Ralph
+- name: Marc Guillemot
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2063.jpg
+  last_name: Guillemot
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2063.jpg
+  first_name: Marc
+- name: "Dr. Halil-Cem G\xC3\xBCrsoy"
+  company: adesso AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5269.jpg
+  last_name: "G\xC3\xBCrsoy"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5269.jpg
+  first_name: Halil-Cem
+- name: Arno Haase
+  company: Arno Haase Consulting
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/56.jpg
+  last_name: Haase
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/56.jpg
+  first_name: Arno
+- name: Sven Haiges
+  company: greenrobot
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/745.jpg
+  last_name: Haiges
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/745.jpg
+  first_name: Sven
+- name: Jonathan Harclerode
+  company: Accenture
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5673.jpg
+  last_name: Harclerode
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5673.jpg
+  first_name: Jonathan
+- name: Andreas Hartmann
+  company: adesso AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4019.jpg
+  last_name: Hartmann
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4019.jpg
+  first_name: Andreas
+- name: Martin Heider
+  company: infomar software
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/648.jpg
+  last_name: Heider
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/648.jpg
+  first_name: Martin
+- name: Sascha Herzog
+  company: Compass Security AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5676.jpg
+  last_name: Herzog
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5676.jpg
+  first_name: Sascha
+- name: Jochen Hiller
+  company: Deutsche Telekom AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2096.jpg
+  last_name: Hiller
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2096.jpg
+  first_name: Jochen
+- name: Angus Huang
+  company: Aplix Corporation
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5530.jpg
+  last_name: Huang
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5530.jpg
+  first_name: Angus
+- name: Mirko Jahn
+  company: InterComponentWare AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5314.jpg
+  last_name: Jahn
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5314.jpg
+  first_name: Mirko
+- name: Boris Janek
+  company: VR NetWorld GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5614.jpg
+  last_name: Janek
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5614.jpg
+  first_name: Boris
+- name: Michael Johann
+  company: rails-experts.com
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/67.jpg
+  last_name: Johann
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/67.jpg
+  first_name: Michael
+- name: Nicolai Josuttis
+  company: IT communication
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/342.jpg
+  last_name: Josuttis
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/342.jpg
+  first_name: Nicolai
+- name: Mik Kersten
+  company: Tasktop Technologies
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3026.jpg
+  last_name: Kersten
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3026.jpg
+  first_name: Mik
+- name: Micha Kiener
+  company: mimacom
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5361.jpg
+  last_name: Kiener
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5361.jpg
+  first_name: Micha
+- name: Viktor Klang
+  company: AkkaSource
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5686.jpg
+  last_name: Klang
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5686.jpg
+  first_name: Viktor
+- name: Arnd Kleinbeck
+  company: innoQ Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5083.jpg
+  last_name: Kleinbeck
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5083.jpg
+  first_name: Arnd
+- name: "Niko K\xC3\xB6bler"
+  company: OPITZ CONSULTING Bad Homburg GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4656.jpg
+  last_name: "K\xC3\xB6bler"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4656.jpg
+  first_name: Niko
+- name: Bernd Kolb
+  company: SAP AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5290.jpg
+  last_name: Kolb
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5290.jpg
+  first_name: Bernd
+- name: "Dierk K\xC3\xB6nig"
+  company: Canoo
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2570.jpg
+  last_name: !binary |
+    S8O2bmln
+
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2570.jpg
+  first_name: Dierk
+- name: Dr. Heinrich Krause
+  company: "unabh\xC3\xA4ngiger Berater"
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4508.jpg
+  last_name: Krause
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4508.jpg
+  first_name: Heinrich
+- name: Klaus Kreft
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4664.jpg
+  last_name: Kreft
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4664.jpg
+  first_name: Klaus
+- name: "J\xC3\xBCrgen Kress"
+  company: Oracle EMEA
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5243.jpg
+  last_name: Kress
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5243.jpg
+  first_name: "J\xC3\xBCrgen"
+- name: Wolfram Kriesing
+  company: Uxebu
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3331.jpg
+  last_name: Kriesing
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3331.jpg
+  first_name: Wolfram
+- name: "R\xC3\xBCdiger K\xC3\xBCgler"
+  company: WIBU-SYSTEMS AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5026.jpg
+  last_name: "K\xC3\xBCgler"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5026.jpg
+  first_name: "R\xC3\xBCdiger"
+- name: Vincent Landgraf
+  company: inovex GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5628.jpg
+  last_name: Landgraf
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5628.jpg
+  first_name: Vincent
+- name: Angelika Langer
+  company: Training/Consulting
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3494.jpg
+  last_name: Langer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3494.jpg
+  first_name: Angelika
+- name: Johannes Link
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/9.jpg
+  last_name: Link
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/9.jpg
+  first_name: Johannes
+- name: Martin Lippert
+  company: SpringSource - a division of VMware
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/662.jpg
+  last_name: Lippert
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/662.jpg
+  first_name: Martin
+- name: "Daniel L\xC3\xBCbke"
+  company: innoQ Schweiz GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4140.jpg
+  last_name: !binary |
+    TMO8Ymtl
+
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4140.jpg
+  first_name: Daniel
+- name: "Matthias L\xC3\xBCbken"
+  company: it-agile GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2170.jpg
+  last_name: "L\xC3\xBCbken"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2170.jpg
+  first_name: Matthias
+- name: Gilles Lunzenfichter
+  company: VMware
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5713.jpg
+  last_name: Lunzenfichter
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5713.jpg
+  first_name: Gilles
+- name: Berthold Maier
+  company: Oracle Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3225.jpg
+  last_name: Maier
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3225.jpg
+  first_name: Berthold
+- name: Kito D. Mann
+  company: JSFCentral
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3786.jpg
+  last_name: D. Mann
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3786.jpg
+  first_name: Kito
+- name: Martin Marinschek
+  company: IRIAN.at
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1205.jpg
+  last_name: Marinschek
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1205.jpg
+  first_name: Martin
+- name: Christian Meder
+  company: inovex GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4754.jpg
+  last_name: Meder
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4754.jpg
+  first_name: Christian
+- name: Robert Mederer
+  company: Accenture Technology Solutions GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3393.jpg
+  last_name: Mederer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3393.jpg
+  first_name: Robert
+- name: Monika Moser
+  company: nugg.ad
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5516.jpg
+  last_name: Moser
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5516.jpg
+  first_name: Monika
+- name: "Stephan M\xC3\xBCller"
+  company: adesso AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4137.jpg
+  last_name: "M\xC3\xBCller"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4137.jpg
+  first_name: Stephan
+- name: "Florian M\xC3\xBCller"
+  company: richability
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2058.jpg
+  last_name: "M\xC3\xBCller"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2058.jpg
+  first_name: Florian
+- name: "Bj\xC3\xB6rn M\xC3\xBCller"
+  company: CaptainCasa
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2857.jpg
+  last_name: "M\xC3\xBCller"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2857.jpg
+  first_name: !binary |
+    QmrDtnJu
+
+- name: Hajo Normann
+  company: HP
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3123.jpg
+  last_name: Normann
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3123.jpg
+  first_name: Hajo
+- name: Mirko Novakovic
+  company: codecentric AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2414.jpg
+  last_name: Novakovic
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2414.jpg
+  first_name: Mirko
+- name: Anne Katherine Petteroe
+  company: Adobe
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5618.jpg
+  last_name: Katherine Petteroe
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5618.jpg
+  first_name: Anne
+- name: Jan Peuker
+  company: Accenture Technology Solutions
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5674.jpg
+  last_name: Peuker
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5674.jpg
+  first_name: Jan
+- name: Carsten Pflug
+  company: SOPHIST GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2090.jpg
+  last_name: Pflug
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2090.jpg
+  first_name: Carsten
+- name: "Michael Pl\xC3\xB6d"
+  company: Senacor Technologies AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/876.jpg
+  last_name: !binary |
+    UGzDtmQ=
+
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/876.jpg
+  first_name: Michael
+- name: Gunther Popp
+  company: Freiberufler
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4115.jpg
+  last_name: Popp
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4115.jpg
+  first_name: Gunther
+- name: Francis Pouatcha
+  company: adorsys Ltd.
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/938.jpg
+  last_name: Pouatcha
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/938.jpg
+  first_name: Francis
+- name: Alois Reitbauer
+  company: dynaTrace Software
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3057.jpg
+  last_name: Reitbauer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3057.jpg
+  first_name: Alois
+- name: Roman Roelofsen
+  company: Weigle Wilcek GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3674.jpg
+  last_name: Roelofsen
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3674.jpg
+  first_name: Roman
+- name: "Peter Ro\xC3\x9Fbach"
+  company: Freiberufler
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/55.jpg
+  last_name: "Ro\xC3\x9Fbach"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/55.jpg
+  first_name: Peter
+- name: "Lars R\xC3\xB6wekamp"
+  company: OpenKnowledge GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/215.jpg
+  last_name: "R\xC3\xB6wekamp"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/215.jpg
+  first_name: Lars
+- name: "Bernd R\xC3\xBCcker"
+  company: camunda services GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2020.jpg
+  last_name: "R\xC3\xBCcker"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2020.jpg
+  first_name: Bernd
+- name: Bruce Sams
+  company: OPTIMA  bit
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/310.jpg
+  last_name: Sams
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/310.jpg
+  first_name: Bruce
+- name: "Markus Sch\xC3\xA4rtel"
+  company: Innovations Software Technology
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3285.jpg
+  last_name: "Sch\xC3\xA4rtel"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3285.jpg
+  first_name: Markus
+- name: Jens Schauder
+  company: LINEAS Informationstechnik GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3731.jpg
+  last_name: Schauder
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3731.jpg
+  first_name: Jens
+- name: Stefan Scheidt
+  company: OPITZ CONSULTING Gummersbach GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2512.jpg
+  last_name: Scheidt
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2512.jpg
+  first_name: Stefan
+- name: Bernd Schiffer
+  company: it-agile GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1510.jpg
+  last_name: Schiffer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1510.jpg
+  first_name: Bernd
+- name: Hermann Schlamann
+  company: "unabh\xC3\xA4ngiger Berater"
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2375.jpg
+  last_name: Schlamann
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2375.jpg
+  first_name: Hermann
+- name: Marc Schlienger
+  company: innoQ Schweiz GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4677.jpg
+  last_name: Schlienger
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4677.jpg
+  first_name: Marc
+- name: Steffen Schluff
+  company: Orientation in Objects GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/304.jpg
+  last_name: Schluff
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/304.jpg
+  first_name: Steffen
+- name: Christoph Schmidt
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5695.jpg
+  last_name: Schmidt
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5695.jpg
+  first_name: Christoph
+- name: Guido Schmutz
+  company: Trivadis
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2157.jpg
+  last_name: Schmutz
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2157.jpg
+  first_name: Guido
+- name: Thomas Schoen
+  company: hello2morrow GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5611.gif
+  last_name: Schoen
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5611.gif
+  first_name: Thomas
+- name: Andreas Schosser
+  company: COINOR AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5495.jpg
+  last_name: Schosser
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5495.jpg
+  first_name: Andreas
+- name: Till Schulte-Coerne
+  company: innoQ Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4948.jpg
+  last_name: Schulte-Coerne
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4948.jpg
+  first_name: Till
+- name: Jens Schumann
+  company: OpenKnowledge GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/313.jpg
+  last_name: Schumann
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/313.jpg
+  first_name: Jens
+- name: Heiko Seeberger
+  company: Weigle Wilczek GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2741.jpg
+  last_name: Seeberger
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2741.jpg
+  first_name: Heiko
+- name: Denis Selivanov
+  company: Accenture
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5009.jpg
+  last_name: Selivanov
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5009.jpg
+  first_name: Denis
+- name: Olaf Siefart
+  company: Senacor
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4715.jpg
+  last_name: Siefart
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4715.jpg
+  first_name: Olaf
+- name: Holger Sirtl
+  company: Microsoft Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5025.jpg
+  last_name: Sirtl
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5025.jpg
+  first_name: Holger
+- name: Heiko Spindler
+  company: Opitz Consulting Bad Homburg GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3545.jpg
+  last_name: Spindler
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3545.jpg
+  first_name: Heiko
+- name: Markus Sprunck
+  company: UniCredit
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5535.jpg
+  last_name: Sprunck
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5535.jpg
+  first_name: Markus
+- name: Dr. Gernot Starke
+  company: Architekt
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1835.jpg
+  last_name: Starke
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1835.jpg
+  first_name: Gernot
+- name: Volker Stiehl
+  company: SAP
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3932.jpg
+  last_name: Stiehl
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3932.jpg
+  first_name: Volker
+- name: Etienne Studer
+  company: Canoo Engineering
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5619.jpg
+  last_name: Studer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5619.jpg
+  first_name: Etienne
+- name: Papick Taboada
+  company: pgt technology scouting GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/853.jpg
+  last_name: Taboada
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/853.jpg
+  first_name: Papick
+- name: Stefan Tilkov
+  company: innoQ Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1211.jpg
+  last_name: Tilkov
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1211.jpg
+  first_name: Stefan
+- name: "Kai T\xC3\xB6dter"
+  company: Siemens Corporate Technology
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/749.jpg
+  last_name: "T\xC3\xB6dter"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/749.jpg
+  first_name: Kai
+- name: Bernd Trops
+  company: SOPERA GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/231.jpg
+  last_name: Trops
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/231.jpg
+  first_name: Bernd
+- name: Clemens Utschig-Utschig
+  company: Boehringer Ingelheim Pharma GmbH & Co. KG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1679.jpg
+  last_name: Utschig-Utschig
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1679.jpg
+  first_name: Clemens
+- name: Dr. Victor Volle
+  company: Senacor Technologies AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5668.jpg
+  last_name: Volle
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5668.jpg
+  first_name: Victor
+- name: Gunnar Wagenknecht
+  company: Ageto
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2100.gif
+  last_name: Wagenknecht
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/2100.gif
+  first_name: Gunnar
+- name: Markus Wagner
+  company: OPTIMA bit GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3497.jpg
+  last_name: Wagner
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/3497.jpg
+  first_name: Markus
+- name: Dirk Weil
+  company: GEDOPLAN GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/653.jpg
+  last_name: Weil
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/653.jpg
+  first_name: Dirk
+- name: "Matthias We\xC3\x9Fendorf"
+  company: Oracle Corp.
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/456.jpg
+  last_name: "We\xC3\x9Fendorf"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/456.jpg
+  first_name: Matthias
+- name: Lothar Wieske
+  company: DB Systel GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/655.jpg
+  last_name: Wieske
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/655.jpg
+  first_name: Lothar
+- name: Mike Wiesner
+  company: SpringSource
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/879.jpg
+  last_name: Wiesner
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/879.jpg
+  first_name: Mike
+- name: Greg Wilson
+  company: Adobe
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5692.jpg
+  last_name: Wilson
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5692.jpg
+  first_name: Greg
+- name: Dr. Andreas Winklhofer
+  company: MAICONSULTING GmbH und Co. KG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5670.jpg
+  last_name: Winklhofer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5670.jpg
+  first_name: Andreas
+- name: Torsten Winterberg
+  company: Opitz Consulting GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/335.jpg
+  last_name: Winterberg
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/335.jpg
+  first_name: Torsten
+- name: Eberhard Wolff
+  company: SpringSource - A division of VMware
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/41.jpg
+  last_name: Wolff
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/41.jpg
+  first_name: Eberhard
+- name: "Dr. J\xC3\xB6rg Wurzer"
+  company: iQser AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4917.jpg
+  last_name: Wurzer
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4917.jpg
+  first_name: !binary |
+    SsO2cmc=
+
+- name: "Stefan Z\xC3\xB6rner"
+  company: oose Innovative Informatik GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1881.jpg
+  last_name: "Z\xC3\xB6rner"
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/1881.jpg
+  first_name: Stefan
+- name: Michael Zunke
+  company: Safenet
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4911.jpg
+  last_name: Zunke
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/4911.jpg
+  first_name: Michael
+- name: Daniel Zwink
+  company: Orientation in Objects GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5653.jpg
+  last_name: Zwink
+  file: /Users/tillsc/innoQ/github/innoq/helloworld/data/photos/speaker/5653.jpg
+  first_name: Daniel

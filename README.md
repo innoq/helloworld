@@ -11,10 +11,10 @@ Clone Helloworld:
 Bundle dependencies:
     bundle install
 
-Create and Initialize Database
+Create and initialize Database
     rake db:setup
 
-Popoulate some Data:
+Popoulate some data:
     rake db:populate
 
 Run the server:
