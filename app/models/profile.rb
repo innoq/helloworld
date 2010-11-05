@@ -83,7 +83,7 @@ class Profile < ActiveRecord::Base
   end
 
   def self.search(word)
-    where(arel_table[:last_name].matches(word).or(arel_table[:first_name].matches(word)).or(arel_table[:company].matches(word))).
+    where(["LOWER(#{self.table_name}.last_name) like :word OR LOWER(#{self.table_name}.first_name) like :word OR LOWER(#{self.table_name}.company) like :word", {:word => word.downcase}]).
       select(:id).
       map(&:id)
   end
