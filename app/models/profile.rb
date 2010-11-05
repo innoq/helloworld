@@ -1,11 +1,11 @@
 class Profile < ActiveRecord::Base
   belongs_to :user
-  belongs_to :private_address, :class_name => 'Address'
-  belongs_to :business_address, :class_name => 'Address'
+  belongs_to :private_address, :class_name => 'Address', :dependent => :destroy
+  belongs_to :business_address, :class_name => 'Address', :dependent => :destroy
 
-  has_many :profile_attributes
+  has_many :profile_attributes, :dependent => :destroy
 
-  has_many :relations, :foreign_key => :source_id
+  has_many :relations, :foreign_key => :source_id, :dependent => :destroy
   has_many :contacts, :through => :relations, :source => :destination do
     def relation_accepted
       where("1=1") & Relation.scoped.accepted
@@ -14,11 +14,12 @@ class Profile < ActiveRecord::Base
       where("1=1") & Relation.scoped.not_accepted
     end
   end
+  has_many :incoming_relations, :foreign_key => :destination_id, :class_name => "Relation", :dependent => :destroy
 
-  has_many :sent_messages, :foreign_key => :from_id, :class_name => "Message"
-  has_many :received_messages, :foreign_key => :to_id, :class_name => "Message"
+  has_many :sent_messages, :foreign_key => :from_id, :class_name => "Message", :dependent => :destroy
+  has_many :received_messages, :foreign_key => :to_id, :class_name => "Message", :dependent => :destroy
 
-  has_many :statuses
+  has_many :statuses, :dependent => :destroy
 
   accepts_nested_attributes_for :profile_attributes, :private_address, :business_address, :allow_destroy => true
 
