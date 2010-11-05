@@ -25,6 +25,7 @@ class AuthController < ApplicationController
 
   def logout
     session.delete(:user)
+    @current_user = nil
   end
 
   def register
