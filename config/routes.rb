@@ -7,6 +7,7 @@ Helloworld::Application.routes.draw do
   end
   resources :contacts
   resources :messages
+  resources :statuses
 
   get "search" => "search#search"
 
