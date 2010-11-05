@@ -28,7 +28,8 @@ def rand_type
 end
 
 def random_profile
-  Profile.find(:first, :offset => rand(PROFILE_COUNT))
+  @profile_count ||= Profile.count
+  Profile.find(:first, :offset => rand(@profile_count))
 end
 
 def random_set(count, limit)
