@@ -12,7 +12,11 @@
 
   <div id="meta">
     <ul>
-      <li><%= link_to "Logout", :controller => 'auth', :action => 'logout' %></li>
+      <%- if current_user -%>
+        <li><%= link_to "Logout", :controller => 'auth', :action => 'logout' %></li>
+      <%- else -%>
+        <li><%= link_to "Login", :controller => 'auth', :action => 'login' %></li>
+      <%- end -%>
       <li><a href="">Imprint</a></li>
       <li><a href="">About</a></li>
     </ul>
@@ -20,7 +24,14 @@
   <!-- /meta -->
 
   <div id="search">
-
+    <%= form_tag search_url, :method => :get, :class => :search do %>
+      <ul>
+        <li>
+          <input type="search" name="q" class="search_term" value="<%= params[:q] %>" placeholder="Enter your search term here" />
+        </li>
+        <li><%= submit_tag "Search" %></li>
+      </ul>
+    <%- end -%>
   </div>
   <!-- /search -->
 
