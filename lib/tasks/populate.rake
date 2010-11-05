@@ -64,9 +64,6 @@ end
 def create_profiles
   speakers = YAML.load(File.open(Rails.root.join("data/speaker.yml")))
 
-  Profile.delete_all
-  User.delete_all
-  Address.delete_all
   i=0
   PROFILE_COUNT.times do
     if i <  speakers.length
@@ -77,6 +74,10 @@ def create_profiles
       data[:file] = photo_file_names[i % photo_file_names.count]  
     end
     data[:company] = Forgery::Name.company_name if data[:company].blank?
+
+    next if Profile.where(:last_name => data[:last_name], :first_name => data[:first_name]).first # Skip if already defined (Herkoku breaks the import)
+
+    puts "#{data[:first_name]} #{data[:last_name]}"
 
     p = Profile.create! :last_name => data[:last_name],
       :first_name => data[:first_name],
@@ -111,7 +112,6 @@ def random_connections(count, &block)
 end 
 
 def create_relations
-  Relation.delete_all
   random_connections(RELATION_COUNT) do |source, target|
     Relation.create! :source => source, :destination => target,
       :comment => Forgery::LoremIpsum.paragraph,
@@ -127,7 +127,6 @@ def create_relations
 end
 
 def create_messages
-  Message.delete_all
   random_connections(MESSAGE_COUNT) do |source, target|
     Message.create! :from => source, :to => target, 
       :subject => Forgery::LoremIpsum.sentence,
@@ -138,7 +137,6 @@ def create_messages
 end
 
 def create_statuses
-  Status.delete_all
   STATUS_COUNT.times do
     who = random_profile
     Status.create! :profile => who,
@@ -151,9 +149,18 @@ begin
   namespace :db do
     desc "Populate the development database with some fake data, based on #{PROFILE_COUNT} users"
     task :populate => :environment do
+      if (ENV['DESTROY'])
+        puts "** Destroying everything"
+        Profile.destroy_all
+        User.destroy_all
+      end
+      puts "** Creating profiles"
       create_profiles
+      puts "** Creating statuses"
       create_statuses
+      puts "** Creating relations"
       create_relations
+      puts "** Creating messages"
       create_messages
     end
   end
