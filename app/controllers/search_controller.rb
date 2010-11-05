@@ -15,7 +15,7 @@ class SearchController < ApplicationController
       end
 
       @results = Profile.where(:id => ids).paginate(:page => params[:page],
-        :per_page => 6,
+        :per_page => 10,
         :order => 'last_name, first_name')
     end
   end
