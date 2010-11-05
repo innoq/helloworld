@@ -25,17 +25,33 @@ class Profile < ActiveRecord::Base
   validates :last_name, :presence => true
   validates :company, :presence => true
 
-  has_attached_file :photo,
-    :default_url => "/images/:attachment/missing_:style.png",
-    :url => "/system/:attachment/:id/:style.:extension",
-    :path => ":rails_root/public/system/:attachment/:id/:style.:extension",
-    :styles => {:small => "61x61#", :medium => "113x108#", :normal => "231x290#"}
+  paperclip_options = {
+    :default_url => "/images/:attachment/missing.png"
+  }
+  if ENV['S3_BUCKET']
+    paperclip_options.merge!(
+      :storage => :s3,
+      :s3_credentials => {
+        :access_key_id => ENV['S3_KEY'],
+        :secret_access_key => ENV['S3_SECRET']
+      },
+      :bucket => ENV['S3_BUCKET'],
+      :path => ":attachment/:id.:extension"
+    )
+  else
+    paperclip_options.merge!(
+      :url => "/system/:attachment/:id.:extension",
+      :path => ":rails_root/public/system/:attachment/:id.:extension"
+    )
+  end
 
-  def full_name 
+  has_attached_file :photo, paperclip_options
+
+  def full_name
     "#{first_name} #{last_name}"
   end
 
-  def contact_count 
+  def contact_count
     # intentionally stupid
     contacts.count
   end
