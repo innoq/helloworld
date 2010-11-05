@@ -118,11 +118,11 @@ def create_relations
       :accepted => true,
       :created_at => rand_time,
       :updated_at => rand_time
-    maybe { Relation.create! :source => target, :destination => source,
+    Relation.create! :source => target, :destination => source,
       :comment => Forgery::LoremIpsum.paragraph,
       :accepted => random_boolean,
       :created_at => rand_time,
-      :updated_at => rand_time }
+      :updated_at => rand_time 
   end
 end
 
