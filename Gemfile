@@ -13,6 +13,8 @@ group :development do
   gem 'mongrel'
 end
 
+gem 'aws-s3'
+
 gem 'forgery'
 gem 'will_paginate', "~>3.0.pre2"
 gem 'ya2yaml'

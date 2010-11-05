@@ -34,6 +34,10 @@ GEM
     activesupport (3.0.0)
     arel (1.0.1)
       activesupport (~> 3.0.0)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
     builder (2.1.2)
     cancan (1.4.0)
     cgi_multipart_eof_fix (2.5.0)
@@ -86,6 +90,7 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
     will_paginate (3.0.pre2)
+    xml-simple (1.0.12)
     ya2yaml (0.29.2)
 
 PLATFORMS
@@ -94,6 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
+  aws-s3
   cancan
   forgery
   mongrel
