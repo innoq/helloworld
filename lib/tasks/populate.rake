@@ -75,28 +75,28 @@ def create_profiles
     end
     data[:company] = Forgery::Name.company_name if data[:company].blank?
 
-    next if Profile.where(:last_name => data[:last_name], :first_name => data[:first_name]).first # Skip if already defined (Herkoku breaks the import)
+    unless Profile.where(:last_name => data[:last_name], :first_name => data[:first_name]).first # Skip if already defined (Herkoku breaks the import)
+      puts "#{data[:first_name]} #{data[:last_name]}"
 
-    puts "#{data[:first_name]} #{data[:last_name]}"
+      p = Profile.create! :last_name => data[:last_name],
+        :first_name => data[:first_name],
+        :company => data[:company],
+        :profession => rand_profession,
+        :about => Forgery::LoremIpsum.paragraph,
+        :created_at => rand_time,
+        :updated_at => rand_time
+      p.create_user :login => data[:first_name][0,1].downcase + data[:last_name].camelcase.downcase,
+        :password  => Forgery::Basic.password,
+        :created_at => rand_time,
+        :updated_at => rand_time
 
-    p = Profile.create! :last_name => data[:last_name],
-      :first_name => data[:first_name],
-      :company => data[:company],
-      :profession => rand_profession,
-      :about => Forgery::LoremIpsum.paragraph,
-      :created_at => rand_time,
-      :updated_at => rand_time
-    p.create_user :login => data[:first_name][0,1].downcase + data[:last_name].camelcase.downcase,
-      :password  => Forgery::Basic.password,
-      :created_at => rand_time,
-      :updated_at => rand_time
+      p.photo = File.new(data[:file])
 
-    p.photo = File.new(data[:file])
-
-    maybe { p.private_address = create_address }
-    maybe { p.business_address = create_address }
-    p.profile_attributes << create_profile_attributes
-    p.save!
+      maybe { p.private_address = create_address }
+      maybe { p.business_address = create_address }
+      p.profile_attributes << create_profile_attributes
+      p.save!
+    end
     i += 1
   end
 end
