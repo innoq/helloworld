@@ -19,7 +19,7 @@ doc.search(".speaker").each do |speaker|
   File.open(file_name, "w") do |file|
     file.write HTTPClient.new.get_content(s['image_url'])
   end
-  s['file'] = file_name
+  s['file'] = File.join("data/photos/speaker/", File.basename(s['image_url']))
   res << s
 end
 

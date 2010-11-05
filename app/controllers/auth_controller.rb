@@ -18,7 +18,7 @@ class AuthController < ApplicationController
       dest = params[:dest] || dashboard_path
       redirect_to dest
     else
-      flash[:notice] = "Wrong username/password combination"
+      flash[:error] = "Wrong username/password combination"
       redirect_to :action => :login
     end
   end
@@ -40,7 +40,7 @@ class AuthController < ApplicationController
       dest = params[:dest] || root_url
       redirect_to dest
     else
-      flash[:notice] = "Could not create user - user name already taken"
+      flash[:error] = "Could not create user - user name already taken"
       render :register
     end
   end
