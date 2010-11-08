@@ -7,6 +7,8 @@ class StatusesController < ApplicationController
 
     newest_status = Status.order(Status.arel_table[:created_at].desc).first
 
+    sleep(0.5)
+
     if stale?(:etag => newest_status.id, :last_modified => newest_status.created_at)
       @statuses =  Status.order(Status.arel_table[:created_at].desc).
         includes(:profile).
