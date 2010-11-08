@@ -7,3 +7,4 @@ tmp/**/*
 .DS_Store
 public/system
 
+.capistrano_history.yml
