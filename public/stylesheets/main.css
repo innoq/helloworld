@@ -137,12 +137,15 @@ textarea.message-body {
     position: absolute;
     top: 50px;
     right: 0px;
-    width: 260px;
+    width: 270px;
 }
 
 input.search_term {
     width: 200px;
     float: left;
+    border: 1px solid #ddd;
+    -moz-border-radius: 8px;
+    padding: 5px;
 }
 
 .submit_search input {
@@ -150,7 +153,6 @@ input.search_term {
     background-color: transparent;
     border-style:none;
     color:#4E9AFA;
-    
 }
 
 
@@ -473,7 +475,7 @@ h4 {
 #meta {
 	position: absolute;
 	top: 10px;
-	right: 10px;
+	left: 672px;
 	font-size: 10px;
 }
 
