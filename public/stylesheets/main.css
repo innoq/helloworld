@@ -98,6 +98,12 @@ a img, img a {
 	width:215px;
 }
 
+#col-two-large {
+	float:left;
+	margin: 0 0 0 20px;
+	width:685px;
+}
+
 .pager {
 	position:absolute;
 	top: 178px;
@@ -109,6 +115,25 @@ a img, img a {
 	text-decoration:none;
 	color:#4e9afa;
 	font-weight:bold;
+}
+
+#login-visual {
+    width: 936px;
+    margin: 0 auto;
+}
+
+.login-info {
+    float:right;
+    width: 240px;
+}
+
+/********************************************************************/
+/* TYPE */
+/********************************************************************/
+
+.small-grey {
+    font-size: .8em;
+    color: #bbb;
 }
 
 /********************************************************************/
@@ -168,10 +193,16 @@ input.search_term {
 .contact-list-item {
 	position:relative;
 	float:left;
-	width:450px;
-	height:160px;
+	width:430px;
+	height:170px;
+        padding: 10px;
 	border-bottom: 1px solid #ccc;
 	margin: 0 20px 10px 0;
+        /*
+        background-color: #f2f2f2;
+       	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+        */
 }
 	
 .contact-list-item h3 {
@@ -216,8 +247,8 @@ input.search_term {
 .contact-list-item img.user-image {
 	display:block;
 	position:absolute;
-	left:0;
-	top:0;
+	left:2px;
+	top:2px;
 }
 
 .contact-list-item-data {
@@ -228,19 +259,21 @@ input.search_term {
     width:113px;
 }
 
-.actions			{ position:absolute; bottom: 10px; left:130px; font-size: 12px; }
+.actions			{ position:absolute; bottom: 10px; right:10px; font-size: 11px; }
 .actions a 			{ text-decoration:none; font-weight:bold; }
 .actions a:hover		{ text-decoration:underline; }
 .actions a.message 		{ color:#1454a5; }
 .actions a.delete 		{ color:#e5144a; padding: 0 15px; }
 .actions a.export 		{ color:#33a514; }
 
-.actions input.delete 		{ font-size: 12px; font-weight: bold; color:#e5144a; padding: 0 15px; background-color: transparent; border-style: none; }
+.actions input.delete 		{ padding: 0 !important; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold; color:#e5144a; background-color: transparent; border-style: none; }
 .actions input.delete:hover 	{ cursor: pointer; text-decoration: underline; }
 
-.actions input.add 		{ font-size: 12px; font-weight: bold; color:#33a514; padding: 0 15px; background-color: transparent; border-style: none; }
+.actions input.add 		{ padding: 0 !important; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold; color:#33a514; padding: 0 15px; background-color: transparent; border-style: none; }
 .actions input.add:hover 	{ cursor: pointer; text-decoration: underline; }
 
+.actions input.accept 		{ padding: 0 !important; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold; color:#333; padding: 0 15px; background-color: transparent; border-style: none; }
+.actions input.accept:hover 	{ cursor: pointer; text-decoration: underline; }
 
 /********************************************************************/
 /* CONTACT LIST SMALL */
@@ -319,6 +352,80 @@ input.search_term {
 
 .button-blue:hover {
         color:#222;
+}
+
+
+li.submit-blue input {
+	padding: 5px 20px;
+	background: transparent url(img/btn-blue.png) repeat-x;
+	font-size: 1.2em;
+	color:#fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: #333 1px 1px 1px;
+        border: 1px solid #55a0fb;
+}
+
+li.submit-blue input:hover {
+        color:#222;
+}
+
+
+/********************************************************************/
+/* FORMS */
+/********************************************************************/
+
+.small-form input[type="text"],
+.small-form input[type="password"] {
+    width: 220px !important;
+}
+
+.default-form legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 0;
+    display: block;
+}
+
+.default-form label {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.default-form input[type="text"],
+.default-form input[type="password"] {
+    width: 450px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.1em;
+    padding: 6px;
+    color: #aaa;
+    margin: 0 0 15px 0;
+}
+
+.default-form textarea {
+    width: 450px;
+    height: 200px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.1em;
+    padding: 6px;
+    color: #aaa;
+    margin: 0 0 15px 0;
+}
+
+.default-form input[type="text"]:focus,
+.default-form input[type="password"]:focus {
+    border: 1px solid #777;
+    color: #333;
 }
 
 

@@ -1,10 +1,17 @@
 <!--<h1>Login</h1>-->
 
-<%= image_tag 'keyvisual.jpg', :alt => 'HELLOWORLD The demo community by innoQ' %>
+<div id="login-visual">
+  <%= image_tag 'keyvisual.jpg', :alt => 'HELLOWORLD The demo community by innoQ' %>
+</div>
 
 <br /><br />
 
-<%= link_to "Register", :controller => 'auth', :action => 'register' %>
+<div class="login-info">
+  <%= image_tag 'login-info.png', :alt => 'HelloWorld' %>
+</div>
+
+
+<div class="default-form small-form">
 <%= form_for @user, :url => authenticate_path do |u| %>
   <%= u.label :login, 'Login' %>:
   <%= u.text_field :login %><br />
@@ -12,4 +19,11 @@
   <%= u.password_field :password %><br />
   <%= u.submit "Log in", :class => "button-blue" %>
 <% end %>
-<p><%= @hint %></p>
+</div>
+
+<p class="small-grey"><%= @hint %></p>
+
+
+<%= link_to "Register", :controller => 'auth', :action => 'register' %>
+
+

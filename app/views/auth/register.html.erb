@@ -1,9 +1,27 @@
 <h1>Register</h1>
-<%= link_to "Login", :controller => 'auth', :action => 'login' %>
-<%= form_for @user, :url => register_user_path do |u| %>
-  <%= u.label :login, 'Login' %>:
-  <%= u.text_field :login %><br />
-  <%= u.label :password, 'Password' %>:
-  <%= u.password_field :password %><br />
- <%= u.submit "Register" %>
-<% end %>
+
+<div id="col-one">
+  Please fill in the fields to become a member:
+</div>
+<!-- /col-one -->
+
+<div id="col-two-large">
+  <div class="profile-center">
+    <div class="default-form">
+    <%= link_to "Login", :controller => 'auth', :action => 'login' %>
+    <%= form_for @user, :url => register_user_path do |u| %>
+      <%= u.label :login, 'Login' %>:
+      <%= u.text_field :login %>
+      <%= u.label :password, 'Password' %>:
+      <%= u.password_field :password %>
+     <%= u.submit "Register" %>
+    <% end %>
+    </div>
+
+  </div>
+</div>
+<!-- col-two-large -->
+
+<div class="clear"></div>
+
+

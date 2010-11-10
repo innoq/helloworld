@@ -9,7 +9,6 @@
 
   <div class="profile-actions">
     <%- if can? :edit, @profile -%>
-      <a href="#" title="">&raquo; Upload new image</a>
       <%= link_to edit_profile_url(@profile) do %>
         &raquo; Edit profile
       <%- end -%>
@@ -59,8 +58,10 @@
     <%= contact_data(@profile, "private_phone") %>
   </div>
 
+  <!--
   <a href="#" title="" class="button-blue">Send Message</a>
-
+  -->
+  
 </div>
 <!-- /col-two -->
 
