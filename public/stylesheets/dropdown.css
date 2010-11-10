@@ -46,16 +46,16 @@ a.first {
 	border-left-style: none !important;
 	-moz-border-radius-bottomleft: 5px;
 	-moz-border-radius-topleft: 5px;
-	-webkit-border-radius-bottomleft: 5px;
-	-webkit-border-radius-topleft: 5px; 
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 a.last {
 	border-left-style: none !important;
 	-moz-border-radius-bottomright: 5px;
 	-moz-border-radius-topright: 5px;
-	-webkit-border-radius-bottomright: 5px;
-	-webkit-border-radius-topright: 5px; 
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 

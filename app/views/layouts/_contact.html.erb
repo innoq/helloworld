@@ -1,7 +1,9 @@
 <div class="contact-list-item">
   <%= image_tag contact.photo.url(), :alt => contact.full_name, :class => "user-image" %>
   <div class="contact-list-item-data">
+    
     <h3><%= link_to contact.full_name, private_profile_url(contact)  %></h3>
+
     <p class="job-title"><%= contact.profession %></p>
 
     <div class="address1">
@@ -11,7 +13,7 @@
 
     <div class="address2">
       <%= mail_to contact.company_email.value if contact.company_email %><br />
-      <%= mail_to contact.company_phone.value if contact.company_phone %>
+      <%= contact.company_phone.value %>
     </div>
 
     <div class="actions">

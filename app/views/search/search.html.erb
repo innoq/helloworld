@@ -13,8 +13,10 @@
   </ul>
 <%- end -%>
 
+<div class="clear"></div>
+
 <%- if @results -%>
-  <h2>Results</h2>
+
   <%- if @results.count > 0 -%>
     <div class="contact-list">
       <%= render :partial => "layouts/contact", :collection => @results %>

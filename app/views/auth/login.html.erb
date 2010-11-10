@@ -1,3 +1,9 @@
+<!--<h1>Login</h1>-->
+
+<%= image_tag 'keyvisual.jpg', :alt => 'HELLOWORLD The demo community by innoQ' %>
+
+<br /><br />
+
 <%= link_to "Register", :controller => 'auth', :action => 'register' %>
 <%= form_for @user, :url => authenticate_path do |u| %>
   <%= u.label :login, 'Login' %>:

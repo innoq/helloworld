@@ -1,3 +1,4 @@
+<h1>Register</h1>
 <%= link_to "Login", :controller => 'auth', :action => 'login' %>
 <%= form_for @user, :url => register_user_path do |u| %>
   <%= u.label :login, 'Login' %>:
