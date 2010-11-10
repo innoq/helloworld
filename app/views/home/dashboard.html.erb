@@ -1,3 +1,6 @@
+
+<h1>Welcome, <%= current_user.profile.first_name %></h1>
+
 <% div_for current_user do %>
   <p class="profession"><span class="label">Profession:</span><%= current_user.profile.profession %></p>
   <p class="company"><span class="label">Company:</span><%= current_user.profile.company %></p>
