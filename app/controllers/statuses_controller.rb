@@ -13,7 +13,7 @@ class StatusesController < ApplicationController
       @statuses =  Status.order(Status.arel_table[:created_at].desc).
         includes(:profile).
         limit(25)
-      response.headers["expires"] = 1.hour.since.httpdate
+      expires_in 1.hour, :private => false
     end
   end
 
