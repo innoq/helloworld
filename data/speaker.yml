@@ -78,7 +78,7 @@
   file: data/photos/speaker/3835.jpg
   first_name: Hans-Christian
 - name: Andy Bosch
-  company: "Unabh\xC3\xA4ngiger Berater und Trainer"
+  company: "Unabhängiger Berater und Trainer"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1212.jpg
   last_name: Bosch
   file: data/photos/speaker/1212.jpg
@@ -131,14 +131,12 @@
   last_name: Emruli
   file: data/photos/speaker/2801.jpg
   first_name: Agim
-- name: "Bj\xC3\xB6rn Feustel"
+- name: "Björn Feustel"
   company: Orientation in Objects GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3910.jpg
   last_name: Feustel
   file: data/photos/speaker/3910.jpg
-  first_name: !binary |
-    QmrDtnJu
-
+  first_name: Björn
 - name: Tim Fischer
   company: Microsoft
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5049.jpg
@@ -193,10 +191,10 @@
   last_name: Guillemot
   file: data/photos/speaker/2063.jpg
   first_name: Marc
-- name: "Dr. Halil-Cem G\xC3\xBCrsoy"
+- name: "Dr. Halil-Cem Gürsoy"
   company: adesso AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5269.jpg
-  last_name: "G\xC3\xBCrsoy"
+  last_name: "Gürsoy"
   file: data/photos/speaker/5269.jpg
   first_name: Halil-Cem
 - name: Arno Haase
@@ -295,10 +293,10 @@
   last_name: Kleinbeck
   file: data/photos/speaker/5083.jpg
   first_name: Arnd
-- name: "Niko K\xC3\xB6bler"
+- name: "Niko Köbler"
   company: OPITZ CONSULTING Bad Homburg GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4656.jpg
-  last_name: "K\xC3\xB6bler"
+  last_name: "Köbler"
   file: data/photos/speaker/4656.jpg
   first_name: Niko
 - name: Bernd Kolb
@@ -307,16 +305,14 @@
   last_name: Kolb
   file: data/photos/speaker/5290.jpg
   first_name: Bernd
-- name: "Dierk K\xC3\xB6nig"
+- name: "Dierk König"
   company: Canoo
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2570.jpg
-  last_name: !binary |
-    S8O2bmln
-
+  last_name: König
   file: data/photos/speaker/2570.jpg
   first_name: Dierk
 - name: Dr. Heinrich Krause
-  company: "unabh\xC3\xA4ngiger Berater"
+  company: "unabhängiger Berater"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4508.jpg
   last_name: Krause
   file: data/photos/speaker/4508.jpg
@@ -327,24 +323,24 @@
   last_name: Kreft
   file: data/photos/speaker/4664.jpg
   first_name: Klaus
-- name: "J\xC3\xBCrgen Kress"
+- name: "Jürgen Kress"
   company: Oracle EMEA
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5243.jpg
   last_name: Kress
   file: data/photos/speaker/5243.jpg
-  first_name: "J\xC3\xBCrgen"
+  first_name: "Jürgen"
 - name: Wolfram Kriesing
   company: Uxebu
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3331.jpg
   last_name: Kriesing
   file: data/photos/speaker/3331.jpg
   first_name: Wolfram
-- name: "R\xC3\xBCdiger K\xC3\xBCgler"
+- name: "Rüdiger Kügler"
   company: WIBU-SYSTEMS AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5026.jpg
-  last_name: "K\xC3\xBCgler"
+  last_name: "Kügler"
   file: data/photos/speaker/5026.jpg
-  first_name: "R\xC3\xBCdiger"
+  first_name: "Rüdiger"
 - name: Vincent Landgraf
   company: inovex GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5628.jpg
@@ -369,18 +365,16 @@
   last_name: Lippert
   file: data/photos/speaker/662.jpg
   first_name: Martin
-- name: "Daniel L\xC3\xBCbke"
+- name: "Daniel Lübke"
   company: innoQ Schweiz GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4140.jpg
-  last_name: !binary |
-    TMO8Ymtl
-
+  last_name: Lübke
   file: data/photos/speaker/4140.jpg
   first_name: Daniel
-- name: "Matthias L\xC3\xBCbken"
+- name: "Matthias Lübken"
   company: it-agile GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2170.jpg
-  last_name: "L\xC3\xBCbken"
+  last_name: "Lübken"
   file: data/photos/speaker/2170.jpg
   first_name: Matthias
 - name: Gilles Lunzenfichter
@@ -425,26 +419,24 @@
   last_name: Moser
   file: data/photos/speaker/5516.jpg
   first_name: Monika
-- name: "Stephan M\xC3\xBCller"
+- name: "Stephan Müller"
   company: adesso AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4137.jpg
-  last_name: "M\xC3\xBCller"
+  last_name: "Müller"
   file: data/photos/speaker/4137.jpg
   first_name: Stephan
-- name: "Florian M\xC3\xBCller"
+- name: "Florian Müller"
   company: richability
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2058.jpg
-  last_name: "M\xC3\xBCller"
+  last_name: "Müller"
   file: data/photos/speaker/2058.jpg
   first_name: Florian
-- name: "Bj\xC3\xB6rn M\xC3\xBCller"
+- name: "Björn Müller"
   company: CaptainCasa
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2857.jpg
-  last_name: "M\xC3\xBCller"
+  last_name: "Müller"
   file: data/photos/speaker/2857.jpg
-  first_name: !binary |
-    QmrDtnJu
-
+  first_name: Björn
 - name: Hajo Normann
   company: HP
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3123.jpg
@@ -475,12 +467,10 @@
   last_name: Pflug
   file: data/photos/speaker/2090.jpg
   first_name: Carsten
-- name: "Michael Pl\xC3\xB6d"
+- name: "Michael Plöd"
   company: Senacor Technologies AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/876.jpg
-  last_name: !binary |
-    UGzDtmQ=
-
+  last_name: Plöd
   file: data/photos/speaker/876.jpg
   first_name: Michael
 - name: Gunther Popp
@@ -507,22 +497,22 @@
   last_name: Roelofsen
   file: data/photos/speaker/3674.jpg
   first_name: Roman
-- name: "Peter Ro\xC3\x9Fbach"
+- name: "Peter Roßbach"
   company: Freiberufler
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/55.jpg
-  last_name: "Ro\xC3\x9Fbach"
+  last_name: "Roßbach"
   file: data/photos/speaker/55.jpg
   first_name: Peter
-- name: "Lars R\xC3\xB6wekamp"
+- name: "Lars Röwekamp"
   company: OpenKnowledge GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/215.jpg
-  last_name: "R\xC3\xB6wekamp"
+  last_name: "Röwekamp"
   file: data/photos/speaker/215.jpg
   first_name: Lars
-- name: "Bernd R\xC3\xBCcker"
+- name: "Bernd Rücker"
   company: camunda services GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2020.jpg
-  last_name: "R\xC3\xBCcker"
+  last_name: "Rücker"
   file: data/photos/speaker/2020.jpg
   first_name: Bernd
 - name: Bruce Sams
@@ -531,10 +521,10 @@
   last_name: Sams
   file: data/photos/speaker/310.jpg
   first_name: Bruce
-- name: "Markus Sch\xC3\xA4rtel"
+- name: "Markus Schärtel"
   company: Innovations Software Technology
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3285.jpg
-  last_name: "Sch\xC3\xA4rtel"
+  last_name: "Schärtel"
   file: data/photos/speaker/3285.jpg
   first_name: Markus
 - name: Jens Schauder
@@ -556,7 +546,7 @@
   file: data/photos/speaker/1510.jpg
   first_name: Bernd
 - name: Hermann Schlamann
-  company: "unabh\xC3\xA4ngiger Berater"
+  company: "unabhängiger Berater"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2375.jpg
   last_name: Schlamann
   file: data/photos/speaker/2375.jpg
@@ -675,10 +665,10 @@
   last_name: Tilkov
   file: data/photos/speaker/1211.jpg
   first_name: Stefan
-- name: "Kai T\xC3\xB6dter"
+- name: "Kai Tödter"
   company: Siemens Corporate Technology
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/749.jpg
-  last_name: "T\xC3\xB6dter"
+  last_name: "Tödter"
   file: data/photos/speaker/749.jpg
   first_name: Kai
 - name: Bernd Trops
@@ -717,10 +707,10 @@
   last_name: Weil
   file: data/photos/speaker/653.jpg
   first_name: Dirk
-- name: "Matthias We\xC3\x9Fendorf"
+- name: "Matthias Weßendorf"
   company: Oracle Corp.
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/456.jpg
-  last_name: "We\xC3\x9Fendorf"
+  last_name: "Weßendorf"
   file: data/photos/speaker/456.jpg
   first_name: Matthias
 - name: Lothar Wieske
@@ -759,18 +749,16 @@
   last_name: Wolff
   file: data/photos/speaker/41.jpg
   first_name: Eberhard
-- name: "Dr. J\xC3\xB6rg Wurzer"
+- name: "Dr. Jörg Wurzer"
   company: iQser AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4917.jpg
   last_name: Wurzer
   file: data/photos/speaker/4917.jpg
-  first_name: !binary |
-    SsO2cmc=
-
-- name: "Stefan Z\xC3\xB6rner"
+  first_name: Jörg
+- name: "Stefan Zörner"
   company: oose Innovative Informatik GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1881.jpg
-  last_name: "Z\xC3\xB6rner"
+  last_name: "Zörner"
   file: data/photos/speaker/1881.jpg
   first_name: Stefan
 - name: Michael Zunke
