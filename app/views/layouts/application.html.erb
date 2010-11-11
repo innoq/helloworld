@@ -25,7 +25,7 @@
   <body>
     <a name="tothetop"></a>
     <div id="main">
-      <esi:include src="/header"></esi:include>
+      <%= tag "esi:include", :src => header_path %>
       <esi:remove>
         <%= render :partial => 'layouts/header' %>
       </esi:remove>
