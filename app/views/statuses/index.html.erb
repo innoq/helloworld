@@ -33,7 +33,7 @@
     <div class="stream">
     <%- @statuses.each do |status| -%>
     <div class="status">
-       <%= link_to (image_tag "rails.png" , :alt => "username", :class=> "stream-image"), profile_url(status.profile) %>
+       <%= link_to (image_tag status.profile.photo.url , :alt => "username", :class=> "stream-image"), profile_url(status.profile) %>
       <div class="status-message"><%= status.message %></div>
 
       <%= link_to status.profile.full_name, profile_url(status.profile), :class=>"username" %> <span class="status-date"><%= l(status.created_at, :format => :long) %></span>
