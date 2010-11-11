@@ -10,7 +10,7 @@ class Ability
       can :update, Profile, :id => user.profile.id
 
       can :show_private, Profile do |profile|
-        profile.user_id == user.id || profile.relations.select{|r| r.destination_id = user.profile.id && r.accepted}.any?
+        profile.user_id == user.id || profile.relations.select{|r| r.destination_id == user.profile.id && r.accepted}.any?
       end
 
       can [:read, :create], Status
