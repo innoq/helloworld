@@ -25,7 +25,10 @@
   <body>
     <a name="tothetop"></a>
     <div id="main">
-      <%= render :partial => 'layouts/header' %>
+      <esi:include src="/header" />
+      <esi:remove>
+        <%= render :partial => 'layouts/header' %>
+      </esi:remove>
 
       <div id="content-holder">
 
