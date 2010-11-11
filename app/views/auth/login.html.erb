@@ -17,9 +17,9 @@
 
 <div class="default-form small-form">
 <%= form_for @user, :url => authenticate_path do |u| %>
-  <%= u.label :login, 'Login' %>:
+  <%= u.label :login, 'Login' %>
   <%= u.text_field :login %><br />
-  <%= u.label :password, 'Password' %>:
+  <%= u.label :password, 'Password' %>
   <%= u.password_field :password %><br />
   <%= u.submit "Log in", :class => "button-blue" %>
 <% end %>

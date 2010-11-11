@@ -22,12 +22,12 @@ p {
 /********************************************************************/
 
 a {
-	color: #f00;
-	text-decoration: underline;
+        color:#4e9afa;
+	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a img, img a { 
@@ -119,7 +119,7 @@ a img, img a {
 }
 
 #login-visual {
-    width: 936px;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -440,6 +440,22 @@ li.submit-blue input:hover {
     color: #333;
 }
 
+.default-form input[type="submit"] {
+        display:block;
+	padding: 5px 20px;
+	background: transparent url(img/btn-blue.png) repeat-x;
+	font-size: 1.2em;
+	color:#fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: #333 1px 1px 1px;
+        border: 1px solid #55a0fb;
+}
+
+.default-form input[type="submit"]:hover {
+    color:#222;
+}
 
 /********************************************************************/
 /* PROFILE */
