@@ -20,6 +20,7 @@ Helloworld::Application.routes.draw do
 
   root :to => 'home#dashboard', :as => :dashboard
   match 'home/about' => 'home#about', :as => :about
+  match 'header' => 'home#header', :as => :header
 
   match 'public/:id(.:format)' => 'profiles#show_public'
 
