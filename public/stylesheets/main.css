@@ -80,6 +80,7 @@ a img, img a {
 
 #content-holder {
 	margin: 0 0 50px 0;
+        line-height: 120%;
 }
 
 #col-one {
@@ -123,8 +124,20 @@ a img, img a {
 }
 
 .login-info {
-    float:right;
-    width: 240px;
+    position: absolute;
+    right: 0px;
+    top: 605px;
+}
+
+.login-register {
+    position: absolute;
+    right: 310px;
+    top: 605px;
+}
+
+.hint {
+    margin: 20px 0 0 0;
+    width: 180px;
 }
 
 /********************************************************************/
@@ -193,9 +206,8 @@ input.search_term {
 .contact-list-item {
 	position:relative;
 	float:left;
-	width:430px;
-	height:170px;
-        padding: 10px;
+	width:450px;
+	height:190px;
 	border-bottom: 1px solid #ccc;
 	margin: 0 20px 10px 0;
         /*

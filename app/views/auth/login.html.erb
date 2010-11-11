@@ -10,6 +10,10 @@
   <%= image_tag 'login-info.png', :alt => 'HelloWorld' %>
 </div>
 
+<div class="login-register">
+<%= link_to image_tag('register.png' , :border=>0), :controller => 'auth', :action => 'register' %>
+</div>
+
 
 <div class="default-form small-form">
 <%= form_for @user, :url => authenticate_path do |u| %>
@@ -21,9 +25,8 @@
 <% end %>
 </div>
 
-<p class="small-grey"><%= @hint %></p>
+<p class="small-grey hint"><%= @hint %></p>
 
 
-<%= link_to "Register", :controller => 'auth', :action => 'register' %>
 
 
