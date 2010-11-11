@@ -4,9 +4,9 @@
 
 <div class="two-col-left">
 
-    <h2>What do you want to share with the world?</h2>
+  <h2>What do you want to share with the world?</h2>
 
-    <%= form_for Status.new, :builder => Helloworld::FormBuilder, :class => 'status' do |f| %>
+  <%= form_for Status.new, :builder => Helloworld::FormBuilder, :class => 'status' do |f| %>
     <ul class="status-form">
 
       <%= f.block :message do %>
@@ -28,22 +28,22 @@
 
 <div class="two-col-right">
 
-    <h2>The world says so:</h2>
+  <h2>The world says so:</h2>
 
-    <div class="stream">
+  <div class="stream">
     <%- @statuses.each do |status| -%>
-    <div class="status">
-       <%= link_to (image_tag status.profile.photo.url , :alt => "username", :class=> "stream-image"), profile_url(status.profile) %>
-      <div class="status-message"><%= status.message %></div>
+      <div class="status">
+        <%= link_to (image_tag status.profile.photo.url , :alt => "username", :class=> "stream-image"), profile_url(status.profile) %>
+        <div class="status-message"><%= status.message %></div>
 
-      <%= link_to status.profile.full_name, profile_url(status.profile), :class=>"username" %> <span class="status-date"><%= l(status.created_at, :format => :long) %></span>
+        <%= link_to status.profile.full_name, profile_url(status.profile), :class=>"username" %> <span class="status-date"><%= l(status.created_at, :format => :long) %></span>
 
-    </div>
-    <div class="clear"><!-- clear --></div>
+      </div>
+      <div class="clear"><!-- clear --></div>
     <%- end -%>
-    </div>
-    <!-- /stream -->
-    
+  </div>
+  <!-- /stream -->
+
 </div>
 <!-- two-col-right -->
 
