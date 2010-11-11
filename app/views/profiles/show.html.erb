@@ -30,20 +30,12 @@
 
     <div class="profile-center-company">
       <%= render :partial => 'address',
-        :collection => [@profile.business_address,
-        @profile.private_address] %>
+        :collection => [@profile.business_address] %>
 
     </div>
 
     <h4>About Me</h4>
     <p><%= @profile.about %></p>
-
-    <h4>Contact Data</h4>
-    <%= contact_data(@profile, "company_email") %>
-    <%= contact_data(@profile, "private_email") %>
-    <%= contact_data(@profile, "company_phone") %>
-    <%= contact_data(@profile, "mobile_phone") %>
-    <%= contact_data(@profile, "private_phone") %>
     
   </div>
 
