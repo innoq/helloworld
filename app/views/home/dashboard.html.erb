@@ -6,43 +6,54 @@
   <h2>My profile information</h2>
 
   <div class="profile-center profile-in-dashboard">
-  <% div_for current_user do %>
+    <% div_for current_user do %>
 
 
 
-    <div class="profile-center-contact-label">Profession:</div>
-    <div class="profile-center-contact-data"><%= current_user.profile.profession %></div>
+      <div class="profile-center-contact-label">Profession:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.profession %></div>
 
-    <div class="profile-center-contact-label">Company:</div>
-    <div class="profile-center-contact-data"><%= current_user.profile.company %></div>
+      <div class="profile-center-contact-label">Company:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.company %></div>
 
-    <div class="profile-center-contact-label">Created:</div>
-    <div class="profile-center-contact-data"><%= current_user.profile.created_at %></div>
+      <div class="profile-center-contact-label">Created:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.created_at %></div>
 
-    <div class="profile-center-contact-label">Updated:</div>
-    <div class="profile-center-contact-data"><%= current_user.profile.updated_at %></div>
+      <div class="profile-center-contact-label">Updated:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.updated_at %></div>
 
-    <div class="profile-center-contact-label">Contacts:</div>
-    <div class="profile-center-contact-data"><%= current_user.profile.contact_count %></div>
+      <div class="profile-center-contact-label">Contacts:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.contact_count %></div>
 
-    <div class="clear"><!-- clear --></div>
-    
-    <!--
-    <p class="about"><span class="label">About <%= current_user.profile.first_name %>:</span><%= current_user.profile.about %></p>
-    -->
-    
-    <p>&nbsp;</p>
+      <div class="clear"><!-- clear --></div>
 
-    <p><%= link_to "Go to Public Profile", profile_path(current_user.profile) %></p>
+      <!--
+      <p class="about"><span class="label">About <%= current_user.profile.first_name %>:</span><%= current_user.profile.about %></p>
+      -->
 
-    <!--<p><a href="#">Update status</a></p>-->
+      <p>&nbsp;</p>
 
-<% end %>
+      <p><%= link_to "Go to Public Profile", profile_path(current_user.profile) %></p>
+
+      <!--<p><a href="#">Update status</a></p>-->
+
+    <% end %>
   </div>
 
-    <h2>Stream of my contacts</h2>
+  <h2>Stream of my contacts</h2>
 
-    [TODO: Stream wie in World Stream (rechte Seite), aber nur aus den eigenen Kontakten]
+  <div class="stream">
+    <%- @statuses.each do |status| -%>
+      <div class="status">
+        <%= link_to (image_tag status.profile.photo.url , :alt => "username", :class=> "stream-image"), private_profile_url(status.profile) %>
+        <div class="status-message"><%= status.message %></div>
+
+        <%= link_to status.profile.full_name, private_profile_url(status.profile), :class=>"username" %> <span class="status-date"><%= l(status.created_at, :format => :long) %></span>
+
+      </div>
+      <div class="clear"><!-- clear --></div>
+    <%- end -%>
+  </div>
 
 
 </div>
@@ -62,7 +73,7 @@
     </div>
     <!-- contact-list -->
 
-    
+
 
     <!-- TODO: change to CONTACTS OF YOUR CONTACTS -->
     <h2>Contacts of your contacts</h2>
