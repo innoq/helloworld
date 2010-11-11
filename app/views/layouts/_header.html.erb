@@ -24,7 +24,6 @@
     <!-- /meta -->
 
     <div id="search">
-      <%- if current_user -%>
         <%= form_tag search_url, :method => :get, :class => :search do %>
           <ul>
             <li>
@@ -32,7 +31,6 @@
             </li>
             <li class="submit_search"><%= submit_tag "Search" %></li>
           </ul>
-        <%- end -%>
       <%- end -%>
     </div>
     <!-- /search -->

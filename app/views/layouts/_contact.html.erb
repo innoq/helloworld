@@ -1,7 +1,7 @@
 <div class="contact-list-item">
   <%= link_to (image_tag contact.photo.url(), :alt => contact.full_name, :class => "user-image"), private_profile_url(contact) %>
   <div class="contact-list-item-data">
-    
+
     <h3><%= link_to contact.full_name, private_profile_url(contact)  %></h3>
 
     <p class="job-title"><%= contact.profession %></p>
@@ -17,28 +17,30 @@
     </div>
 
     <div class="actions">
-      <%= link_to "Send message", new_message_url(:to => contact.id), :class => "message showmessage" %>
-      <%- if relation = current_user.profile.relations.where(:destination_id => contact.id).last -%>
-        <% if relation.accepted %>
-          <%= form_tag contact_url(contact.id), :method => :delete do %>
-            <%= submit_tag "Remove contact", :class => "delete", :confirm => "Sure?" %>
+      <%- if current_user -%>
+        <%= link_to "Send message", new_message_url(:to => contact.id), :class => "message showmessage" %>
+        <%- if relation = current_user.profile.relations.where(:destination_id => contact.id).last -%>
+          <% if relation.accepted %>
+            <%= form_tag contact_url(contact.id), :method => :delete do %>
+              <%= submit_tag "Remove contact", :class => "delete", :confirm => "Sure?" %>
+            <%- end -%>
+          <%- else -%>
+            <%= form_tag contact_url(contact.id), :method => :put do %>
+              <%= hidden_field_tag(:accepted, true) %>
+              <%= submit_tag "Accept", :class => "accept" %>
+            <%- end -%>
+            <%= form_tag contact_url(contact.id), :method => :delete do %>
+              <%= submit_tag "Reject", :class => "delete", :confirm => "Sure?" %>
+            <%- end -%>
           <%- end -%>
         <%- else -%>
-          <%= form_tag contact_url(contact.id), :method => :put do %>
-            <%= hidden_field_tag(:accepted, true) %>
-            <%= submit_tag "Accept", :class => "accept" %>
-          <%- end -%>
-          <%= form_tag contact_url(contact.id), :method => :delete do %>
-            <%= submit_tag "Reject", :class => "delete", :confirm => "Sure?" %>
+          <%= form_tag contacts_url, :method => :post do %>
+            <%= hidden_field_tag(:destination_id, contact.id) %>
+            <%= submit_tag "Add to contact list", :class => "add" %>
           <%- end -%>
         <%- end -%>
-      <%- else -%>
-        <%= form_tag contacts_url, :method => :post do %>
-          <%= hidden_field_tag(:destination_id, contact.id) %>
-          <%= submit_tag "Add to contact list", :class => "add" %>
-        <%- end -%>
+        <!-- <a class="export" href="#">Vcard Export</a>-->
       <%- end -%>
-      <!-- <a class="export" href="#">Vcard Export</a>-->
     </div>
 
   </div>

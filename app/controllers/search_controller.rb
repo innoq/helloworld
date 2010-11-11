@@ -1,6 +1,8 @@
 class SearchController < ApplicationController
   respond_to :html, :json
 
+  skip_before_filter :check_login, :only => [:search]
+
   def search
     if params[:q].presence
       words = params[:q].split(/[\s,]/).select{|w| w.present?}.map{|w| "%#{w}%"}
