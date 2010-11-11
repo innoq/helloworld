@@ -25,10 +25,10 @@
   <body>
     <a name="tothetop"></a>
     <div id="main">
-      <%#= tag "esi:include", :src => header_path %>
-      <%#= content_tag "esi:remove" do %>
+      <%= tag "esi:include", :src => header_path %>
+      <%= content_tag "esi:remove" do %>
         <%= render :partial => 'layouts/header' %>
-      <% #end %>
+      <% end %>
 
       <div id="content-holder">
 
