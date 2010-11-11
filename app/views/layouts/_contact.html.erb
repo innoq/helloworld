@@ -1,5 +1,5 @@
 <div class="contact-list-item">
-  <%= image_tag contact.photo.url(), :alt => contact.full_name, :class => "user-image" %>
+  <%= link_to (image_tag contact.photo.url(), :alt => contact.full_name, :class => "user-image"), private_profile_url(contact) %>
   <div class="contact-list-item-data">
     
     <h3><%= link_to contact.full_name, private_profile_url(contact)  %></h3>

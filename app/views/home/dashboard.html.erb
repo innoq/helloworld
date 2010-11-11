@@ -1,26 +1,85 @@
 
 <h1>Welcome, <%= current_user.profile.first_name %></h1>
 
-<% div_for current_user do %>
-  <p class="profession"><span class="label">Profession:</span><%= current_user.profile.profession %></p>
-  <p class="company"><span class="label">Company:</span><%= current_user.profile.company %></p>
-  <p class="about"><span class="label">About <%= current_user.profile.first_name %>:</span><%= current_user.profile.about %></p>
-  <p class="created-at"><span class="label">Created:</span><%= current_user.profile.created_at %></p>
-  <p class="updated-at"><span class="label">Updated:</span><%= current_user.profile.updated_at %></p>
-  <p class="contact-count"><span class="label"># of Contacts:</span><%= current_user.profile.contact_count %></p>
-  <p><%= link_to "Public Profile", profile_path(current_user.profile) %></p>
-  <p><a href="#">Update status</a></p>
+<div class="two-col-left">
+
+  <h2>My profile information</h2>
+
+  <div class="profile-center profile-in-dashboard">
+  <% div_for current_user do %>
+
+
+
+    <div class="profile-center-contact-label">Profession:</div>
+    <div class="profile-center-contact-data"><%= current_user.profile.profession %></div>
+
+    <div class="profile-center-contact-label">Company:</div>
+    <div class="profile-center-contact-data"><%= current_user.profile.company %></div>
+
+    <div class="profile-center-contact-label">Created:</div>
+    <div class="profile-center-contact-data"><%= current_user.profile.created_at %></div>
+
+    <div class="profile-center-contact-label">Updated:</div>
+    <div class="profile-center-contact-data"><%= current_user.profile.updated_at %></div>
+
+    <div class="profile-center-contact-label">Contacts:</div>
+    <div class="profile-center-contact-data"><%= current_user.profile.contact_count %></div>
+
+    <div class="clear"><!-- clear --></div>
+    
+    <!--
+    <p class="about"><span class="label">About <%= current_user.profile.first_name %>:</span><%= current_user.profile.about %></p>
+    -->
+    
+    <p>&nbsp;</p>
+
+    <p><%= link_to "Go to Public Profile", profile_path(current_user.profile) %></p>
+
+    <!--<p><a href="#">Update status</a></p>-->
+
 <% end %>
-
-<%- if current_user.profile.contacts.relation_not_accepted.any? -%>
-  <h2>Contacts waiting for confirmation</h2>
-  <div class="contact-list">
-    <%= render :partial => "layouts/contact", :collection => current_user.profile.contacts.relation_not_accepted %>
-    <!-- /items -->
   </div>
-  <!-- contact-list -->
 
-<%- end -%>
+    <h2>Stream of my contacts</h2>
+
+    [TODO: Stream wie in World Stream (rechte Seite), aber nur aus den eigenen Kontakten]
+
+
+</div>
+<!-- two-col-left -->
+
+<div class="two-col-right">
+
+  <%- if current_user.profile.contacts.relation_not_accepted.any? -%>
+
+
+    <!-- AWAITING CONFIRMATION -->
+    <h2>Contacts waiting for confirmation</h2>
+    <div class="contact-list list-in-dashboard">
+      <%= render :partial => "layouts/contact", :collection => current_user.profile.contacts.relation_not_accepted %>
+      <!-- /items -->
+      <div class="clear"><!-- clear --></div>
+    </div>
+    <!-- contact-list -->
+
+    
+
+    <!-- TODO: change to CONTACTS OF YOUR CONTACTS -->
+    <h2>Contacts of your contacts</h2>
+    <div class="contact-list list-in-dashboard">
+      <%= render :partial => "layouts/contact", :collection => current_user.profile.contacts.relation_not_accepted %>
+      <!-- /items -->
+      <div class="clear"><!-- clear --></div>
+    </div>
+    <!-- contact-list -->
+
+
+  <%- end -%>
+
+</div>
+<!-- two-col-right -->
+
+
 
 <div class="clear"><!-- clear --></div>
 

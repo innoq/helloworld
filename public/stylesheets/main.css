@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a img, img a { 
@@ -103,6 +103,18 @@ a img, img a {
 	float:left;
 	margin: 0 0 0 20px;
 	width:685px;
+}
+
+.two-col-left {
+    float:left;
+    width: 450px;
+    margin: 0 20px 0 0;
+}
+
+.two-col-right {
+    float:left;
+    width: 450px;
+    margin: 0 0 0 0;
 }
 
 .pager {
@@ -196,8 +208,88 @@ input.search_term {
 
 
 /********************************************************************/
+/* STATUS - FEED THE WORLD */
+/********************************************************************/
+
+ul.status-form textarea {
+    width: 420px;
+    height: 200px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.1em;
+    padding: 6px;
+    color: #aaa;
+    margin: 0 0 15px 0;
+}
+
+ul.status-form input[type="submit"] {
+/* 	display:block; */
+	padding: 5px 20px;
+	background: transparent url(img/btn-blue.png) repeat-x;
+	font-size: 1.2em;
+	color:#fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: #333 1px 1px 1px;
+        border: 1px solid #55a0fb;
+}
+
+ul.status-form input[type="submit"]:hover {
+        color:#222;
+}
+
+.stream .status {
+	border-top: 1px solid #cfcfcf;
+        padding: 8px 0;
+	color: #555;
+	font-size: 1em;
+}
+
+
+.stream .status-date {
+        font-weight: normal;
+	font-size: 0.9em;
+        color: #aaa;
+}
+
+.stream a.username {
+        font-weight: normal;
+	font-size: 0.9em;
+}
+
+img.stream-image {
+        display: block;
+        float:left;
+        width: 61px;
+        margin: 0 8px 8px 0;
+}
+
+.status-message {
+    font-size: 1.2em;
+    line-height: 140% !important;
+    padding: 0 0 5px 0;
+}
+
+/********************************************************************/
+/* DASHBOARD */
+/********************************************************************/
+
+.list-in-dashboard {
+    padding: 0 0 20px 0 !important;
+}
+
+.profile-in-dashboard {
+    padding-bottom: 10px !important;
+}
+
+/********************************************************************/
 /* CONTACT LIST */
 /********************************************************************/
+
+
 
 .contact-list {
     margin: 30px 0 0 0;

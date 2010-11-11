@@ -1,11 +1,16 @@
 <h1>World status feed</h1>
 
-<div id="col-one">
-  <%= form_for Status.new, :builder => Helloworld::FormBuilder, :class => 'status' do |f| %>
-    <ul>
+
+
+<div class="two-col-left">
+
+    <h2>What do you want to share with the world?</h2>
+
+    <%= form_for Status.new, :builder => Helloworld::FormBuilder, :class => 'status' do |f| %>
+    <ul class="status-form">
 
       <%= f.block :message do %>
-        <%= f.label :message, "What do you want to share with the world?" %>
+        <!--<%= f.label :message, "What do you want to share with the world?" %>-->
         <%= f.text_area :message, :placeholder => "Your message", :cols => 35, :rows => 3 %>
       <%- end -%>
 
@@ -13,26 +18,35 @@
         <%= f.submit "Publish" %>
       <%- end -%>
 
-    </ul> 
+    </ul>
   <%- end -%>
-</div>
-<!-- /col-one -->
 
-<div id="col-two">
-  <%- @statuses.each do |status| -%>
+</div>
+<!-- two-col-left -->
+
+
+
+<div class="two-col-right">
+
+    <h2>The world says so:</h2>
+
+    <div class="stream">
+    <%- @statuses.each do |status| -%>
     <div class="status">
-      <h3><%= link_to status.profile.full_name, profile_url(status.profile) %></h3>
-      <span class="item-date"><%= l(status.created_at, :format => :long) %></span>
-      <%= status.message %>
+       <%= link_to (image_tag "rails.png" , :alt => "username", :class=> "stream-image"), profile_url(status.profile) %>
+      <div class="status-message"><%= status.message %></div>
+
+      <%= link_to status.profile.full_name, profile_url(status.profile), :class=>"username" %> <span class="status-date"><%= l(status.created_at, :format => :long) %></span>
+
     </div>
-  <%- end -%>
-
+    <div class="clear"><!-- clear --></div>
+    <%- end -%>
+    </div>
+    <!-- /stream -->
+    
 </div>
-<!-- /col-two -->
+<!-- two-col-right -->
 
-<div id="col-three">
 
-</div>
-<!-- /col-three -->
 
 <div class="clear"><!-- clear --></div>
