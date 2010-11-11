@@ -9,6 +9,8 @@
     <% div_for current_user do %>
 
 
+      <div class="profile-center-contact-label">Name:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.full_name %></div>
 
       <div class="profile-center-contact-label">Profession:</div>
       <div class="profile-center-contact-data"><%= current_user.profile.profession %></div>
@@ -16,14 +18,11 @@
       <div class="profile-center-contact-label">Company:</div>
       <div class="profile-center-contact-data"><%= current_user.profile.company %></div>
 
-      <div class="profile-center-contact-label">Created:</div>
-      <div class="profile-center-contact-data"><%= current_user.profile.created_at %></div>
+      <div class="profile-center-contact-label">Joined at:</div>
+      <div class="profile-center-contact-data"><%= l(current_user.profile.created_at, :format => :long) %></div>
 
-      <div class="profile-center-contact-label">Updated:</div>
-      <div class="profile-center-contact-data"><%= current_user.profile.updated_at %></div>
-
-      <div class="profile-center-contact-label">Contacts:</div>
-      <div class="profile-center-contact-data"><%= current_user.profile.contact_count %></div>
+      <div class="profile-center-contact-label">Last profile update:</div>
+      <div class="profile-center-contact-data"><%= l(current_user.profile.updated_at, :format => :long) %></div>
 
       <div class="clear"><!-- clear --></div>
 
@@ -33,7 +32,7 @@
 
       <p>&nbsp;</p>
 
-      <p><%= link_to "Go to Public Profile", profile_path(current_user.profile) %></p>
+      <p><%= link_to "Go to Public Profile", profile_path(current_user.profile) %> | <%= link_to "Go to Private Profile", private_profile_path(current_user.profile) %></p>
 
       <!--<p><a href="#">Update status</a></p>-->
 
@@ -61,31 +60,27 @@
 
 <div class="two-col-right">
 
-  <%- if current_user.profile.contacts.relation_not_accepted.any? -%>
-
+  <%- if @unaccepted_contacts.any? -%>
 
     <!-- AWAITING CONFIRMATION -->
     <h2>Contacts waiting for confirmation</h2>
     <div class="contact-list list-in-dashboard">
-      <%= render :partial => "layouts/contact", :collection => current_user.profile.contacts.relation_not_accepted %>
+      <%= render :partial => "layouts/contact", :collection => @unaccepted_contacts %>
       <!-- /items -->
       <div class="clear"><!-- clear --></div>
     </div>
     <!-- contact-list -->
-
-
-
-    <!-- TODO: change to CONTACTS OF YOUR CONTACTS -->
-    <h2>Contacts of your contacts</h2>
-    <div class="contact-list list-in-dashboard">
-      <%= render :partial => "layouts/contact", :collection => current_user.profile.contacts.relation_not_accepted %>
-      <!-- /items -->
-      <div class="clear"><!-- clear --></div>
-    </div>
-    <!-- contact-list -->
-
 
   <%- end -%>
+
+  <h2>Contacts of your contacts</h2>
+  <div class="contact-list list-in-dashboard">
+    <%= render :partial => "layouts/contact", :collection => @contacts_of_contacts %>
+    <!-- /items -->
+    <div class="clear"><!-- clear --></div>
+  </div>
+  <!-- contact-list -->
+
 
 </div>
 <!-- two-col-right -->
