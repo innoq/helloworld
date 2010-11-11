@@ -69,10 +69,12 @@ def create_profiles
   PROFILE_COUNT.times do
     if i <  speakers.length
       data = speakers[i].symbolize_keys
+      data[:profession] = "Speaker"
     else
       data[:first_name] = Forgery::Name.first_name
       data[:last_name] = Forgery::Name.last_name
-      data[:file] = photo_file_names[i % photo_file_names.count]  
+      data[:file] = photo_file_names[i % photo_file_names.count]
+      data[:profession] = rand_profession
     end
     data[:company] = Forgery::Name.company_name if data[:company].blank?
 
@@ -82,7 +84,7 @@ def create_profiles
       p = Profile.create! :last_name => data[:last_name],
         :first_name => data[:first_name],
         :company => data[:company],
-        :profession => rand_profession,
+        :profession => data[:profession],
         :about => Forgery::LoremIpsum.paragraph,
         :created_at => rand_time,
         :updated_at => rand_time
