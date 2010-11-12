@@ -18,7 +18,7 @@
 
     <div class="actions">
       <%- if current_user -%>
-        <%= link_to "Send message", new_message_url(:to => contact.id), :class => "message showmessage" %>
+        <!-- <%= link_to "Send message", new_message_url(:to => contact.id), :class => "message showmessage" %> -->
         <%- if relation = current_user.profile.relations.where(:destination_id => contact.id).last -%>
           <% if relation.accepted %>
             <%= form_tag contact_url(contact.id), :method => :delete do %>

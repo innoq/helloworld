@@ -185,9 +185,10 @@ textarea.message-body {
 
 #search {
     position: absolute;
-    top: 50px;
+    top: 46px;
     right: 0px;
-    width: 270px;
+    width: 290px;
+    text-align:right;
 }
 
 input.search_term {
@@ -195,14 +196,23 @@ input.search_term {
     float: left;
     border: 1px solid #ddd;
     -moz-border-radius: 8px;
-    padding: 5px;
+    padding: 5px 5px;
 }
 
 .submit_search input {
+    /*
     float: left;
     background-color: transparent;
-    border-style:none;
     color:#4E9AFA;
+    */
+    color:#fff;
+    border-style:none;
+    background: transparent url(img/search_n.png) no-repeat;
+    width: 71px;
+    height: 25px;
+}
+.submit_search input:hover {
+    background: transparent url(img/search_h.png) no-repeat;
 }
 
 
@@ -220,8 +230,12 @@ ul.status-form textarea {
     -webkit-border-radius: 5px;
     font-size: 1.1em;
     padding: 6px;
-    color: #aaa;
+    color: #333;
     margin: 0 0 15px 0;
+}
+
+ul.status-form textarea:focus {
+    border: 1px solid #1e5ca2;
 }
 
 ul.status-form input[type="submit"] {
@@ -299,9 +313,10 @@ img.stream-image {
 	position:relative;
 	float:left;
 	width:450px;
-	height:190px;
+	height:170px;
 	border-bottom: 1px solid #ccc;
 	margin: 0 20px 10px 0;
+        overflow:hidden;
         /*
         background-color: #f2f2f2;
        	-moz-border-radius: 5px;
@@ -363,21 +378,20 @@ img.stream-image {
     width:113px;
 }
 
-.actions			{ position:absolute; bottom: 10px; right:10px; font-size: 11px; }
+.actions			{ position:absolute; bottom: 10px; left:128px; font-size: 11px; width: 180px; }
 .actions a 			{ text-decoration:none; font-weight:bold; }
 .actions a:hover		{ text-decoration:underline; }
 .actions a.message 		{ color:#1454a5; }
 .actions a.delete 		{ color:#e5144a; padding: 0 15px; }
 .actions a.export 		{ color:#33a514; }
 
-.actions input.delete 		{ padding: 0 !important; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold; color:#e5144a; background-color: transparent; border-style: none; }
-.actions input.delete:hover 	{ cursor: pointer; text-decoration: underline; }
 
-.actions input.add 		{ padding: 0 !important; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold; color:#33a514; padding: 0 15px; background-color: transparent; border-style: none; }
-.actions input.add:hover 	{ cursor: pointer; text-decoration: underline; }
+.actions input 			{ border-style: none; background-color: transparent; padding: 0 6px 0 0; background-color: transparent; display:inline; float:left; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold;  }
+.actions input:hover		{ cursor: pointer; text-decoration: underline; }
 
-.actions input.accept 		{ padding: 0 !important; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold; color:#333; padding: 0 15px; background-color: transparent; border-style: none; }
-.actions input.accept:hover 	{ cursor: pointer; text-decoration: underline; }
+.actions input.delete 		{ color:#e5144a; }
+.actions input.add 		{ color:#33a514; }
+.actions input.accept 		{ color:#333; }
 
 /********************************************************************/
 /* CONTACT LIST SMALL */
@@ -509,27 +523,29 @@ li.submit-blue input:hover {
     -webkit-border-radius: 5px;
     font-size: 1.1em;
     padding: 6px;
-    color: #aaa;
+    color: #333;
     margin: 0 0 15px 0;
 }
 
 .default-form textarea {
     width: 450px;
     height: 200px;
-    border: 1px solid #ccc;
+    border: 1px solid #777;
     -moz-border-radius: 5px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     font-size: 1.1em;
     padding: 6px;
-    color: #aaa;
+    color: #333;
     margin: 0 0 15px 0;
 }
 
+
+
 .default-form input[type="text"]:focus,
-.default-form input[type="password"]:focus {
-    border: 1px solid #777;
-    color: #333;
+.default-form input[type="password"]:focus,
+.default-form textarea:focus {
+    border: 1px solid #1e5ca2;
 }
 
 .default-form input[type="submit"] {
@@ -642,17 +658,14 @@ li.submit-blue input:hover {
 /********************************************************************/
 
 input {
-	font-size: 10px;
 	font-family: inherit;
 }
 
 textarea {
-	font-size: 10px;
 	font-family: inherit;
 }
 
 select {
-	font-size: 10px;
 	font-family: inherit;
 }
 
@@ -702,7 +715,7 @@ h4 {
 #meta {
 	position: absolute;
 	top: 10px;
-	left: 672px;
+	right: 2px;
 	font-size: 10px;
 }
 
@@ -711,7 +724,7 @@ h4 {
 }
 
 #meta ul li {
-	margin: 0 10px 0 0;
+	margin: 0 0 0 10px;
 	display: inline;
 	border-right: 1px solid #fff;
 }
