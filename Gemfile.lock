@@ -59,8 +59,6 @@ GEM
       daemons (>= 1.0.3)
       fastthread (>= 1.0.1)
       gem_plugin (>= 0.2.3)
-    mongrel (1.1.5-java)
-      gem_plugin (>= 0.2.3)
     paperclip (2.3.4)
       activerecord
       activesupport
