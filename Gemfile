@@ -10,7 +10,7 @@ platforms :ruby do
 end
 
 group :development do
-  gem 'mongrel'
+  #gem 'mongrel'
 end
 
 gem 'aws-s3'

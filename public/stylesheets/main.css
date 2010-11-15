@@ -393,6 +393,20 @@ img.stream-image {
 .actions input.add 		{ color:#33a514; }
 .actions input.accept 		{ color:#333; }
 
+
+.contact-icon-holder {
+    margin: 20px 0;
+}
+
+.contact-icon {
+    width: 36px !important;
+    height: 33px !important;
+    float:left;
+    margin: 0 15px 0 0;
+}
+
+
+
 /********************************************************************/
 /* CONTACT LIST SMALL */
 /********************************************************************/
