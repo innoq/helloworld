@@ -37,7 +37,7 @@ class StatusesController < ApplicationController
     if (@status.save) # Everything was fine
 
       # Purge the reverse proxy
-      # Net::HTTP.new("localhost", "8080").request(Net::HTTP::Purge.new(statuses_path), "")
+       Net::HTTP.new("localhost", "8080").request(Net::HTTP::Purge.new(statuses_path), "")
 
       redirect_to statuses_url # This URL is beeing cached
 
