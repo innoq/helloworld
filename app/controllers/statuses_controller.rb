@@ -22,7 +22,7 @@ class StatusesController < ApplicationController
       # Tell the client to do some caching if we don't have to display an error
       # message
       if !params[:error]
-       # expires_in 2.minutes, :private => false
+        expires_in 2.minutes, :private => false
       end
       
     end
