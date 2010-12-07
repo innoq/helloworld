@@ -22,7 +22,7 @@ class StatusesController < ApplicationController
       # Tell the client to do some caching if we don't have to display an error
       # message
       if !params[:error]
-        expires_in 2.minutes, :private => false
+       # expires_in 2.minutes, :private => false
       end
       
     end
@@ -37,7 +37,7 @@ class StatusesController < ApplicationController
     if (@status.save) # Everything was fine
 
       # Purge the reverse proxy
-       Net::HTTP.new("localhost", "8080").request(Net::HTTP::Purge.new(statuses_path), "")
+      # Net::HTTP.new("localhost", "8080").request(Net::HTTP::Purge.new(statuses_path), "")
 
       redirect_to statuses_url # This URL is beeing cached
 
