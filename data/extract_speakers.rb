@@ -1,8 +1,7 @@
 require 'rubygems'
 require 'hpricot'
 require 'httpclient'
-
-URL = 'http://jax.de/wjax2010/speaker/'
+require 'yaml'
 
 doc = Hpricot(File.open("speaker.html"))
 
