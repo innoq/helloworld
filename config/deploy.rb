@@ -3,7 +3,7 @@ load_history
 
 load "#{File.dirname(__FILE__)}/deploy/common.rb"
 
-set :default_stage, "ec2"
+set :default_stage, "innoq"
 set :stages, %w(ec2 innoq)
 require 'capistrano/ext/multistage'
 
