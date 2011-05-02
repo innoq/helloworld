@@ -12,7 +12,7 @@ class StatusesController < ApplicationController
     if stale?(:etag => newest_status.id, :last_modified => newest_status.created_at)
 
       # Waste some time
-      sleep(0.5)
+      sleep(1)
 
       # Load status list
       @statuses =  Status.order(Status.arel_table[:created_at].desc).
