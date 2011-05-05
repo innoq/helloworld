@@ -8,8 +8,8 @@ class StatusesController < ApplicationController
     authorize! :show, Status
 
     # Evaluate and set Last-Modified and ETag headers
-    newest_status = Status.order(Status.arel_table[:created_at].desc).first
-    if stale?(:etag => newest_status.id, :last_modified => newest_status.created_at)
+   # newest_status = Status.order(Status.arel_table[:created_at].desc).first
+   # if stale?(:etag => newest_status.id, :last_modified => newest_status.created_at)
 
       # Waste some time
       sleep(1)
@@ -21,11 +21,11 @@ class StatusesController < ApplicationController
 
       # Tell the client to do some caching if we don't have to display an error
       # message
-      if !params[:error]
+      #if !params[:error]
        # expires_in 2.minutes, :private => false
-      end
+      #end
       
-    end
+    #end
   end
 
   def create
