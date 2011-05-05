@@ -7,25 +7,16 @@ class StatusesController < ApplicationController
   def index
     authorize! :show, Status
 
-    # Evaluate and set Last-Modified and ETag headers
-   # newest_status = Status.order(Status.arel_table[:created_at].desc).first
-   # if stale?(:etag => newest_status.id, :last_modified => newest_status.created_at)
+    # Waste some time
+    sleep(1)
 
-      # Waste some time
-      sleep(1)
+    # Load status list
+    @statuses =  Status.order(Status.arel_table[:created_at].desc).
+      includes(:profile).
+      limit(25)
 
-      # Load status list
-      @statuses =  Status.order(Status.arel_table[:created_at].desc).
-        includes(:profile).
-        limit(25)
-
-      # Tell the client to do some caching if we don't have to display an error
-      # message
-      #if !params[:error]
-       # expires_in 2.minutes, :private => false
-      #end
+    expires_in 2.minutes, :public => true
       
-    #end
   end
 
   def create
