@@ -15,7 +15,7 @@ class StatusesController < ApplicationController
       includes(:profile).
       limit(25)
 
-     expires_in 2.minutes, :public => true
+    # expires_in 2.minutes, :public => true
       
   end
 
