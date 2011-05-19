@@ -149,7 +149,7 @@ def create_statuses
 end
 
 begin
-  namespace :db do
+  namespace :db do    
     desc "Populate the development database with some fake data, based on #{PROFILE_COUNT} users"
     task :populate => :environment do
       if (ENV['DESTROY'])
@@ -165,6 +165,10 @@ begin
       create_relations
       puts "** Creating messages"
       create_messages
+    end
+    
+    task :seeds_created => :environment do
+      "touch ../../shared/.seeds_created"
     end
   end
 rescue LoadError
