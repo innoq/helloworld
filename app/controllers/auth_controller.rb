@@ -37,7 +37,7 @@ class AuthController < ApplicationController
     if @user.nil?
       @user = User.create(params[:user])
       session[:user] = @user.id
-      dest = params[:dest] || root_url
+      dest = params[:dest] || dashboard_path
       redirect_to dest
     else
       flash[:error] = "Could not create user - user name already taken"
