@@ -14,6 +14,7 @@ doc.search(".speaker").each do |speaker|
   s['name'] =~ /((Dr.|Prof.)\s*)*(.+)/
   s['first_name'], s['last_name'] = $3.split(/\s/, 2)
   s['image_url'] = speaker.search("span.pic img").attr('src')
+  puts "Downloading #{s['name'] }'s profile image..."
   file_name = File.expand_path(File.join("photos/speaker/", File.basename(s['image_url'])))
   File.open(file_name, "w") do |file|
     file.write HTTPClient.new.get_content(s['image_url'])
