@@ -602,6 +602,11 @@ li.submit-blue input:hover {
 	margin: 18px 0;
 }
 
+.profile-center-contact-image {
+	float: right;
+	width: 61px;
+}
+
 .profile-center-contact-label {
 	float:left;
 	width: 100px;
@@ -612,7 +617,7 @@ li.submit-blue input:hover {
 
 .profile-center-contact-data {
 	float:left;
-	width: 250px;	
+	width: 215px;	
 	font-size: 0.9em;
 	margin: 0 0 2px 0;
 }
