@@ -1,40 +1,52 @@
 --- 
-- name: Paul Allen
-  company: Cutter Consortium
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3400.jpg
+- name: Andreas Ahmann
+  company: Ceyoniq Technology GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6808.jpg
+  last_name: Ahmann
+  file: data/photos/speaker/6808.jpg
+  first_name: Andreas
+- name: Dan Allen
+  company: JBoss
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4837.jpg
   last_name: Allen
-  file: data/photos/speaker/3400.jpg
-  first_name: Paul
-- name: Andres Almiray
-  company: Canoo
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5081.jpg
-  last_name: Almiray
-  file: data/photos/speaker/5081.jpg
-  first_name: Andres
-- name: Thomas Asel
-  company: Orientations in Objects GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6109.jpg
-  last_name: Asel
-  file: data/photos/speaker/6109.jpg
-  first_name: Thomas
+  file: data/photos/speaker/4837.jpg
+  first_name: Dan
 - name: Pavlo Baron
-  company: M-net
+  company: codecentric AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4432.jpg
   last_name: Baron
   file: data/photos/speaker/4432.jpg
   first_name: Pavlo
-- name: Maik Bauschulte
-  company: GAD eG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3231.jpg
-  last_name: Bauschulte
-  file: data/photos/speaker/3231.jpg
-  first_name: Maik
-- name: Wayne Beaton
-  company: The Eclipse Foundation
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2067.jpg
-  last_name: Beaton
-  file: data/photos/speaker/2067.jpg
-  first_name: Wayne
+- name: Jyoti Bansal
+  company: AppDynamics
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5666.jpg
+  last_name: Bansal
+  file: data/photos/speaker/5666.jpg
+  first_name: Jyoti
+- name: Lincoln Baxter III
+  company: JBoss by Red Hat, Inc.
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6036.jpg
+  last_name: Baxter III
+  file: data/photos/speaker/6036.jpg
+  first_name: Lincoln
+- name: Felix Becker
+  company: JUBECO GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6341.jpg
+  last_name: Becker
+  file: data/photos/speaker/6341.jpg
+  first_name: Felix
+- name: Tim Becker
+  company: syngenio AG
+  image_url: http://entwickler.com/konferenzen/img/content/speaker_dummy.jpg
+  last_name: Becker
+  file: data/photos/speaker/speaker_dummy.jpg
+  first_name: Tim
+- name: Domenic Benz
+  company: Swisscom SAP Services
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6589.jpg
+  last_name: Benz
+  file: data/photos/speaker/6589.jpg
+  first_name: Domenic
 - name: Adam Bien
   company: adam-bien.com
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/690.jpg
@@ -49,147 +61,99 @@
   first_name: Alexander
 - name: Jan Blankenhorn
   company: Weigle Wilczek GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5281.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6311.jpg
   last_name: Blankenhorn
-  file: data/photos/speaker/5281.jpg
+  file: data/photos/speaker/6311.jpg
   first_name: Jan
 - name: Matthias Bohlen
-  company: IT-Berater
+  company: "Coach f\xFCr effektive Produktentwicklung"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/44.jpg
   last_name: Bohlen
   file: data/photos/speaker/44.jpg
   first_name: Matthias
-- name: Hans-Christian Boos
-  company: arago AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6206.jpg
-  last_name: Boos
-  file: data/photos/speaker/6206.jpg
-  first_name: Hans-Christian
+- name: Manuel Bork
+  company: Yatta Solutions GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4780.jpg
+  last_name: Bork
+  file: data/photos/speaker/4780.jpg
+  first_name: Manuel
 - name: Andy Bosch
-  company: "Unabh\xC3\xA4ngiger Berater und Trainer"
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1212.jpg
+  company: Berater und Trainer
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/619.jpg
   last_name: Bosch
-  file: data/photos/speaker/1212.jpg
+  file: data/photos/speaker/619.jpg
   first_name: Andy
-- name: Markus Bukowski
-  company: Accenture
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6176.jpg
-  last_name: Bukowski
-  file: data/photos/speaker/6176.jpg
-  first_name: Markus
-- name: Stuart Cairncross
-  company: syngenio AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6095.jpg
-  last_name: Cairncross
-  file: data/photos/speaker/6095.jpg
-  first_name: Stuart
-- name: "Micha\xC3\xABl Chaize"
+- name: Tobias Bosch
+  company: "OPITZ CONSULTNG M\xFCnchen GmbH"
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5258.jpg
+  last_name: Bosch
+  file: data/photos/speaker/5258.jpg
+  first_name: Tobias
+- name: "J\xFCrgen Broda"
+  company: Continental Automotive GmbH
+  image_url: http://entwickler.com/konferenzen/img/content/speaker_dummy.jpg
+  last_name: Broda
+  file: data/photos/speaker/speaker_dummy.jpg
+  first_name: "J\xFCrgen"
+- name: "Micha\xEBl Chaize"
   company: Adobe
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5067.jpg
   last_name: Chaize
   file: data/photos/speaker/5067.jpg
-  first_name: "Micha\xC3\xABl"
-- name: Bryan Cheung
-  company: Liferay
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3462.jpg
-  last_name: Cheung
-  file: data/photos/speaker/3462.jpg
-  first_name: Bryan
-- name: Stijn Christiaens
-  company: Collibra
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6033.jpg
-  last_name: Christiaens
-  file: data/photos/speaker/6033.jpg
-  first_name: Stijn
-- name: Uri Cohen
-  company: Gigaspaces
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6217.jpg
-  last_name: Cohen
-  file: data/photos/speaker/6217.jpg
-  first_name: Uri
+  first_name: "Micha\xEBl"
 - name: Jens Coldewey
   company: it-agile
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2367.jpg
   last_name: Coldewey
   file: data/photos/speaker/2367.jpg
   first_name: Jens
+- name: Adrian Cole
+  company: Cloudsoft
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6426.jpg
+  last_name: Cole
+  file: data/photos/speaker/6426.jpg
+  first_name: Adrian
 - name: Kristijan Cvetkovic
   company: credeo GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3804.jpg
   last_name: Cvetkovic
   file: data/photos/speaker/3804.jpg
   first_name: Kristijan
+- name: Carsten Czarski
+  company: ORACLE Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/695.jpg
+  last_name: Czarski
+  file: data/photos/speaker/695.jpg
+  first_name: Carsten
 - name: Andreas Dangl
   company: Fabasoft
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4516.jpg
   last_name: Dangl
   file: data/photos/speaker/4516.jpg
   first_name: Andreas
-- name: Boleslaw Dawidowicz
-  company: Red Hat
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6060.jpg
-  last_name: Dawidowicz
-  file: data/photos/speaker/6060.jpg
-  first_name: Boleslaw
-- name: Timo Derstappen
-  company: ""
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6098.jpg
-  last_name: Derstappen
-  file: data/photos/speaker/6098.jpg
-  first_name: Timo
-- name: Sebastian Deutsch
-  company: 9elements
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6065.jpg
-  last_name: Deutsch
-  file: data/photos/speaker/6065.jpg
-  first_name: Sebastian
-- name: Peter Dimitri
+- name: Christian Dedek
+  company: Orientation in Objects GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/40.jpg
+  last_name: Dedek
+  file: data/photos/speaker/40.jpg
+  first_name: Christian
+- name: Konstantin Diener
+  company: COINOR AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5494.jpg
+  last_name: Diener
+  file: data/photos/speaker/5494.jpg
+  first_name: Konstantin
+- name: Gabi Disselbeck
   company: syngenio AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6096.jpg
-  last_name: Dimitri
-  file: data/photos/speaker/6096.jpg
-  first_name: Peter
-- name: Hans Dockter
-  company: Gradle GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3726.jpg
-  last_name: Dockter
-  file: data/photos/speaker/3726.jpg
-  first_name: Hans
-- name: "Erik D\xC3\xB6rnenburg"
-  company: ThoughtWorks
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5532.jpg
-  last_name: "D\xC3\xB6rnenburg"
-  file: data/photos/speaker/5532.jpg
-  first_name: Erik
-- name: Andreas Ebbert-Karroum
-  company: codecentric AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3562.jpg
-  last_name: Ebbert-Karroum
-  file: data/photos/speaker/3562.jpg
-  first_name: Andreas
-- name: Jutta Eckstein
-  company: IT communication
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/338.jpg
-  last_name: Eckstein
-  file: data/photos/speaker/338.jpg
-  first_name: Jutta
-- name: Sven Efftinge
-  company: itemis
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4745.jpg
-  last_name: Efftinge
-  file: data/photos/speaker/4745.jpg
-  first_name: Sven
-- name: Sebastian Eichner
-  company: Freelancer
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5688.jpg
-  last_name: Eichner
-  file: data/photos/speaker/5688.jpg
-  first_name: Sebastian
-- name: Andreas Eigenmann
-  company: Helvetia Versicherungen
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5896.jpg
-  last_name: Eigenmann
-  file: data/photos/speaker/5896.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4429.jpg
+  last_name: Disselbeck
+  file: data/photos/speaker/4429.jpg
+  first_name: Gabi
+- name: Andreas Ditze
+  company: MID GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6692.jpg
+  last_name: Ditze
+  file: data/photos/speaker/6692.jpg
   first_name: Andreas
 - name: Agim Emruli
   company: mimacom
@@ -197,38 +161,24 @@
   last_name: Emruli
   file: data/photos/speaker/2801.jpg
   first_name: Agim
-- name: "Bj\xC3\xB6rn Feustel"
-  company: Orientation in Objects GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3910.jpg
-  last_name: Feustel
-  file: data/photos/speaker/3910.jpg
-  first_name: !binary |
-    QmrDtnJu
-
-- name: Oliver Fischer
-  company: inubit AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5875.gif
-  last_name: Fischer
-  file: data/photos/speaker/5875.gif
-  first_name: Oliver
-- name: Thomas Fischl
-  company: Fabasoft
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6273.jpg
-  last_name: Fischl
-  file: data/photos/speaker/6273.jpg
-  first_name: Thomas
-- name: Bernd Fondermann
-  company: brainlounge
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3194.gif
-  last_name: Fondermann
-  file: data/photos/speaker/3194.gif
-  first_name: Bernd
+- name: Michael Frankerl
+  company: ING-DiBa AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6621.jpg
+  last_name: Frankerl
+  file: data/photos/speaker/6621.jpg
+  first_name: Michael
 - name: Jakob Freund
   company: camunda services GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2807.jpg
   last_name: Freund
   file: data/photos/speaker/2807.jpg
   first_name: Jakob
+- name: Uwe Friedrichsen
+  company: codecentric AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1234.jpg
+  last_name: Friedrichsen
+  file: data/photos/speaker/1234.jpg
+  first_name: Uwe
 - name: Thilo Frotscher
   company: Freelancer
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/156.jpg
@@ -241,156 +191,120 @@
   last_name: Fuhrer
   file: data/photos/speaker/5845.jpg
   first_name: Kornelius
+- name: Papick Garcia Taboada
+  company: pgt technology scouting GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1269.jpg
+  last_name: Garcia Taboada
+  file: data/photos/speaker/1269.jpg
+  first_name: Papick
+- name: "Markus G\xE4rtner"
+  company: it-agile GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6335.jpg
+  last_name: "G\xE4rtner"
+  file: data/photos/speaker/6335.jpg
+  first_name: Markus
 - name: Ekkehard Gentz
-  company: Independent Softwarearchitect
+  company: Independent Software Architect
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/633.jpg
   last_name: Gentz
   file: data/photos/speaker/633.jpg
   first_name: Ekkehard
-- name: Phillip Ghadir
-  company: innoQ Deutschland GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1159.jpg
-  last_name: Ghadir
-  file: data/photos/speaker/1159.jpg
-  first_name: Phillip
 - name: Oliver Gierke
   company: SpringSource - a division of VMware
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4565.jpg
   last_name: Gierke
   file: data/photos/speaker/4565.jpg
   first_name: Oliver
-- name: Robert Gimbel
-  company: camunda services GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5811.jpg
-  last_name: Gimbel
-  file: data/photos/speaker/5811.jpg
-  first_name: Robert
-- name: Kay Glahn
-  company: Mobile Technology Consultant
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/336.jpg
-  last_name: Glahn
-  file: data/photos/speaker/336.jpg
-  first_name: Kay
-- name: "Bj\xC3\xB6rn Goerke"
-  company: SAP AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6218.jpg
-  last_name: Goerke
-  file: data/photos/speaker/6218.jpg
-  first_name: !binary |
-    QmrDtnJu
-
-- name: Brian Goetz
-  company: Oracle
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2359.jpg
-  last_name: Goetz
-  file: data/photos/speaker/2359.jpg
-  first_name: Brian
-- name: Andrea Grass
-  company: oose Innovative Informatik gmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3533.jpg
-  last_name: Grass
-  file: data/photos/speaker/3533.jpg
-  first_name: Andrea
-- name: Jan Groth
-  company: Helvetia Versicherungen
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5453.jpg
-  last_name: Groth
-  file: data/photos/speaker/5453.jpg
-  first_name: Jan
-- name: Marc Guillemot
+- name: Thomas Grimm
+  company: Deutsche Telekom AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2710.jpg
+  last_name: Grimm
+  file: data/photos/speaker/2710.jpg
+  first_name: Thomas
+- name: Christian Grobmeier
   company: Freelancer
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2063.jpg
-  last_name: Guillemot
-  file: data/photos/speaker/2063.jpg
-  first_name: Marc
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6787.jpg
+  last_name: Grobmeier
+  file: data/photos/speaker/6787.jpg
+  first_name: Christian
+- name: Jan Groth
+  company: mp technology consulting
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6342.jpg
+  last_name: Groth
+  file: data/photos/speaker/6342.jpg
+  first_name: Jan
+- name: Sandro Guglielmin
+  company: AppDynamics
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6755.jpg
+  last_name: Guglielmin
+  file: data/photos/speaker/6755.jpg
+  first_name: Sandro
+- name: "Dr. Halil-Cem G\xFCrsoy"
+  company: adesso AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5269.jpg
+  last_name: "G\xFCrsoy"
+  file: data/photos/speaker/5269.jpg
+  first_name: Halil-Cem
 - name: Arno Haase
   company: Arno Haase Consulting
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/56.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6340.jpg
   last_name: Haase
-  file: data/photos/speaker/56.jpg
+  file: data/photos/speaker/6340.jpg
   first_name: Arno
-- name: "Bj\xC3\xB6rn Hardegen"
-  company: MID GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6169.jpg
-  last_name: Hardegen
-  file: data/photos/speaker/6169.jpg
-  first_name: !binary |
-    QmrDtnJu
-
+- name: Sven Haiges
+  company: Hybris GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/179.jpg
+  last_name: Haiges
+  file: data/photos/speaker/179.jpg
+  first_name: Sven
 - name: Andreas Hartmann
   company: adesso AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3968.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4019.jpg
   last_name: Hartmann
-  file: data/photos/speaker/3968.jpg
+  file: data/photos/speaker/4019.jpg
   first_name: Andreas
-- name: Martin Heider
-  company: infomar software
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/648.jpg
-  last_name: Heider
-  file: data/photos/speaker/648.jpg
-  first_name: Martin
-- name: Christian Heilmann
-  company: Mozilla
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4872.jpg
-  last_name: Heilmann
-  file: data/photos/speaker/4872.jpg
-  first_name: Christian
-- name: Michael Herr
-  company: Senacor Technologies AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1906.jpg
-  last_name: Herr
-  file: data/photos/speaker/1906.jpg
-  first_name: Michael
-- name: Thomas Heute
-  company: Red Hat
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4207.jpg
-  last_name: Heute
-  file: data/photos/speaker/4207.jpg
-  first_name: Thomas
+- name: Andreas Helios
+  company: Adobe Systems GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4946.jpg
+  last_name: Helios
+  file: data/photos/speaker/4946.jpg
+  first_name: Andreas
+- name: Dominik Helleberg
+  company: inovex GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3094.jpg
+  last_name: Helleberg
+  file: data/photos/speaker/3094.jpg
+  first_name: Dominik
+- name: Kevlin Henney
+  company: Independent Consultant
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4647.jpg
+  last_name: Henney
+  file: data/photos/speaker/4647.jpg
+  first_name: Kevlin
 - name: Jochen Hiller
   company: Deutsche Telekom AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2096.jpg
   last_name: Hiller
   file: data/photos/speaker/2096.jpg
   first_name: Jochen
-- name: "J\xC3\xBCrgen H\xC3\xB6ller"
+- name: Michael Hitz
+  company: Allianz AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6596.jpg
+  last_name: Hitz
+  file: data/photos/speaker/6596.jpg
+  first_name: Michael
+- name: Michael Hofmann
+  company: oose Innovative Informatik GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5815.jpg
+  last_name: Hofmann
+  file: data/photos/speaker/5815.jpg
+  first_name: Michael
+- name: "J\xFCrgen H\xF6ller"
   company: SpringSource, a division of VMware
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1239.jpg
-  last_name: "H\xC3\xB6ller"
+  last_name: "H\xF6ller"
   file: data/photos/speaker/1239.jpg
-  first_name: "J\xC3\xBCrgen"
-- name: Michael Hunger
-  company: ""
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6180.jpg
-  last_name: Hunger
-  file: data/photos/speaker/6180.jpg
-  first_name: Michael
-- name: Iran Hutchinson
-  company: Intersystems
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3110.jpg
-  last_name: Hutchinson
-  file: data/photos/speaker/3110.jpg
-  first_name: Iran
-- name: Alexandra Imrie
-  company: BREDEX GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5788.jpg
-  last_name: Imrie
-  file: data/photos/speaker/5788.jpg
-  first_name: Alexandra
-- name: Lilia Janczyk
-  company: T-Systems Multimedia Solutions GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5785.jpg
-  last_name: Janczyk
-  file: data/photos/speaker/5785.jpg
-  first_name: Lilia
-- name: "Bj\xC3\xB6rn Jensen"
-  company: Silpion IT-Solutions GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6035.jpg
-  last_name: Jensen
-  file: data/photos/speaker/6035.jpg
-  first_name: !binary |
-    QmrDtnJu
-
+  first_name: "J\xFCrgen"
 - name: Tobias Joch
   company: inovex GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4755.jpg
@@ -403,76 +317,74 @@
   last_name: Johann
   file: data/photos/speaker/67.jpg
   first_name: Michael
-- name: Max Katz
-  company: Exadel
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3690.jpg
-  last_name: Katz
-  file: data/photos/speaker/3690.jpg
-  first_name: Max
-- name: Kohsuke Kawaguchi
+- name: Sylvia Johnigk
+  company: secucat
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6595.jpg
+  last_name: Johnigk
+  file: data/photos/speaker/6595.jpg
+  first_name: Sylvia
+- name: Nicolai Josuttis
+  company: IT communication
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/594.jpg
+  last_name: Josuttis
+  file: data/photos/speaker/594.jpg
+  first_name: Nicolai
+- name: Christian Kaltepoth
+  company: ingenit GmbH & Co. KG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6530.jpg
+  last_name: Kaltepoth
+  file: data/photos/speaker/6530.jpg
+  first_name: Christian
+- name: Moritz Kammerer
   company: ""
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6090.jpg
-  last_name: Kawaguchi
-  file: data/photos/speaker/6090.jpg
-  first_name: Kohsuke
-- name: Markus Keinz
-  company: btexx business technologies
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6195.jpg
-  last_name: Keinz
-  file: data/photos/speaker/6195.jpg
-  first_name: Markus
-- name: Mik Kersten
-  company: Tasktop Technologies
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2351.jpg
-  last_name: Kersten
-  file: data/photos/speaker/2351.jpg
-  first_name: Mik
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6594.jpg
+  last_name: Kammerer
+  file: data/photos/speaker/6594.jpg
+  first_name: Moritz
+- name: Martin Karmann
+  company: "OPITZ CONSULTING M\xFCnchen GmbH"
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6321.jpg
+  last_name: Karmann
+  file: data/photos/speaker/6321.jpg
+  first_name: Martin
+- name: Gavin King
+  company: Red Hat
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6472.jpg
+  last_name: King
+  file: data/photos/speaker/6472.jpg
+  first_name: Gavin
 - name: Alexander Klein
   company: BeOne Group
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/6045.jpg
   last_name: Klein
   file: data/photos/speaker/6045.jpg
   first_name: Alexander
-- name: Matthias Knoop
-  company: simonigence gmbh
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6031.jpg
-  last_name: Knoop
-  file: data/photos/speaker/6031.jpg
-  first_name: Matthias
-- name: "Dr. Jan K\xC3\xB6hnlein"
-  company: itemis
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4119.jpg
-  last_name: "K\xC3\xB6hnlein"
-  file: data/photos/speaker/4119.jpg
-  first_name: Jan
+- name: Daniel Kleine-Albers
+  company: "OPITZ CONSULTING M\xFCnchen GmbH"
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6272.jpg
+  last_name: Kleine-Albers
+  file: data/photos/speaker/6272.jpg
+  first_name: Daniel
 - name: Bernd Kolb
   company: SAP AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5290.jpg
   last_name: Kolb
   file: data/photos/speaker/5290.jpg
   first_name: Bernd
-- name: "Dierk K\xC3\xB6nig"
-  company: Canoo
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2570.jpg
-  last_name: !binary |
-    S8O2bmln
-
-  file: data/photos/speaker/2570.jpg
+- name: "Dierk K\xF6nig"
+  company: Canoo Engineering AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1208.jpg
+  last_name: "K\xF6nig"
+  file: data/photos/speaker/1208.jpg
   first_name: Dierk
-- name: Michael Kopp
-  company: dynaTrace
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5346.jpg
-  last_name: Kopp
-  file: data/photos/speaker/5346.jpg
-  first_name: Michael
-- name: Holger Koschek
-  company: Holisticon AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1242.jpg
-  last_name: Koschek
-  file: data/photos/speaker/1242.jpg
-  first_name: Holger
+- name: Rainer Koppenhofer
+  company: T-Systems
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6821.jpg
+  last_name: Koppenhofer
+  file: data/photos/speaker/6821.jpg
+  first_name: Rainer
 - name: Dr. Heinrich Krause
-  company: "unabh\xC3\xA4ngiger Berater"
+  company: "unabh\xE4ngiger Berater"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4508.jpg
   last_name: Krause
   file: data/photos/speaker/4508.jpg
@@ -483,109 +395,71 @@
   last_name: Kreft
   file: data/photos/speaker/4664.jpg
   first_name: Klaus
-- name: Peter Kriens
-  company: aQute
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1473.jpg
-  last_name: Kriens
-  file: data/photos/speaker/1473.jpg
-  first_name: Peter
-- name: Wolfram Kriesing
-  company: Uxebu
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3331.jpg
-  last_name: Kriesing
-  file: data/photos/speaker/3331.jpg
-  first_name: Wolfram
-- name: "R\xC3\xBCdiger K\xC3\xBCgler"
-  company: WIBU-SYSTEMS AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5026.jpg
-  last_name: "K\xC3\xBCgler"
-  file: data/photos/speaker/5026.jpg
-  first_name: "R\xC3\xBCdiger"
+- name: "R\xFCdiger K\xFCgler"
+  company: WIBU Systems
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3365.jpg
+  last_name: "K\xFCgler"
+  file: data/photos/speaker/3365.jpg
+  first_name: "R\xFCdiger"
 - name: Michael Kurz
   company: IRIAN Solutions
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5333.jpg
   last_name: Kurz
   file: data/photos/speaker/5333.jpg
   first_name: Michael
-- name: Markus Lammers
-  company: GAD eG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6097.jpg
-  last_name: Lammers
-  file: data/photos/speaker/6097.jpg
-  first_name: Markus
-- name: Fabian Lange
-  company: codecentric AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3518.jpg
-  last_name: Lange
-  file: data/photos/speaker/3518.jpg
-  first_name: Fabian
 - name: Angelika Langer
   company: Training/Consulting
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3494.jpg
   last_name: Langer
   file: data/photos/speaker/3494.jpg
   first_name: Angelika
-- name: Guido Laures
-  company: Software AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2068.jpg
-  last_name: Laures
-  file: data/photos/speaker/2068.jpg
-  first_name: Guido
 - name: Karsten Lentzsch
   company: JGoodies
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/48.jpg
   last_name: Lentzsch
   file: data/photos/speaker/48.jpg
   first_name: Karsten
-- name: Yasmine Limberger
-  company: Avanade Deutschland GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1144.jpg
-  last_name: Limberger
-  file: data/photos/speaker/1144.jpg
-  first_name: Yasmine
+- name: Arne Limburg
+  company: open knowledge GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3668.jpg
+  last_name: Limburg
+  file: data/photos/speaker/3668.jpg
+  first_name: Arne
+- name: Johannes Link
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/9.jpg
+  last_name: Link
+  file: data/photos/speaker/9.jpg
+  first_name: Johannes
 - name: Martin Lippert
   company: SpringSource - a division of VMware
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/662.jpg
   last_name: Lippert
   file: data/photos/speaker/662.jpg
   first_name: Martin
-- name: "Achim L\xC3\xB6rke"
-  company: Bredex GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2867.jpg
-  last_name: !binary |
-    TMO2cmtl
-
-  file: data/photos/speaker/2867.jpg
-  first_name: Achim
-- name: "Matthias L\xC3\xBCbken"
-  company: Adcloud
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2170.jpg
-  last_name: "L\xC3\xBCbken"
-  file: data/photos/speaker/2170.jpg
-  first_name: Matthias
 - name: Berthold Maier
-  company: Oracle Deutschland
+  company: T-Systems
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4682.jpg
   last_name: Maier
   file: data/photos/speaker/4682.jpg
   first_name: Berthold
-- name: "Christine Ma\xC3\x9Floch"
-  company: T-Systems Multimedia Solutions GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6044.jpg
-  last_name: "Ma\xC3\x9Floch"
-  file: data/photos/speaker/6044.jpg
-  first_name: Christine
-- name: Matthew McCullough
-  company: Ambient Ideas, LLC
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4503.jpg
-  last_name: McCullough
-  file: data/photos/speaker/4503.jpg
-  first_name: Matthew
+- name: Matthias Marschall
+  company: ""
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6727.jpg
+  last_name: Marschall
+  file: data/photos/speaker/6727.jpg
+  first_name: Matthias
+- name: "J\xFCrgen Mayrb\xE4url"
+  company: Microsoft
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6212.jpg
+  last_name: "Mayrb\xE4url"
+  file: data/photos/speaker/6212.jpg
+  first_name: "J\xFCrgen"
 - name: Christian Meder
   company: inovex GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3444.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4754.jpg
   last_name: Meder
-  file: data/photos/speaker/3444.jpg
+  file: data/photos/speaker/4754.jpg
   first_name: Christian
 - name: Robert Mederer
   company: Accenture
@@ -593,68 +467,36 @@
   last_name: Mederer
   file: data/photos/speaker/3393.jpg
   first_name: Robert
-- name: Falko Menge
-  company: camunda services GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5812.jpg
-  last_name: Menge
-  file: data/photos/speaker/5812.jpg
-  first_name: Falko
-- name: Carl-Eric Menzel
+- name: Mario Meir-Huber
+  company: CodeForce
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6145.jpg
+  last_name: Meir-Huber
+  file: data/photos/speaker/6145.jpg
+  first_name: Mario
+- name: Olaf Meyer
   company: C1 SetCon GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2532.jpg
-  last_name: Menzel
-  file: data/photos/speaker/2532.jpg
-  first_name: Carl-Eric
-- name: Bernhard Merkle
-  company: SICK AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4671.jpg
-  last_name: Merkle
-  file: data/photos/speaker/4671.jpg
-  first_name: Bernhard
-- name: Ed Merks
-  company: Macro Modeling
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5852.jpg
-  last_name: Merks
-  file: data/photos/speaker/5852.jpg
-  first_name: Ed
-- name: "Ren\xC3\xA9 Meyer"
-  company: "Telef\xC3\xB3nica o2 Germany GmbH & Co. OHG"
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6114.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6698.jpg
   last_name: Meyer
-  file: data/photos/speaker/6114.jpg
-  first_name: !binary |
-    UmVuw6k=
-
-- name: Thomas Michelbach
-  company: Accenture
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6175.jpg
-  last_name: Michelbach
-  file: data/photos/speaker/6175.jpg
-  first_name: Thomas
-- name: "Stephan M\xC3\xBCller"
+  file: data/photos/speaker/6698.jpg
+  first_name: Olaf
+- name: "Stephan M\xFCller"
   company: adesso AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5796.jpg
-  last_name: "M\xC3\xBCller"
+  last_name: "M\xFCller"
   file: data/photos/speaker/5796.jpg
   first_name: Stephan
-- name: Benjamin Muskalla
-  company: Tasktop Techonologies
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5824.jpg
-  last_name: Muskalla
-  file: data/photos/speaker/5824.jpg
-  first_name: Benjamin
-- name: Ralph Nelius
-  company: Deutsche Post  AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6163.jpg
-  last_name: Nelius
-  file: data/photos/speaker/6163.jpg
-  first_name: Ralph
-- name: Ted Neward
-  company: Neward & Associates
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2972.jpg
-  last_name: Neward
-  file: data/photos/speaker/2972.jpg
-  first_name: Ted
+- name: "Florian M\xFCller"
+  company: richability
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2058.jpg
+  last_name: "M\xFCller"
+  file: data/photos/speaker/2058.jpg
+  first_name: Florian
+- name: "Bernd M\xFCller"
+  company: Ostfalia
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6364.jpg
+  last_name: "M\xFCller"
+  file: data/photos/speaker/6364.jpg
+  first_name: Bernd
 - name: Hajo Normann
   company: HP
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3123.jpg
@@ -667,76 +509,60 @@
   last_name: Novakovic
   file: data/photos/speaker/2414.jpg
   first_name: Mirko
-- name: Thomas Obitz
-  company: Senacor Technologies AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6192.jpg
-  last_name: Obitz
-  file: data/photos/speaker/6192.jpg
-  first_name: Thomas
+- name: Christoph Ortmann
+  company: Opitz Consulting GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6696.jpg
+  last_name: Ortmann
+  file: data/photos/speaker/6696.jpg
+  first_name: Christoph
 - name: Patrick Peschlow
   company: codecentric AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/6075.jpg
   last_name: Peschlow
   file: data/photos/speaker/6075.jpg
   first_name: Patrick
-- name: Jan Peuker
-  company: Accenture
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5674.jpg
-  last_name: Peuker
-  file: data/photos/speaker/5674.jpg
-  first_name: Jan
-- name: Christiane Philipps
-  company: ""
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4994.jpg
-  last_name: Philipps
-  file: data/photos/speaker/4994.jpg
-  first_name: Christiane
-- name: Roman Pichler
-  company: Pichler Consulting Ltd
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5073.jpg
-  last_name: Pichler
-  file: data/photos/speaker/5073.jpg
-  first_name: Roman
-- name: Steffen Pingel
-  company: Tasktop Technologies
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4701.jpg
-  last_name: Pingel
-  file: data/photos/speaker/4701.jpg
-  first_name: Steffen
-- name: "Michael Pl\xC3\xB6d"
+- name: Sven Peters
+  company: Atlassian
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6622.jpg
+  last_name: Peters
+  file: data/photos/speaker/6622.jpg
+  first_name: Sven
+- name: "Michael Pl\xF6d"
   company: Senacor Technologies AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/876.jpg
-  last_name: !binary |
-    UGzDtmQ=
-
+  last_name: "Pl\xF6d"
   file: data/photos/speaker/876.jpg
   first_name: Michael
-- name: Oleg Podsechin
-  company: ""
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5687.jpg
-  last_name: Podsechin
-  file: data/photos/speaker/5687.jpg
-  first_name: Oleg
 - name: Valentino Pola
   company: COINOR AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5870.jpg
   last_name: Pola
   file: data/photos/speaker/5870.jpg
   first_name: Valentino
-- name: Gunther Popp
-  company: Freiberufler
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4115.jpg
-  last_name: Popp
-  file: data/photos/speaker/4115.jpg
-  first_name: Gunther
-- name: "J\xC3\xB6rg Ramser"
-  company: COINOR AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5871.jpg
-  last_name: Ramser
-  file: data/photos/speaker/5871.jpg
-  first_name: !binary |
-    SsO2cmc=
-
+- name: Gerald Preissler
+  company: Talend GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2449.jpg
+  last_name: Preissler
+  file: data/photos/speaker/2449.jpg
+  first_name: Gerald
+- name: "J\xF6rg Preu\xDFig"
+  company: Trainer & Coach
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5916.jpg
+  last_name: "Preu\xDFig"
+  file: data/photos/speaker/5916.jpg
+  first_name: "J\xF6rg"
+- name: Sven Ramuschkat
+  company: Herrlich & Ramuschkat GmbH (Adobe Solution Partner)
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4561.jpg
+  last_name: Ramuschkat
+  file: data/photos/speaker/4561.jpg
+  first_name: Sven
+- name: Carsten Reckord
+  company: Yatta Solutions GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6383.jpg
+  last_name: Reckord
+  file: data/photos/speaker/6383.jpg
+  first_name: Carsten
 - name: Bernd Rederlechner
   company: T-Systems International
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4563.jpg
@@ -749,149 +575,113 @@
   last_name: Reitbauer
   file: data/photos/speaker/3057.jpg
   first_name: Alois
-- name: Ian Robinson
-  company: ThoughtWorks
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5986.jpg
-  last_name: Robinson
-  file: data/photos/speaker/5986.jpg
-  first_name: Ian
+- name: Gerhard Rempp
+  company: MID GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6813.jpg
+  last_name: Rempp
+  file: data/photos/speaker/6813.jpg
+  first_name: Gerhard
 - name: Roman Roelofsen
-  company: Weigle Wilcek GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3674.jpg
+  company: WeigleWilczek GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4668.jpg
   last_name: Roelofsen
-  file: data/photos/speaker/3674.jpg
+  file: data/photos/speaker/4668.jpg
   first_name: Roman
-- name: Arne Roock
+- name: Stefan Roock
   company: it-agile GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4193.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2146.jpg
   last_name: Roock
-  file: data/photos/speaker/4193.jpg
-  first_name: Arne
-- name: Evgenia Rosa
-  company: Oracle Deutschland GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/387.jpg
-  last_name: Rosa
-  file: data/photos/speaker/387.jpg
-  first_name: Evgenia
-- name: "Peter Ro\xC3\x9Fbach"
-  company: Freiberufler
+  file: data/photos/speaker/2146.jpg
+  first_name: Stefan
+- name: "Peter Ro\xDFbach"
+  company: Systemarchitekt
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/55.jpg
-  last_name: "Ro\xC3\x9Fbach"
+  last_name: "Ro\xDFbach"
   file: data/photos/speaker/55.jpg
   first_name: Peter
-- name: "Lars R\xC3\xB6wekamp"
+- name: "Lars R\xF6wekamp"
   company: open knowledge GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/215.jpg
-  last_name: "R\xC3\xB6wekamp"
+  last_name: "R\xF6wekamp"
   file: data/photos/speaker/215.jpg
   first_name: Lars
-- name: "Bernd R\xC3\xBCcker"
+- name: Dr. Anne Rozinat
+  company: Fluxicon
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6717.jpg
+  last_name: Rozinat
+  file: data/photos/speaker/6717.jpg
+  first_name: Anne
+- name: Andrew Lee Rubinger
+  company: JBoss/Red Hat
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6605.jpg
+  last_name: Lee Rubinger
+  file: data/photos/speaker/6605.jpg
+  first_name: Andrew
+- name: "Bernd R\xFCcker"
   company: camunda services
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2020.jpg
-  last_name: "R\xC3\xBCcker"
+  last_name: "R\xFCcker"
   file: data/photos/speaker/2020.jpg
   first_name: Bernd
+- name: Bruce Sams
+  company: OPTIMA  bit
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/310.jpg
+  last_name: Sams
+  file: data/photos/speaker/310.jpg
+  first_name: Bruce
 - name: Sebastian Sanitz
-  company: it-agile
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2077.jpg
+  company: it-agile GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1513.jpg
   last_name: Sanitz
-  file: data/photos/speaker/2077.jpg
+  file: data/photos/speaker/1513.jpg
   first_name: Sebastian
-- name: "Markus Sch\xC3\xA4rtel"
+- name: "Markus Sch\xE4rtel"
   company: Bosch Software Innovations GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3285.jpg
-  last_name: "Sch\xC3\xA4rtel"
+  last_name: "Sch\xE4rtel"
   file: data/photos/speaker/3285.jpg
   first_name: Markus
-- name: Rainer Scheibehenne
-  company: Telekom AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6219.jpg
-  last_name: Scheibehenne
-  file: data/photos/speaker/6219.jpg
-  first_name: Rainer
 - name: Stefan Scheidt
   company: OPITZ CONSULTING Gummersbach GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2512.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4150.jpg
   last_name: Scheidt
-  file: data/photos/speaker/2512.jpg
+  file: data/photos/speaker/4150.jpg
   first_name: Stefan
-- name: Gregor Scheithauer
-  company: OPITZ CONSULTING GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6170.jpg
-  last_name: Scheithauer
-  file: data/photos/speaker/6170.jpg
-  first_name: Gregor
-- name: Bernd Schiffer
-  company: it-agile GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2544.jpg
-  last_name: Schiffer
-  file: data/photos/speaker/2544.jpg
-  first_name: Bernd
-- name: Tom Schindl
-  company: BestSolution.at EDV Systemhaus GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4983.jpg
-  last_name: Schindl
-  file: data/photos/speaker/4983.jpg
-  first_name: Tom
+- name: Daniel Schimera
+  company: Accenture
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6699.jpg
+  last_name: Schimera
+  file: data/photos/speaker/6699.jpg
+  first_name: Daniel
 - name: Hermann Schlamann
-  company: "unabh\xC3\xA4ngiger Berater"
+  company: "unabh\xE4ngiger Berater"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2375.jpg
   last_name: Schlamann
   file: data/photos/speaker/2375.jpg
   first_name: Hermann
-- name: Steffen Schluff
-  company: Orientation in Objects GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/304.jpg
-  last_name: Schluff
-  file: data/photos/speaker/304.jpg
-  first_name: Steffen
-- name: Benjamin Schmid
-  company: eXXcellent solutions GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/650.gif
-  last_name: Schmid
-  file: data/photos/speaker/650.gif
-  first_name: Benjamin
-- name: Danilo Schmiedel
-  company: OPITZ CONSULTING Berlin GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6215.jpg
-  last_name: Schmiedel
-  file: data/photos/speaker/6215.jpg
-  first_name: Danilo
-- name: Guido Schmutz
-  company: Trivadis
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2157.jpg
-  last_name: Schmutz
-  file: data/photos/speaker/2157.jpg
-  first_name: Guido
-- name: Andreas Schosser
-  company: COINOR AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5495.jpg
-  last_name: Schosser
-  file: data/photos/speaker/5495.jpg
-  first_name: Andreas
-- name: Markus Schramm
-  company: compeople AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2192.jpg
-  last_name: Schramm
-  file: data/photos/speaker/2192.jpg
-  first_name: Markus
+- name: Stephan Schmidt
+  company: Vice CTO / brands4friends
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3653.jpg
+  last_name: Schmidt
+  file: data/photos/speaker/3653.jpg
+  first_name: Stephan
+- name: Christian Schneider
+  company: Talend GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6593.jpg
+  last_name: Schneider
+  file: data/photos/speaker/6593.jpg
+  first_name: Christian
 - name: Till Schulte-Coerne
   company: innoQ Deutschland GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4948.jpg
   last_name: Schulte-Coerne
   file: data/photos/speaker/4948.jpg
   first_name: Till
-- name: Marko Schulz
-  company: it-agile GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5810.jpg
-  last_name: Schulz
-  file: data/photos/speaker/5810.jpg
-  first_name: Marko
 - name: Jens Schumann
   company: open knowledge GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/656.jpg
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/313.jpg
   last_name: Schumann
-  file: data/photos/speaker/656.jpg
+  file: data/photos/speaker/313.jpg
   first_name: Jens
 - name: Rainer Schuppe
   company: codecentric AG
@@ -899,209 +689,143 @@
   last_name: Schuppe
   file: data/photos/speaker/6110.jpg
   first_name: Rainer
-- name: Frank Schwab
-  company: imacor
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6168.jpg
-  last_name: Schwab
-  file: data/photos/speaker/6168.jpg
-  first_name: Frank
-- name: Heiko Seeberger
-  company: Weigle Wilczek GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2741.jpg
-  last_name: Seeberger
-  file: data/photos/speaker/2741.jpg
-  first_name: Heiko
-- name: Jochen Seemann
-  company: MID GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3879.jpg
-  last_name: Seemann
-  file: data/photos/speaker/3879.jpg
-  first_name: Jochen
+- name: Carsten Sensler
+  company: Deutsche Telekom AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1218.jpg
+  last_name: Sensler
+  file: data/photos/speaker/1218.jpg
+  first_name: Carsten
+- name: Andrei Shakirin
+  company: Talend GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6768.jpg
+  last_name: Shakirin
+  file: data/photos/speaker/6768.jpg
+  first_name: Andrei
 - name: Olaf Siefart
   company: Senacor Technologies AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4715.jpg
   last_name: Siefart
   file: data/photos/speaker/4715.jpg
   first_name: Olaf
-- name: Holger Sirtl
-  company: Microsoft GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3209.jpg
-  last_name: Sirtl
-  file: data/photos/speaker/3209.jpg
-  first_name: Holger
-- name: Dirk Slama
-  company: inubit AG
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6159.jpg
-  last_name: Slama
-  file: data/photos/speaker/6159.jpg
-  first_name: Dirk
-- name: Shaun Smith
-  company: Oracle
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1840.jpg
-  last_name: Smith
-  file: data/photos/speaker/1840.jpg
-  first_name: Shaun
-- name: Heiko Spindler
-  company: OPITZ CONSULTING GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4733.gif
-  last_name: Spindler
-  file: data/photos/speaker/4733.gif
-  first_name: Heiko
+- name: Ralf Sigmund
+  company: OPITZ CONSULTING Hamburg GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5850.jpg
+  last_name: Sigmund
+  file: data/photos/speaker/5850.jpg
+  first_name: Ralf
 - name: Dr. Gernot Starke
   company: Architekt
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1835.jpg
   last_name: Starke
   file: data/photos/speaker/1835.jpg
   first_name: Gernot
-- name: Eike Stepper
-  company: ES Consulting
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3816.jpg
-  last_name: Stepper
-  file: data/photos/speaker/3816.jpg
-  first_name: Eike
-- name: Volker Stiehl
-  company: SAP
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3932.jpg
-  last_name: Stiehl
-  file: data/photos/speaker/3932.jpg
-  first_name: Volker
+- name: John Stevenson
+  company: London Java Community
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5936.jpg
+  last_name: Stevenson
+  file: data/photos/speaker/5936.jpg
+  first_name: John
+- name: Jim Stogdill
+  company: Accenture
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6758.jpg
+  last_name: Stogdill
+  file: data/photos/speaker/6758.jpg
+  first_name: Jim
 - name: Mark Struberg
   company: ""
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5942.jpg
   last_name: Struberg
   file: data/photos/speaker/5942.jpg
   first_name: Mark
-- name: Etienne Studer
-  company: edorasware ag
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5726.jpg
-  last_name: Studer
-  file: data/photos/speaker/5726.jpg
-  first_name: Etienne
-- name: Papick Taboada
-  company: pgt technology scouting GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/853.jpg
-  last_name: Taboada
-  file: data/photos/speaker/853.jpg
-  first_name: Papick
-- name: Jochen Theodorou
-  company: SpringSource GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3970.jpg
-  last_name: Theodorou
-  file: data/photos/speaker/3970.jpg
-  first_name: Jochen
 - name: Stefan Tilkov
   company: innoQ Deutschland GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1211.jpg
   last_name: Tilkov
   file: data/photos/speaker/1211.jpg
   first_name: Stefan
-- name: "Kai T\xC3\xB6dter"
+- name: "Kai T\xF6dter"
   company: Siemens Corporate Technology
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/749.jpg
-  last_name: "T\xC3\xB6dter"
+  last_name: "T\xF6dter"
   file: data/photos/speaker/749.jpg
   first_name: Kai
-- name: Dalibor Topic
-  company: Oracle
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3150.jpg
-  last_name: Topic
-  file: data/photos/speaker/3150.jpg
-  first_name: Dalibor
 - name: Stefan Toth
   company: oose Innovative Informatik GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5929.jpg
   last_name: Toth
   file: data/photos/speaker/5929.jpg
   first_name: Stefan
+- name: Lars Trieloff
+  company: Adobe
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6812.jpg
+  last_name: Trieloff
+  file: data/photos/speaker/6812.jpg
+  first_name: Lars
+- name: Paul Trommler
+  company: COINOR AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6390.jpg
+  last_name: Trommler
+  file: data/photos/speaker/6390.jpg
+  first_name: Paul
 - name: Bernd Trops
-  company: SOPERA
+  company: Talend GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/231.jpg
   last_name: Trops
   file: data/photos/speaker/231.jpg
   first_name: Bernd
-- name: Clemens Utschig-Utschig
-  company: Boehringer Ingelheim Pharma
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/1764.jpg
-  last_name: Utschig-Utschig
-  file: data/photos/speaker/1764.jpg
-  first_name: Clemens
-- name: Lars Vogel
-  company: Trainer und Entwickler
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5122.jpg
-  last_name: Vogel
-  file: data/photos/speaker/5122.jpg
-  first_name: Lars
+- name: Gregor Tudan
+  company: COINOR AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6757.jpg
+  last_name: Tudan
+  file: data/photos/speaker/6757.jpg
+  first_name: Gregor
 - name: Dirk von der Weiden
   company: C1 SetCon GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2715.jpg
   last_name: von der Weiden
   file: data/photos/speaker/2715.jpg
   first_name: Dirk
-- name: Gunnar Wagenknecht
-  company: AGETO
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2098.jpg
-  last_name: Wagenknecht
-  file: data/photos/speaker/2098.jpg
-  first_name: Gunnar
-- name: Tom Ware
-  company: Oracle
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5898.jpg
-  last_name: Ware
-  file: data/photos/speaker/5898.jpg
-  first_name: Tom
-- name: Tobias Wassermann
-  company: TW IT-Consulting
-  image_url: http://entwickler.com/konferenzen/img/content/speaker_dummy.jpg
-  last_name: Wassermann
-  file: data/photos/speaker/speaker_dummy.jpg
-  first_name: Tobias
 - name: Wolfgang Weigend
-  company: oracle
+  company: Oracle
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3263.jpg
   last_name: Weigend
   file: data/photos/speaker/3263.jpg
   first_name: Wolfgang
-- name: Dirk Weil
-  company: GEDOPLAN GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/653.jpg
-  last_name: Weil
-  file: data/photos/speaker/653.jpg
-  first_name: Dirk
-- name: Jonathan Weiss
-  company: Peritor GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/3356.jpg
-  last_name: Weiss
-  file: data/photos/speaker/3356.jpg
-  first_name: Jonathan
-- name: Michael Wendt
-  company: microfin GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6094.jpg
-  last_name: Wendt
-  file: data/photos/speaker/6094.jpg
-  first_name: Michael
-- name: "Matthias We\xC3\x9Fendorf"
+- name: Steffen Wentzel
+  company: ING-DiBa AG
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6620.jpg
+  last_name: Wentzel
+  file: data/photos/speaker/6620.jpg
+  first_name: Steffen
+- name: "Matthias We\xDFendorf"
   company: Kaazing
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1207.jpg
-  last_name: "We\xC3\x9Fendorf"
+  last_name: "We\xDFendorf"
   file: data/photos/speaker/1207.jpg
   first_name: Matthias
-- name: Lothar Wieske
-  company: DB Systel GmbH
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/655.jpg
-  last_name: Wieske
-  file: data/photos/speaker/655.jpg
-  first_name: Lothar
+- name: Mike Wiesner
+  company: SpringSource
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/879.jpg
+  last_name: Wiesner
+  file: data/photos/speaker/879.jpg
+  first_name: Mike
 - name: Torsten Winterberg
-  company: OPITZ CONSULTING
+  company: Opitz Consulting
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/335.jpg
   last_name: Winterberg
   file: data/photos/speaker/335.jpg
   first_name: Torsten
-- name: Henning Wolf
-  company: it-agile
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/465.jpg
+- name: Oliver Wolf
+  company: innoQ Deutschland GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/2917.jpg
   last_name: Wolf
-  file: data/photos/speaker/465.jpg
+  file: data/photos/speaker/2917.jpg
+  first_name: Oliver
+- name: Henning Wolf
+  company: it-agile GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4751.jpg
+  last_name: Wolf
+  file: data/photos/speaker/4751.jpg
   first_name: Henning
 - name: Eberhard Wolff
   company: adesso AG
@@ -1109,39 +833,21 @@
   last_name: Wolff
   file: data/photos/speaker/41.jpg
   first_name: Eberhard
-- name: Martin Woodward
-  company: Microsoft
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5826.jpg
-  last_name: Woodward
-  file: data/photos/speaker/5826.jpg
-  first_name: Martin
-- name: Jure Zakotnik
-  company: Accenture
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6174.jpg
-  last_name: Zakotnik
-  file: data/photos/speaker/6174.jpg
-  first_name: Jure
-- name: Sebastian Zarnekow
-  company: itemis
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4744.jpg
-  last_name: Zarnekow
-  file: data/photos/speaker/4744.jpg
-  first_name: Sebastian
-- name: Colette Ziller
-  company: "OPITZ CONSULTING M\xC3\xBCnchen GmbH"
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/4025.jpg
-  last_name: Ziller
-  file: data/photos/speaker/4025.jpg
-  first_name: Colette
-- name: "Stefan Z\xC3\xB6rner"
+- name: Oliver Wulff
+  company: ""
+  image_url: http://entwickler.com/konferenzen/img/content/speaker_dummy.jpg
+  last_name: Wulff
+  file: data/photos/speaker/speaker_dummy.jpg
+  first_name: Oliver
+- name: Farid Zaid
+  company: OPITZ CONSULTING GmbH
+  image_url: http://www.entwickler.com/konferenzen/input3/bilder/6613.jpg
+  last_name: Zaid
+  file: data/photos/speaker/6613.jpg
+  first_name: Farid
+- name: "Stefan Z\xF6rner"
   company: oose Innovative Informatik GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1881.jpg
-  last_name: "Z\xC3\xB6rner"
+  last_name: "Z\xF6rner"
   file: data/photos/speaker/1881.jpg
   first_name: Stefan
-- name: Michael Zunke
-  company: Safenet
-  image_url: http://www.entwickler.com/konferenzen/input3/bilder/5705.jpg
-  last_name: Zunke
-  file: data/photos/speaker/5705.jpg
-  first_name: Michael
