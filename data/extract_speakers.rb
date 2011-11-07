@@ -23,5 +23,8 @@ doc.search(".speaker").each do |speaker|
   res << s
 end
 
-puts res.to_yaml
+puts "Writing to speaker.yml..."
+File.open("speaker.yml", "w") do |file|
+  file.write res.to_yaml
+end
 
