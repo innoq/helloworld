@@ -1,4 +1,6 @@
-PROFILE_COUNT = (ENV['USERS'] || 188).to_i
+SPEAKER_DATA = YAML.load(File.open(Rails.root.join("data/speaker.yml")))
+
+PROFILE_COUNT = (ENV['USERS'] || SPEAKER_DATA.length).to_i
 RELATION_COUNT = (ENV['RELATIONS']|| 10).to_i
 MESSAGE_COUNT = (ENV['MESSAGES'] || 3).to_i
 STATUS_COUNT = (ENV['STATUS'] || PROFILE_COUNT * 3).to_i
@@ -63,12 +65,10 @@ def create_address
 end
 
 def create_profiles
-  speakers = YAML.load(File.open(Rails.root.join("data/speaker.yml")))
-
   i=0
   PROFILE_COUNT.times do
-    if i <  speakers.length
-      data = speakers[i].symbolize_keys
+    if i <  SPEAKER_DATA.length
+      data = SPEAKER_DATA[i].symbolize_keys
       data[:profession] = "Speaker"
     else
       data[:first_name] = Forgery::Name.first_name
