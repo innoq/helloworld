@@ -16,11 +16,11 @@ Bundle dependencies:
 
 Create and initialize Database
 
-    rake db:setup
+    bundle exec rake db:setup
 
 Popoulate some data:
 
-    rake db:populate
+    bundle exec rake db:populate
 
 Run the server:
 
