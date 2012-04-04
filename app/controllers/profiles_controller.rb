@@ -1,8 +1,8 @@
 class ProfilesController < ApplicationController
   respond_to :html, :json
 
-  skip_before_filter :check_login, :only => [:show, :private] # private will deal with not loggedin users itself
-
+  # skip_before_filter :check_login, :only => [:show, :private] # private will deal with not loggedin users itself
+  # re-enabled login to prevent google for indexing profiles
   def show
     @profile = Profile.find(params[:id])
     authorize! :show, @profile
