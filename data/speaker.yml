@@ -66,7 +66,7 @@
   file: data/photos/speaker/6311.jpg
   first_name: Jan
 - name: Matthias Bohlen
-  company: "Coach f\xFCr effektive Produktentwicklung"
+  company: "Coach f\xC3\xBCr effektive Produktentwicklung"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/44.jpg
   last_name: Bohlen
   file: data/photos/speaker/44.jpg
@@ -84,23 +84,23 @@
   file: data/photos/speaker/619.jpg
   first_name: Andy
 - name: Tobias Bosch
-  company: "OPITZ CONSULTNG M\xFCnchen GmbH"
+  company: "OPITZ CONSULTNG M\xC3\xBCnchen GmbH"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5258.jpg
   last_name: Bosch
   file: data/photos/speaker/5258.jpg
   first_name: Tobias
-- name: "J\xFCrgen Broda"
+- name: "J\xC3\xBCrgen Broda"
   company: Continental Automotive GmbH
   image_url: http://entwickler.com/konferenzen/img/content/speaker_dummy.jpg
   last_name: Broda
   file: data/photos/speaker/speaker_dummy.jpg
-  first_name: "J\xFCrgen"
-- name: "Micha\xEBl Chaize"
+  first_name: "J\xC3\xBCrgen"
+- name: "Micha\xC3\xABl Chaize"
   company: Adobe
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5067.jpg
   last_name: Chaize
   file: data/photos/speaker/5067.jpg
-  first_name: "Micha\xEBl"
+  first_name: "Micha\xC3\xABl"
 - name: Jens Coldewey
   company: it-agile
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2367.jpg
@@ -197,10 +197,10 @@
   last_name: Garcia Taboada
   file: data/photos/speaker/1269.jpg
   first_name: Papick
-- name: "Markus G\xE4rtner"
+- name: "Markus G\xC3\xA4rtner"
   company: it-agile GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/6335.jpg
-  last_name: "G\xE4rtner"
+  last_name: "G\xC3\xA4rtner"
   file: data/photos/speaker/6335.jpg
   first_name: Markus
 - name: Ekkehard Gentz
@@ -239,10 +239,10 @@
   last_name: Guglielmin
   file: data/photos/speaker/6755.jpg
   first_name: Sandro
-- name: "Dr. Halil-Cem G\xFCrsoy"
+- name: "Dr. Halil-Cem G\xC3\xBCrsoy"
   company: adesso AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5269.jpg
-  last_name: "G\xFCrsoy"
+  last_name: "G\xC3\xBCrsoy"
   file: data/photos/speaker/5269.jpg
   first_name: Halil-Cem
 - name: Arno Haase
@@ -299,12 +299,12 @@
   last_name: Hofmann
   file: data/photos/speaker/5815.jpg
   first_name: Michael
-- name: "J\xFCrgen H\xF6ller"
+- name: "J\xC3\xBCrgen H\xC3\xB6ller"
   company: SpringSource, a division of VMware
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1239.jpg
-  last_name: "H\xF6ller"
+  last_name: "H\xC3\xB6ller"
   file: data/photos/speaker/1239.jpg
-  first_name: "J\xFCrgen"
+  first_name: "J\xC3\xBCrgen"
 - name: Tobias Joch
   company: inovex GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4755.jpg
@@ -342,7 +342,7 @@
   file: data/photos/speaker/6594.jpg
   first_name: Moritz
 - name: Martin Karmann
-  company: "OPITZ CONSULTING M\xFCnchen GmbH"
+  company: "OPITZ CONSULTING M\xC3\xBCnchen GmbH"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/6321.jpg
   last_name: Karmann
   file: data/photos/speaker/6321.jpg
@@ -360,7 +360,7 @@
   file: data/photos/speaker/6045.jpg
   first_name: Alexander
 - name: Daniel Kleine-Albers
-  company: "OPITZ CONSULTING M\xFCnchen GmbH"
+  company: "OPITZ CONSULTING M\xC3\xBCnchen GmbH"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/6272.jpg
   last_name: Kleine-Albers
   file: data/photos/speaker/6272.jpg
@@ -371,10 +371,12 @@
   last_name: Kolb
   file: data/photos/speaker/5290.jpg
   first_name: Bernd
-- name: "Dierk K\xF6nig"
+- name: "Dierk K\xC3\xB6nig"
   company: Canoo Engineering AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1208.jpg
-  last_name: "K\xF6nig"
+  last_name: !binary |
+    S8O2bmln
+
   file: data/photos/speaker/1208.jpg
   first_name: Dierk
 - name: Rainer Koppenhofer
@@ -384,7 +386,7 @@
   file: data/photos/speaker/6821.jpg
   first_name: Rainer
 - name: Dr. Heinrich Krause
-  company: "unabh\xE4ngiger Berater"
+  company: "unabh\xC3\xA4ngiger Berater"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4508.jpg
   last_name: Krause
   file: data/photos/speaker/4508.jpg
@@ -395,12 +397,12 @@
   last_name: Kreft
   file: data/photos/speaker/4664.jpg
   first_name: Klaus
-- name: "R\xFCdiger K\xFCgler"
+- name: "R\xC3\xBCdiger K\xC3\xBCgler"
   company: WIBU Systems
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3365.jpg
-  last_name: "K\xFCgler"
+  last_name: "K\xC3\xBCgler"
   file: data/photos/speaker/3365.jpg
-  first_name: "R\xFCdiger"
+  first_name: "R\xC3\xBCdiger"
 - name: Michael Kurz
   company: IRIAN Solutions
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5333.jpg
@@ -449,12 +451,12 @@
   last_name: Marschall
   file: data/photos/speaker/6727.jpg
   first_name: Matthias
-- name: "J\xFCrgen Mayrb\xE4url"
+- name: "J\xC3\xBCrgen Mayrb\xC3\xA4url"
   company: Microsoft
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/6212.jpg
-  last_name: "Mayrb\xE4url"
+  last_name: "Mayrb\xC3\xA4url"
   file: data/photos/speaker/6212.jpg
-  first_name: "J\xFCrgen"
+  first_name: "J\xC3\xBCrgen"
 - name: Christian Meder
   company: inovex GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4754.jpg
@@ -479,22 +481,22 @@
   last_name: Meyer
   file: data/photos/speaker/6698.jpg
   first_name: Olaf
-- name: "Stephan M\xFCller"
+- name: "Stephan M\xC3\xBCller"
   company: adesso AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5796.jpg
-  last_name: "M\xFCller"
+  last_name: "M\xC3\xBCller"
   file: data/photos/speaker/5796.jpg
   first_name: Stephan
-- name: "Florian M\xFCller"
+- name: "Florian M\xC3\xBCller"
   company: richability
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2058.jpg
-  last_name: "M\xFCller"
+  last_name: "M\xC3\xBCller"
   file: data/photos/speaker/2058.jpg
   first_name: Florian
-- name: "Bernd M\xFCller"
+- name: "Bernd M\xC3\xBCller"
   company: Ostfalia
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/6364.jpg
-  last_name: "M\xFCller"
+  last_name: "M\xC3\xBCller"
   file: data/photos/speaker/6364.jpg
   first_name: Bernd
 - name: Hajo Normann
@@ -527,10 +529,12 @@
   last_name: Peters
   file: data/photos/speaker/6622.jpg
   first_name: Sven
-- name: "Michael Pl\xF6d"
+- name: "Michael Pl\xC3\xB6d"
   company: Senacor Technologies AG
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/876.jpg
-  last_name: "Pl\xF6d"
+  last_name: !binary |
+    UGzDtmQ=
+
   file: data/photos/speaker/876.jpg
   first_name: Michael
 - name: Valentino Pola
@@ -545,12 +549,14 @@
   last_name: Preissler
   file: data/photos/speaker/2449.jpg
   first_name: Gerald
-- name: "J\xF6rg Preu\xDFig"
+- name: "J\xC3\xB6rg Preu\xC3\x9Fig"
   company: Trainer & Coach
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/5916.jpg
-  last_name: "Preu\xDFig"
+  last_name: "Preu\xC3\x9Fig"
   file: data/photos/speaker/5916.jpg
-  first_name: "J\xF6rg"
+  first_name: !binary |
+    SsO2cmc=
+
 - name: Sven Ramuschkat
   company: Herrlich & Ramuschkat GmbH (Adobe Solution Partner)
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/4561.jpg
@@ -593,16 +599,16 @@
   last_name: Roock
   file: data/photos/speaker/2146.jpg
   first_name: Stefan
-- name: "Peter Ro\xDFbach"
+- name: "Peter Ro\xC3\x9Fbach"
   company: Systemarchitekt
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/55.jpg
-  last_name: "Ro\xDFbach"
+  last_name: "Ro\xC3\x9Fbach"
   file: data/photos/speaker/55.jpg
   first_name: Peter
-- name: "Lars R\xF6wekamp"
+- name: "Lars R\xC3\xB6wekamp"
   company: open knowledge GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/215.jpg
-  last_name: "R\xF6wekamp"
+  last_name: "R\xC3\xB6wekamp"
   file: data/photos/speaker/215.jpg
   first_name: Lars
 - name: Dr. Anne Rozinat
@@ -617,10 +623,10 @@
   last_name: Lee Rubinger
   file: data/photos/speaker/6605.jpg
   first_name: Andrew
-- name: "Bernd R\xFCcker"
+- name: "Bernd R\xC3\xBCcker"
   company: camunda services
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2020.jpg
-  last_name: "R\xFCcker"
+  last_name: "R\xC3\xBCcker"
   file: data/photos/speaker/2020.jpg
   first_name: Bernd
 - name: Bruce Sams
@@ -635,10 +641,10 @@
   last_name: Sanitz
   file: data/photos/speaker/1513.jpg
   first_name: Sebastian
-- name: "Markus Sch\xE4rtel"
+- name: "Markus Sch\xC3\xA4rtel"
   company: Bosch Software Innovations GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/3285.jpg
-  last_name: "Sch\xE4rtel"
+  last_name: "Sch\xC3\xA4rtel"
   file: data/photos/speaker/3285.jpg
   first_name: Markus
 - name: Stefan Scheidt
@@ -654,7 +660,7 @@
   file: data/photos/speaker/6699.jpg
   first_name: Daniel
 - name: Hermann Schlamann
-  company: "unabh\xE4ngiger Berater"
+  company: "unabh\xC3\xA4ngiger Berater"
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/2375.jpg
   last_name: Schlamann
   file: data/photos/speaker/2375.jpg
@@ -743,10 +749,10 @@
   last_name: Tilkov
   file: data/photos/speaker/1211.jpg
   first_name: Stefan
-- name: "Kai T\xF6dter"
+- name: "Kai T\xC3\xB6dter"
   company: Siemens Corporate Technology
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/749.jpg
-  last_name: "T\xF6dter"
+  last_name: "T\xC3\xB6dter"
   file: data/photos/speaker/749.jpg
   first_name: Kai
 - name: Stefan Toth
@@ -797,10 +803,10 @@
   last_name: Wentzel
   file: data/photos/speaker/6620.jpg
   first_name: Steffen
-- name: "Matthias We\xDFendorf"
+- name: "Matthias We\xC3\x9Fendorf"
   company: Kaazing
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1207.jpg
-  last_name: "We\xDFendorf"
+  last_name: "We\xC3\x9Fendorf"
   file: data/photos/speaker/1207.jpg
   first_name: Matthias
 - name: Mike Wiesner
@@ -845,9 +851,9 @@
   last_name: Zaid
   file: data/photos/speaker/6613.jpg
   first_name: Farid
-- name: "Stefan Z\xF6rner"
+- name: "Stefan Z\xC3\xB6rner"
   company: oose Innovative Informatik GmbH
   image_url: http://www.entwickler.com/konferenzen/input3/bilder/1881.jpg
-  last_name: "Z\xF6rner"
+  last_name: "Z\xC3\xB6rner"
   file: data/photos/speaker/1881.jpg
   first_name: Stefan
