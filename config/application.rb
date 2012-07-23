@@ -45,7 +45,7 @@ module Helloworld
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
-    config.action_view.javascript_expansions[:defaults] = %w(jquery-1.4.3.min rails application)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery-1.7.2.min rails application)
 
   end
 end
