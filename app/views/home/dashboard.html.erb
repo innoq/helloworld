@@ -46,7 +46,7 @@
 
   <div class="stream">
     <%- @statuses.each do |status| -%>
-      <div class="status">
+      <div class="status list-in-dashboard">
         <%= link_to (image_tag status.profile.photo.url , :alt => "username", :class=> "stream-image"), private_profile_url(status.profile) %>
         <div class="status-message"><%= status.message %></div>
 
@@ -57,7 +57,7 @@
     <%- end -%>
   </div>
 
-
+  
 </div>
 <!-- two-col-left -->
 
