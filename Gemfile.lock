@@ -45,7 +45,10 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
-    cocaine (0.4.2)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     forgery (0.5.0)
@@ -67,11 +70,10 @@ GEM
     net-ssh (2.6.3)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
-    paperclip (3.4.0)
-      activemodel (>= 3.0.0)
-      activerecord (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (~> 0.4.0)
+    paperclip (2.3.16)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
       mime-types
     polyglot (0.3.3)
     rack (1.2.7)
@@ -118,7 +120,7 @@ DEPENDENCIES
   cancan
   capistrano
   forgery
-  paperclip
+  paperclip (~> 2.3.4)
   rails (= 3.0.20)
   sqlite3-ruby
   will_paginate (~> 3.0.pre2)

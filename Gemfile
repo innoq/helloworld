@@ -15,7 +15,7 @@ gem 'forgery'
 gem 'will_paginate', "~>3.0.pre2"
 gem 'ya2yaml'
 
-gem 'paperclip'
+gem 'paperclip', '~> 2.3.4'
 
 gem 'cancan'
 
