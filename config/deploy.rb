@@ -8,10 +8,10 @@ set :stages, %w(ec2 innoq)
 require 'capistrano/ext/multistage'
 
 # RVM bootstrap
-$:.unshift(File.expand_path("~/.rvm/lib"))
-require 'rvm/capistrano'
-set :rvm_ruby_string, '1.8.7'
-set :rvm_type, :user
+#$:.unshift(File.expand_path("~/.rvm/lib"))
+#require 'rvm/capistrano'
+#set :rvm_ruby_string, '1.8.7'
+#set :rvm_type, :user
 
 # bundler bootstrap
 require 'bundler/capistrano'
