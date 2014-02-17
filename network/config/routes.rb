@@ -6,10 +6,6 @@ Helloworld::Application.routes.draw do
     end
   end
   resources :contacts
-  resources :messages
-  resources :statuses
-
-  get "search" => "search#search"
 
   get "auth/login"
   get "auth/logout"

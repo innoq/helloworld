@@ -1,12 +1,11 @@
 .bundle
-db/*.sqlite3
-db/*.sqlite3-journal
-log/*.log
+*/db/*.sqlite3
+*/db/*.sqlite3-journal
+*/log/*.log
 nbproject
-tmp/**/*
+*/tmp/**/*
 .DS_Store
-public/system
+*/public/system
 
 .capistrano_history.yml
-
-helloworld.war
+*.war

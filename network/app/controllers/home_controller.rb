@@ -6,11 +6,7 @@ class HomeController < ApplicationController
     my_contact_ids = current_user.profile.relations.where(Relation.arel_table[:accepted].eq(true)).map(&:destination_id)
 
     # Load status list
-    @statuses =  Status.
-      includes(:profile).
-      where(Profile.arel_table[:id].in(my_contact_ids)).
-      order(Status.arel_table[:created_at].desc).
-      limit(10)
+    @statuses =  []
 
     @contacts_of_contacts = Profile.
       includes(:incoming_relations).
