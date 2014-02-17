@@ -1,0 +1,111 @@
+<h1>Edit Profile</h1>
+
+<div id="col-one">
+
+  <div class="profile-image">
+    <%= image_tag @profile.photo.url(), :alt => @profile.full_name %>
+  </div>
+  <!-- /profile-image -->
+
+  <div class="profile-actions">
+
+  </div>
+  <!-- /profile-actions -->
+
+  <h2>User's profile updates (<%= @profile.statuses.count %>)</h2>
+
+  <div class="profile-stream">
+    <%= render :partial => 'status', :collection => @profile.statuses %>
+  </div>
+  <!-- /profile-stream -->
+
+</div>
+<!-- /col-one -->
+
+<div id="col-two-large">
+  <div class="profile-center">
+
+    <h3>Edit your profile information here:</h3>
+    <br />
+
+<%= form_for @profile, :builder => Helloworld::FormBuilder do |f| %>
+  <%= render :partial => "/errors", :object => @profile.errors %>
+  <div class="default-form">
+  <ul>
+
+    <%= f.block :first_name do %>
+      <label>First Name</label>
+      <%= f.text_field :first_name %>
+    <%- end -%>
+
+    <%= f.block :last_name do %>
+      <label>Last Name</label>
+      <%= f.text_field :last_name %>
+    <%- end -%>
+
+    <%= f.block :profession do %><label>Profession</label>
+      <%= f.text_field :profession %>
+    <%- end -%>
+
+    <%= f.block :company do %><label>Company</label>
+      <%= f.text_field :company %>
+    <%- end -%>
+
+    <%= f.block :about do %><label>About me</label>
+      <%= f.text_area :about %>
+    <%- end -%>
+
+    <%= f.block :profile_attributes do %>
+      <fieldset>
+        <legend>Contact data</legend>
+
+        <ul>
+          <%= f.fields_for :profile_attributes do |profile_attribute| %>
+            <%= profile_attribute.hidden_field :id %>
+            <%= profile_attribute.hidden_field :attr_type %>
+            <%= profile_attribute.block :value do %>
+              <label><%= profile_attribute.object.attr_type.humanize %>:</label>
+              <%- if profile_attribute.object.new_record? -%>
+                <%= profile_attribute.text_field :value %>
+              <%- else -%>
+                <%= profile_attribute.object.value %> <%= profile_attribute.check_box :_destroy %> Delete? <br /><br />
+              <%- end -%>
+            <%- end -%>
+          <%- end -%>
+        </ul>
+
+      </fieldset>
+    <%- end -%>
+
+    <%= f.block :business_address do %>
+      <fieldset>
+        <legend>Business address</legend>
+        <%= f.fields_for :business_address do |ba| %>
+          <%= render "edit_address", :address_form => ba %>
+        <%- end -%>
+      </fieldset>
+    <%- end -%>
+
+    <%= f.block :private_address do %>
+      <fieldset>
+        <legend>Private address</legend>
+        <%= f.fields_for :private_address do |pa| %>
+          <%= render "edit_address", :address_form => pa %>
+        <%- end -%>
+      </fieldset>
+    <%- end -%>
+
+    <li class="submit-blue">
+      <%= f.submit %>
+    </li>
+
+  </ul>
+  </div>
+
+<%- end -%>
+
+  </div>
+</div>
+
+
+<div class="clear"><!-- clear --></div>

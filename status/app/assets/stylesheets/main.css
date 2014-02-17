@@ -1,0 +1,776 @@
+/***** CSS by Thomas Karolzyk - thomas@karolzyk.com ****/
+
+/* make sure reset.css is loaded */
+
+/********************************************************************/
+/* GENERAL */
+/********************************************************************/
+
+body {
+/*	background: #fff url(../img/bg.jpg) repeat-y;*/
+	color:#000;
+	font-size: 12px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin: 0 0 12px 0;
+}
+
+/********************************************************************/
+/* LINKS */
+/********************************************************************/
+
+a {
+        color:#4e9afa;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img, img a { 
+	border:0 
+}
+
+#footer a {
+	color:#555;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+/********************************************************************/
+/* LAYOUT */
+/********************************************************************/
+
+#main { 
+	position: relative;
+	width: 940px;
+/* 	background: #fff url(../img/.gif) repeat-x; */
+	margin: 0 auto;
+} 
+
+#logo { 
+	position: absolute;
+	top: 47px;
+	left:0;
+} 
+
+#claim { 
+	position: absolute;
+	top: 46px;
+	left:290px;
+} 
+
+#header { 
+	position: relative;
+	height: 168px;
+/*	background: #fff url(../img/.gif) repeat-x;*/
+} 
+
+#footer { 
+	position: relative;
+	width: 940px;
+	margin: 100px auto 30px auto;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding: 10px 0;
+} 
+
+#content-holder {
+	margin: 0 0 50px 0;
+        line-height: 120%;
+}
+
+#col-one {
+	float:left;
+	width:231px;
+}
+
+#col-two {
+	float:left;
+	width:440px;
+	margin: 0 20px;
+}
+
+#col-three {
+	float:left;
+	width:215px;
+}
+
+#col-two-large {
+	float:left;
+	margin: 0 0 0 20px;
+	width:685px;
+}
+
+.two-col-left {
+    float:left;
+    width: 450px;
+    margin: 0 20px 0 0;
+}
+
+.two-col-right {
+    float:left;
+    width: 450px;
+    margin: 0 0 0 0;
+}
+
+.pager {
+	position:absolute;
+	top: 178px;
+	right:10px;
+	color:#4e9afa;
+}
+
+.pager a {
+	text-decoration:none;
+	color:#4e9afa;
+	font-weight:bold;
+}
+
+#login-visual {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.login-info {
+    position: absolute;
+    right: 0px;
+    top: 605px;
+}
+
+.login-register {
+    position: absolute;
+    right: 310px;
+    top: 605px;
+}
+
+.hint {
+    margin: 20px 0 0 0;
+    width: 180px;
+}
+
+/********************************************************************/
+/* TYPE */
+/********************************************************************/
+
+.small-grey {
+    font-size: .8em;
+    color: #bbb;
+}
+
+/********************************************************************/
+/* CONTACT LIST */
+/********************************************************************/
+
+
+textarea.message-body {
+	width:490px;
+	height: 260px;
+	display:block;
+	margin: 0 0 20px 0;
+	border: 1px solid #ccc;
+	font-size:13px;
+	color:#333;
+	font-family:inherit;
+}
+
+
+
+/********************************************************************/
+/* SEARCH */
+/********************************************************************/
+
+#search {
+    position: absolute;
+    top: 46px;
+    right: 0px;
+    width: 290px;
+    text-align:right;
+}
+
+input.search_term {
+    width: 200px;
+    float: left;
+    border: 1px solid #ddd;
+    -moz-border-radius: 8px;
+    padding: 5px 5px;
+}
+
+.submit_search input {
+    /*
+    float: left;
+    background-color: transparent;
+    color:#4E9AFA;
+    */
+    color:#fff;
+    border-style:none;
+    background: transparent url(img/search_n.png) no-repeat;
+    width: 71px;
+    height: 25px;
+}
+.submit_search input:hover {
+    background: transparent url(img/search_h.png) no-repeat;
+}
+
+
+
+/********************************************************************/
+/* STATUS - FEED THE WORLD */
+/********************************************************************/
+
+ul.status-form textarea {
+    width: 420px;
+    height: 200px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.1em;
+    padding: 6px;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+ul.status-form textarea:focus {
+    border: 1px solid #1e5ca2;
+}
+
+ul.status-form input[type="submit"] {
+/* 	display:block; */
+	padding: 5px 20px;
+	background: transparent url(img/btn-blue.png) repeat-x;
+	font-size: 1.2em;
+	color:#fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: #333 1px 1px 1px;
+        border: 1px solid #55a0fb;
+}
+
+ul.status-form input[type="submit"]:hover {
+        color:#222;
+}
+
+.stream .status {
+	border-top: 1px solid #cfcfcf;
+        padding: 8px 0;
+	color: #555;
+	font-size: 1em;
+}
+
+
+.stream .status-date {
+        font-weight: normal;
+	font-size: 0.9em;
+        color: #aaa;
+}
+
+.stream a.username {
+        font-weight: normal;
+	font-size: 0.9em;
+}
+
+img.stream-image {
+        display: block;
+        float:left;
+        width: 61px;
+        margin: 0 8px 8px 0;
+}
+
+.status-message {
+    font-size: 1.2em;
+    line-height: 140% !important;
+    padding: 0 0 5px 0;
+}
+
+/********************************************************************/
+/* DASHBOARD */
+/********************************************************************/
+
+.list-in-dashboard {
+    padding: 0 0 20px 0 !important;
+}
+
+.profile-in-dashboard {
+    padding-bottom: 10px !important;
+}
+
+/********************************************************************/
+/* CONTACT LIST */
+/********************************************************************/
+
+
+
+.contact-list {
+    margin: 30px 0 0 0;
+}
+
+.contact-list-item {
+	position:relative;
+	float:left;
+	width:450px;
+	height:170px;
+	border-bottom: 1px solid #ccc;
+	margin: 0 20px 10px 0;
+        overflow:hidden;
+        /*
+        background-color: #f2f2f2;
+       	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+        */
+}
+	
+.contact-list-item h3 {
+	margin:0 0 4px 0;
+}
+
+
+.contact-list-item h3 a {
+	color:inherit;
+	text-decoration:none;
+}
+	
+.contact-list-item .address1 {
+	font-size:11px;
+	line-height: 135%;
+	color:#444;
+	/*
+        position:absolute;
+	top: 45px; 
+	left:130px;
+        */
+ }
+
+.contact-list-item .address2 {
+	font-size:11px;
+	line-height: 135%;
+	color:#444;
+        margin: 10px 0 0 0;
+	/*
+        position:absolute;
+	top: 45px;
+	left:274px;
+        */
+}
+
+.contact-list-item .address2 a {
+	color:inherit;
+	text-decoration:none;
+}
+
+
+.contact-list-item img.user-image {
+	display:block;
+	position:absolute;
+	left:2px;
+	top:2px;
+}
+
+.contact-list-item-data {
+	margin: 0 0 0 130px;
+}
+
+.contact-list-item img {
+    width:113px;
+}
+
+.actions			{ position:absolute; bottom: 10px; left:128px; font-size: 11px; width: 180px; }
+.actions a 			{ text-decoration:none; font-weight:bold; }
+.actions a:hover		{ text-decoration:underline; }
+.actions a.message 		{ color:#1454a5; }
+.actions a.delete 		{ color:#e5144a; padding: 0 15px; }
+.actions a.export 		{ color:#33a514; }
+
+
+.actions input 			{ border-style: none; background-color: transparent; padding: 0 6px 0 0; background-color: transparent; display:inline; float:left; margin: 4px 0 0 0 !important; font-size: 11px; font-weight: bold;  }
+.actions input:hover		{ cursor: pointer; text-decoration: underline; }
+
+.actions input.delete 		{ color:#e5144a; }
+.actions input.add 		{ color:#33a514; }
+.actions input.accept 		{ color:#333; }
+
+
+.contact-icon-holder {
+    padding: 20px 0 0 ;
+}
+
+.contact-icon {
+    width: 36px !important;
+    height: 33px !important;
+    float:left;
+    margin: 0 15px 0 0;
+}
+
+
+
+/********************************************************************/
+/* CONTACT LIST SMALL */
+/********************************************************************/
+
+.contact-list-small {
+	line-height: 120%;
+	border-top: 1px solid #cfcfcf;
+/* 	padding: 10px 0; */
+	color: #555;
+	font-size: 0.9em;
+	line-height: 130%;
+}
+
+.contact-list-small-item {
+	border-bottom: 1px solid #cfcfcf;
+	padding: 8px 0 10px 0;
+}
+
+.contact-list-small-text {
+	float:right;
+	width: 125px;
+	margin: 0 5px 0 0;
+}
+
+.contact-list-small-text a {
+      color: #555;
+      text-decoration: none;
+}
+
+.contact-list-small-text a:hover {
+      color: #4E9AFA;
+}
+
+.contact-list-small-img {
+	float:left;
+	width: 61px;
+}
+
+.contact-list-small-img img {
+	width: 61px;
+}
+
+.contact-list-small-username {
+	font-weight:bold;
+}
+
+.contact-list-small-email a {
+	color:#aaa;
+	display:block;
+	margin: 10px 0 0 0;
+	text-decoration: none;
+}
+
+
+.contact-list-small-email a:hover {
+	color:#333;
+}
+
+/********************************************************************/
+/* LINKS */
+/********************************************************************/
+
+.button-blue {
+/* 	display:block; */
+	padding: 5px 20px;
+	background: transparent url(img/btn-blue.png) repeat-x;
+	font-size: 1.2em;
+	color:#fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: #333 1px 1px 1px;
+        border: 1px solid #55a0fb;
+}
+
+.button-blue:hover {
+        color:#222;
+}
+
+
+li.submit-blue input {
+	padding: 5px 20px;
+	background: transparent url(img/btn-blue.png) repeat-x;
+	font-size: 1.2em;
+	color:#fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: #333 1px 1px 1px;
+        border: 1px solid #55a0fb;
+}
+
+li.submit-blue input:hover {
+        color:#222;
+}
+
+
+/********************************************************************/
+/* FORMS */
+/********************************************************************/
+
+.small-form input[type="text"],
+.small-form input[type="password"] {
+    width: 220px !important;
+}
+
+.default-form legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 0;
+    display: block;
+}
+
+.default-form label {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.default-form input[type="text"],
+.default-form input[type="password"] {
+    width: 450px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.1em;
+    padding: 6px;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.default-form textarea {
+    width: 450px;
+    height: 200px;
+    border: 1px solid #777;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1.1em;
+    padding: 6px;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+
+
+.default-form input[type="text"]:focus,
+.default-form input[type="password"]:focus,
+.default-form textarea:focus {
+    border: 1px solid #1e5ca2;
+}
+
+.default-form input[type="submit"] {
+        display:block;
+	padding: 5px 20px;
+	background: transparent url(img/btn-blue.png) repeat-x;
+	font-size: 1.2em;
+	color:#fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow: #333 1px 1px 1px;
+        border: 1px solid #55a0fb;
+}
+
+.default-form input[type="submit"]:hover {
+    color:#222;
+}
+
+/********************************************************************/
+/* PROFILE */
+/********************************************************************/
+
+.profile-image img {
+    width: 231px;
+}
+
+.profile-center {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #e3f0f1;
+	padding: 18px 22px 100px 22px;
+	color:#555;
+	line-height: 125%;
+	margin: 0 0 15px 0;
+}
+
+.profile-center-company {
+	font-size: 0.9em;
+	margin: 18px 0;
+}
+
+.profile-center-contact-image {
+	float: right;
+	width: 61px;
+}
+
+.profile-center-contact-label {
+	float:left;
+	width: 100px;
+	font-weight:bold;
+	font-size: 0.9em;
+	margin: 0 0 2px 0;
+}
+
+.profile-center-contact-data {
+	float:left;
+	width: 215px;	
+	font-size: 0.9em;
+	margin: 0 0 2px 0;
+}
+
+.profile-actions {
+	margin: 12px 0 25px 0;
+}
+
+.profile-actions a {
+	color:#478595;
+	margin: 5px 0;
+	display:block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+
+.profile-actions a:hover {
+	color: #333;
+}
+
+.profile-stream {
+	line-height: 120%;
+	border-top: 1px solid #cfcfcf;
+/* 	padding: 10px 0; */
+	color: #555;
+	font-size: 0.9em;
+}
+
+.profile-stream-item-date {
+	font-weight:bold;
+}
+
+.profile-stream-item {
+	border-bottom: 1px solid #cfcfcf;
+	padding: 8px 0 10px 0;
+}
+
+/********************************************************************/
+/* MISC CLASSES */
+/********************************************************************/
+
+.img-left {
+	float:left;
+	margin: 0 1em 1em 0;
+}
+
+.img-right {
+	float:right;
+	margin: 0 0 1em 1em;
+}
+
+/********************************************************************/
+/* FORMS */
+/********************************************************************/
+
+input {
+	font-family: inherit;
+}
+
+textarea {
+	font-family: inherit;
+}
+
+select {
+	font-family: inherit;
+}
+
+/********************************************************************/
+/* HEADER */
+/********************************************************************/
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+	font-size: 100%;
+}
+
+h1 {
+	font-size:2em;
+	font-weight:bold;
+	color:#4e9afa;
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 10px 0;
+	margin: 0 0 25px 0;
+}
+
+h2 {
+	font-size:1.3em;
+	font-weight:bold;
+	color:#4e9afa;
+	margin: 0 0 12px 0;
+}
+
+h3 {
+	font-size:1.2em;
+	font-weight:bold;
+	color:#555;
+	margin: 5px 0;
+}
+h4 {
+	font-size:0.9em;
+	font-weight:bold;
+	color:#555;
+	text-transform: uppercase;
+	margin: 20px 0 5px 0;
+}
+
+/********************************************************************/
+/* NAVIGATION */
+/********************************************************************/
+
+#meta {
+	position: absolute;
+	top: 10px;
+	right: 2px;
+	font-size: 10px;
+}
+
+#meta ul {
+	list-style: none;
+}
+
+#meta ul li {
+	margin: 0 0 0 10px;
+	display: inline;
+	border-right: 1px solid #fff;
+}
+
+#meta ul li a { 
+/*
+	display: block;
+	float:left;
+*/
+	text-decoration: none;
+	color: #5aa4fb; 
+}
+
+#meta ul li.active a { 
+	color: #333; 
+}
+
+/********************************************************************/
+/* HELPER CLASSES */
+/********************************************************************/
+
+.clear {
+	clear: both;
+}
+
+.out {
+	position: absolute;
+	top: -999px;
+	left: -999px;
+}

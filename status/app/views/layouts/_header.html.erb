@@ -1,0 +1,55 @@
+<div id="header">
+
+  <div id="logo">
+    <%= link_to (image_tag 'logo.png', :alt => 'HelloWorld'), dashboard_url %>
+  </div>
+  <!-- /logo -->
+
+  <div id="claim">
+    <%= image_tag 'claim.png', :alt => 'The demo community by innoQ' %>
+  </div>
+  <!-- /logo -->
+
+  <div id="meta">
+    <ul>
+      <%- if current_user -%>
+        <li><%= link_to "Logout", auth_logout_path %></li>
+      <%- else -%>
+        <li><%= link_to "Login", auth_login_path %></li>
+      <%- end -%>
+        <li><a href="">Imprint</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </div>
+    <!-- /meta -->
+
+    <div id="search">
+        <%= form_tag search_url, :method => :get, :class => :search do %>
+          <ul>
+            <li>
+              <input type="search" name="q" class="search_term" value="<%= params[:q] %>" placeholder="Enter your search term here" />
+            </li>
+            <li class="submit_search"><%= submit_tag "Search" %></li>
+          </ul>
+      <%- end -%>
+    </div>
+    <!-- /search -->
+
+    <ul id="menu">
+      <li><%= link_to "Dashboard", dashboard_path, :class => "first" %></li>
+      <li><%= link_to "World status feed", statuses_path %></li>
+      <li><%= link_to "Contacts", contacts_path %></li>
+      <li><%= link_to "Profile", (current_user && private_profile_path(current_user.profile)) || auth_login_path %></li>
+      <li><%= link_to "About", about_path, :class => "last" %></li>
+    </ul>
+    <!-- /menu -->
+
+
+  </div>
+  <!-- /header -->
+
+
+
+
+
+

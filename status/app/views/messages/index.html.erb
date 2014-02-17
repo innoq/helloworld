@@ -1,0 +1,10 @@
+<p>Messages: <%= @messages.count %>
+<ul>
+<% @messages.each do |m| %>
+  <% content_tag_for(:li, m) do %>
+  <p class="from"><span class="label">From:</span><%= link_to(m.from.full_name, m.from) %></p>
+  <p class="subject"><span class="label">Subject:</span><%= m.subject %></p>
+  <% end %>
+<% end %>
+<%= will_paginate @messages %>
+</ul>

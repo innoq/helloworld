@@ -1,0 +1,17 @@
+<h1>My Contacts</h1>
+
+<div class="pager">
+  <%= will_paginate @contacts %>
+</div>
+
+
+<div class="contact-list">
+  <%= render :partial => "layouts/contact", :collection => @contacts %>
+  <!-- /items -->
+</div>
+<!-- contact-list -->
+
+<div class="clear"><!-- clear --></div>
+
+<br />
+<%= link_to "Search contact", search_url(), :class => "button-blue" %>

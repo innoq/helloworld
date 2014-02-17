@@ -1,0 +1,230 @@
+
+
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+
+#menu {
+	
+/* 	margin: 0 0 0 195px; */
+	list-style:none;
+	height:40px;
+	
+	position:absolute;
+	top: 92px;
+	right:0px;
+	
+	z-index:500;
+
+}
+
+#menu li {
+	float:left;
+	background-position: top left;
+}
+
+
+li.special a,
+li.special  {
+	background-color: #4b4a48 !important;
+}
+
+li.special a:hover,
+li.special:hover  {
+	background-color: #fff !important;
+}
+
+
+a.first {
+	border-left-style: none !important;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+a.last {
+	border-left-style: none !important;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+#menu li a {
+	display:block;
+	float:left;
+	height:36px;
+	line-height:36px;
+	background: transparent url(img/nav.png) repeat-x;
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	width:187px;
+	text-align: center;
+/* 	padding:0 40px; */
+/*
+	border-right: 1px solid #9bcb5f;
+	border-left: 1px solid #c5e1a2;
+*/
+	border-right: 1px solid #62a4f7;
+}
+
+#menu table {
+	border-collapse:collapse;
+	width:0;
+	height:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+	
+/* Default link styling */
+
+	
+/* Style the list OR link hover. Depends on which browser is used */
+#menu li a:hover {
+	z-index:200;
+	position:relative;
+	background: transparent url(img/nav-hi.png) repeat-x;
+}
+
+#menu li:hover {
+	position:relative;
+	z-index:200;
+}
+
+#menu li:hover > a {
+	background: transparent url(img/nav-hi.png) repeat-x;
+}
+
+#menu li:hover > a.sub {
+	background: transparent url(img/menu_bg2.png) repeat-x;
+}
+
+#menu li.current a {
+	color:#333;
+	background: transparent url(img/nav.png) repeat-x;
+}
+
+#menu li a.sub {
+	background:#333 url(down-arrow.gif) no-repeat right center;
+}
+
+#menu li.current a.sub {
+	color:#333;
+	background: transparent url(img/nav.png) repeat-x;
+}
+
+#menu :hover ul {
+	left:1px;
+	top:36px;
+	width:188px;
+	background:#4e9afa;
+}
+
+
+	
+/* keep the 'next' level invisible by placing it off screen. */
+#menu ul,#menu :hover ul ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	width:0;
+	height:0;
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:11px;
+}
+
+#menu :hover ul :hover ul {
+	left:142px;
+	top:-1px;
+	background:#4e9afa;
+	white-space:nowrap;
+	width:188px;
+	z-index:200;
+	height:auto;
+}
+
+#menu :hover ul li {
+	margin:0;
+	border-top:1px solid #fff;
+}
+
+#menu :hover ul li a {
+	border-left-style:none;
+	border-right-style:none;
+	font-size:11px;
+	width:188px;
+	padding:0;
+	text-indent:10px;
+	background:#67b0fa;
+	color:#fff;
+	height:25px;
+	line-height:25px;
+	font-weight: normal;
+	text-align: left !important;
+}
+
+#menu :hover ul li a.fly {
+	background:#333 url(right-arrow.gif) no-repeat right center;
+}
+
+#menu :hover ul :hover {
+	background-color:#99c6fa;
+/* 	color:#000; */
+}
+
+#menu :hover ul :hover a.fly {
+	background-color:#fff;
+	color:#69655e;
+}
+
+#menu :hover ul li.currentsub a {
+	background-color:#fff;
+	color:#69655e;
+}
+
+#menu :hover ul li.currentsub a.fly {
+	background-color:#fff;
+	color:#69655e;
+}
+
+#menu :hover ul :hover ul li a {
+	width:140px;
+	padding:0;
+	text-indent:10px;
+	background:#ac0b0b;
+	color:#fff;
+	text-align: left !important;
+}
+
+
+#menu :hover ul :hover ul li a:hover {
+	background:#fff;
+	color:#69655e;
+}
+/*
+#menu :hover ul :hover ul :hover {
+	background-color:#d70;
+	color:#fff;
+}
+
+#menu :hover ul :hover ul li.currentfly a,#menu :hover ul :hover ul li.currentfly a:hover {
+	background:#840;
+	color:#fff;
+}
+*/
