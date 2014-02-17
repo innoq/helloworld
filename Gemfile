@@ -22,3 +22,5 @@ gem 'cancan'
 group 'development' do
   gem 'capistrano'
 end
+
+gem "jquery-rails"
