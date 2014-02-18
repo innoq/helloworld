@@ -1,0 +1,1 @@
+../../../common/foreign_links.rb

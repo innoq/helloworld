@@ -1,21 +1,23 @@
 class HomeController < ApplicationController
 
-  skip_before_filter :check_login, :only => [:about, :header]
+  skip_before_filter :check_login
 
   def dashboard
-    my_contact_ids = current_user.profile.relations.where(Relation.arel_table[:accepted].eq(true)).map(&:destination_id)
+    respond_to do |format|
+      format.html
+      format.json do
+        render :json => {:resources => self.resources}
+      end
+      format.json_home do
+        render :json => {:resources => self.resources}
+      end
+    end
+  end
 
-    # Load status list
-    @statuses =  []
-
-    @contacts_of_contacts = Profile.
-      includes(:incoming_relations).
-      where(Relation.arel_table[:source_id].in(my_contact_ids)).
-      where(Profile.arel_table[:id].not_in(my_contact_ids + [current_user.profile.id])).
-      order("random()").
-      limit(10)
-
-    @unaccepted_contacts = current_user.profile.contacts.relation_not_accepted
+  def register_resources
+    raise "Didn't understand JSON Home data" unless params["resources"].is_a?(Hash)
+    self.add_resources(params["resources"])
+    dashboard
   end
 
   def header
