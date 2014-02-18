@@ -5,6 +5,9 @@ load "#{File.dirname(__FILE__)}/deploy/common.rb"
 
 set :default_stage, "innoq"
 set :stages, %w(ec2 innoq)
+set :deploy_subdir, "network"
+set :strategy, RemoteCacheSubdir.new(self)
+
 require 'capistrano/ext/multistage'
 
 # RVM bootstrap
