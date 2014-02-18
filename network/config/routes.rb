@@ -7,15 +7,7 @@ Helloworld::Application.routes.draw do
   end
   resources :contacts
 
-  get "auth/login"
-  get "auth/logout"
-  get "auth/register"
-
-  match 'auth/register_user' => 'auth#register_user', :as => 'register_user'
-  match 'auth/authenticate' => 'auth#authenticate', :as => 'authenticate'
-
   root :to => 'home#dashboard', :as => :dashboard
-  match 'home/about' => 'home#about', :as => :about
   match 'header' => 'home#header', :as => :header
 
   match 'public/:id(.:format)' => 'profiles#show_public'

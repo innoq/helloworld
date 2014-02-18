@@ -120,7 +120,6 @@ GEM
     tzinfo (0.3.38)
     will_paginate (3.0.4)
     xml-simple (1.1.2)
-    ya2yaml (0.31)
 
 PLATFORMS
   java
@@ -137,4 +136,3 @@ DEPENDENCIES
   rails (~> 3.2)
   sqlite3-ruby
   will_paginate (~> 3.0.pre2)
-  ya2yaml
