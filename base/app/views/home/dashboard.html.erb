@@ -1,0 +1,94 @@
+
+<h1>Welcome, <%= current_user.profile.first_name %></h1>
+
+<div class="two-col-left">
+
+  <h2>My profile information</h2>
+
+  <div class="profile-center profile-in-dashboard">
+    <% div_for current_user do %>
+
+		<div class="profile-center-contact-image">
+			<%= image_tag current_user.profile.photo.url, :alt => "username", :class=> "stream-image" %>
+		</div>
+
+      <div class="profile-center-contact-label">Name:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.full_name %></div>
+
+      <div class="profile-center-contact-label">Profession:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.profession %></div>
+
+      <div class="profile-center-contact-label">Company:</div>
+      <div class="profile-center-contact-data"><%= current_user.profile.company %></div>
+
+      <div class="profile-center-contact-label">Joined at:</div>
+      <div class="profile-center-contact-data"><%= l(current_user.profile.created_at, :format => :long) %></div>
+
+      <div class="profile-center-contact-label">Last profile update:</div>
+      <div class="profile-center-contact-data"><%= l(current_user.profile.updated_at, :format => :long) %></div>
+
+      <div class="clear"><!-- clear --></div>
+
+      <!--
+      <p class="about"><span class="label">About <%= current_user.profile.first_name %>:</span><%= current_user.profile.about %></p>
+      -->
+
+      <p>&nbsp;</p>
+
+      <p><%= link_to "Go to Public Profile", profile_path(current_user.profile) %> | <%= link_to "Go to Private Profile", private_profile_path(current_user.profile) %></p>
+
+      <!--<p><a href="#">Update status</a></p>-->
+
+    <% end %>
+  </div>
+
+  <h2>Stream of my contacts</h2>
+
+  <div class="stream">
+    <%- @statuses.each do |status| -%>
+      <div class="status list-in-dashboard">
+        <%= link_to (image_tag status.profile.photo.url , :alt => "username", :class=> "stream-image"), private_profile_url(status.profile) %>
+        <div class="status-message"><%= status.message %></div>
+
+        <%= link_to status.profile.full_name, private_profile_url(status.profile), :class=>"username" %> <span class="status-date"><%= l(status.created_at, :format => :long) %></span>
+
+      </div>
+      <div class="clear"><!-- clear --></div>
+    <%- end -%>
+  </div>
+
+  
+</div>
+<!-- two-col-left -->
+
+<div class="two-col-right">
+
+  <%- if @unaccepted_contacts.any? -%>
+
+    <!-- AWAITING CONFIRMATION -->
+    <h2>Contacts waiting for confirmation</h2>
+    <div class="contact-list list-in-dashboard">
+      <%= render :partial => "layouts/contact", :collection => @unaccepted_contacts %>
+      <!-- /items -->
+      <div class="clear"><!-- clear --></div>
+    </div>
+    <!-- contact-list -->
+
+  <%- end -%>
+
+  <h2>Contacts of your contacts</h2>
+  <div class="contact-list list-in-dashboard">
+    <%= render :partial => "layouts/contact", :collection => @contacts_of_contacts %>
+    <!-- /items -->
+    <div class="clear"><!-- clear --></div>
+  </div>
+  <!-- contact-list -->
+
+
+</div>
+<!-- two-col-right -->
+
+
+
+<div class="clear"><!-- clear --></div>
+
