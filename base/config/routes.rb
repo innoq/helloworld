@@ -1,6 +1,6 @@
 Helloworld::Application.routes.draw do
 
-  get '/' => 'home#dashboard', :as => :dashboard
+  get '/' => 'home#json_home', :as => :root
   put '/' => 'home#register_resources'
   get '/home/about' => 'home#about', :as => :about
   get 'header' => 'home#header', :as => :header
@@ -9,7 +9,7 @@ Helloworld::Application.routes.draw do
   get "auth/logout"
   get "auth/register"
 
-  get 'auth/register_user' => 'auth#register_user', :as => 'register_user'
-  get 'auth/authenticate' => 'auth#authenticate', :as => 'authenticate'
+  post 'auth/register_user' => 'auth#register_user', :as => 'register_user'
+  post 'auth/authenticate' => 'auth#authenticate', :as => 'authenticate'
 
 end

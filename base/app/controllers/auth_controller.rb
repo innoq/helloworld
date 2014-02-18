@@ -6,7 +6,6 @@ class AuthController < ApplicationController
 
   def login
     @user = User.new
-    @dest ||= dashboard_path
     sample_user = random_user
     @hint = "Try user '#{sample_user.login}' with password '#{sample_user.password}' to get started." if sample_user
   end
@@ -15,8 +14,10 @@ class AuthController < ApplicationController
     @user = User.find_by_login(params[:user][:login])
     if @user and @user.password == params[:user][:password]
       session[:user] = @user.id
-      dest = params[:dest] || dashboard_path
-      redirect_to dest
+      dest = params[:return_to] || foreign_uri('http://helloworld.innoq.com/dashboard') || root_url
+      dest = URI.parse(dest)
+      dest.query = "login_token=1&#{dest.query}"
+      redirect_to dest.to_s
     else
       flash[:error] = "Wrong username/password combination"
       redirect_to :action => :login
@@ -37,8 +38,10 @@ class AuthController < ApplicationController
     if @user.nil?
       @user = User.create(params[:user])
       session[:user] = @user.id
-      dest = params[:dest] || dashboard_path
-      redirect_to dest
+      dest = params[:return_to] || foreign_uri('http://helloworld.innoq.com/dashboard') || root_url
+      dest = URI.parse(dest)
+      dest.query = "login_token=1&#{dest.query}"
+      redirect_to dest.to_s
     else
       flash[:error] = "Could not create user - user name already taken"
       render :register

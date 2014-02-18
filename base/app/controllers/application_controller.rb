@@ -12,17 +12,21 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    @current_user ||= session[:user].nil? ? nil : User.includes(:profile => :contacts).where(:id => session[:user]).last
+    @current_user ||= session[:user].nil? ? nil : User.where(:id => session[:user]).last
   end
 
   def resources
-    (@@external_resources || {}).merge(
+    @@external_resources||= {}
+    @@external_resources.merge(
       "http://helloworld.innoq.com/login" => {
         "href-template" => CGI.unescape(auth_login_url("return_to" => "{return_to}")),
         "href-vars" => {"return_to" => "http://helloworld.innoq.com/return_to"}
       },
       "http://helloworld.innoq.com/logout" => {
         "href" => auth_logout_url
+      },
+      "http://helloworld.innoq.com/about" => {
+        "href" => about_url
       }
     )
   end

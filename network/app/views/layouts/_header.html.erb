@@ -1,7 +1,7 @@
 <div id="header">
 
   <div id="logo">
-    <%= link_to (image_tag 'logo.png', :alt => 'HelloWorld'), dashboard_url %>
+    <%= link_to (image_tag 'logo.png', :alt => 'HelloWorld'), foreign_uri("http://helloworld.innoq.com/dashboard") || root_url %>
   </div>
   <!-- /logo -->
 
@@ -13,43 +13,49 @@
   <div id="meta">
     <ul>
       <%- if current_user -%>
-        <li><%= link_to "Logout", auth_logout_path %></li>
+        <li><%= link_to "Logout", foreign_uri("http://helloworld.innoq.com/logout") %></li>
       <%- else -%>
-        <li><%= link_to "Login", auth_login_path %></li>
+        <li><%= link_to "Login", foreign_uri("http://helloworld.innoq.com/login", :return_to => request.url) %></li>
       <%- end -%>
-        <li><a href="">Imprint</a></li>
-        <li><a href="">About</a></li>
-      </ul>
-    </div>
-    <!-- /meta -->
-
-    <div id="search">
-        <%#= form_tag search_url, :method => :get, :class => :search do %>
-          <ul>
-            <li>
-              <input type="search" name="q" class="search_term" value="<%= params[:q] %>" placeholder="Enter your search term here" />
-            </li>
-            <li class="submit_search"><%= submit_tag "Search" %></li>
-          </ul>
-      <%#- end -%>
-    </div>
-    <!-- /search -->
-
-    <ul id="menu">
-      <li><%= link_to "Dashboard", dashboard_path, :class => "first" %></li>
-      <li><%= link_to "World status feed", statuses_url %></li>
-      <li><%= link_to "Contacts", contacts_path %></li>
-      <li><%= link_to "Profile", (current_user && private_profile_path(current_user.profile)) || auth_login_path %></li>
-      <li><%= link_to "About", about_path, :class => "last" %></li>
+      <li><a href="">Imprint</a></li>
+      <li><a href="">About</a></li>
     </ul>
-    <!-- /menu -->
-
-
   </div>
-  <!-- /header -->
+  <!-- /meta -->
+
+  <div id="search">
+    <% if search_uri = foreign_uri("http://helloworld.innoq.com/search", "q" => "") %>
+      <%= form_tag search_uri, :method => :get, :class => :search do %>
+        <ul>
+          <li>
+            <input type="search" name="q" class="search_term" value="<%= params[:q] %>" placeholder="Enter your search term here" />
+          </li>
+          <li class="submit_search"><%= submit_tag "Search" %></li>
+        </ul>
+      <%- end -%>
+    <% end %>
+  </div>
+  <!-- /search -->
+
+  <ul id="menu">
+    <% if dashboard_uri = foreign_uri("http://helloworld.innoq.com/dashboard") %>
+      <li><%= link_to "Dashboard", dashboard_uri, :class => "first" %></li>
+    <% end %>
+    <% if stauses_uri = foreign_uri("http://helloworld.innoq.com/statuses") %>
+      <li><%= link_to "World status feed", stauses_uri %></li>
+    <% end %>
+    <% if contacts_uri = foreign_uri("http://helloworld.innoq.com/contacts") %>
+      <li><%= link_to "Contacts", contacts_uri %></li>
+    <% end %>
+    <% if current_user && (private_profile_uri = foreign_uri("http://helloworld.innoq.com/private_profile", "user_id" => current_user.id))  %>
+      <li><%= link_to "Profile", private_profile_uri %></li>
+    <% end %>
+    <% if about_uri = foreign_uri("http://helloworld.innoq.com/about")  %>
+      <li><%= link_to "About", about_uri, :class => "last" %></li>
+    <% end %>
+  </ul>
+  <!-- /menu -->
 
 
-
-
-
-
+</div>
+<!-- /header -->

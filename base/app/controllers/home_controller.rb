@@ -2,9 +2,8 @@ class HomeController < ApplicationController
 
   skip_before_filter :check_login
 
-  def dashboard
+  def json_home
     respond_to do |format|
-      format.html
       format.json do
         render :json => {:resources => self.resources}
       end
@@ -17,7 +16,7 @@ class HomeController < ApplicationController
   def register_resources
     raise "Didn't understand JSON Home data" unless params["resources"].is_a?(Hash)
     self.add_resources(params["resources"])
-    dashboard
+    json_home
   end
 
   def header
