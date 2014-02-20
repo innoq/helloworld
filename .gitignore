@@ -10,3 +10,4 @@ public/system
 .capistrano_history.yml
 
 helloworld.war
+public/assets
