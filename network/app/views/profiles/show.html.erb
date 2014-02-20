@@ -12,10 +12,10 @@
   </div>
   <!-- /profile-actions -->
 
-  <h2>User's profile updates (<%= @profile.statuses.count %>)</h2>
+  <h2>User's profile updates (<%#= TODO @profile.statuses.count %>Not implemented yet!)</h2>
 
   <div class="profile-stream">
-    <%= render :partial => 'status', :collection => @profile.statuses %>
+    <%#= render :partial => 'status', :collection => @profile.statuses %>
   </div>
   <!-- /profile-stream -->
 
@@ -36,21 +36,21 @@
 
     <h4>About Me</h4>
     <p><%= @profile.about %></p>
-    
+
   </div>
 
   <!--
   <a href="#" title="" class="button-blue">Send Message</a>
   -->
-  
+
 </div>
 <!-- /col-two -->
 
 <div id="col-three">
-  <h2>User's contacts (<%= @profile.contacts.relation_accepted.count || 0 %>)</h2>
+  <h2>User's contacts (<%= @profile.relations.accepted.count || 0 %>)</h2>
 
   <div class="contact-list-small">
-    <%= render :partial => 'contact', :collection => @profile.contacts.relation_accepted %>
+    <%= render :partial => 'contact', :collection => @profile.relations.accepted.map(&:destination) %>
   </div>
   <!-- /contact-list-small -->
 </div>

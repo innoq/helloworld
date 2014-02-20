@@ -1,4 +1,7 @@
 class Profile < ActiveRecord::Base
+
+  attr_accessible :first_name, :last_name, :profession, :company, :about, :private_address_id, :business_address_id, :photo
+
   belongs_to :user
   belongs_to :private_address, :class_name => 'Address', :dependent => :destroy
   belongs_to :business_address, :class_name => 'Address', :dependent => :destroy
@@ -6,14 +9,6 @@ class Profile < ActiveRecord::Base
   has_many :profile_attributes, :dependent => :destroy
 
   has_many :relations, :foreign_key => :source_id, :dependent => :destroy
-  has_many :contacts, :through => :relations, :source => :destination do
-    def relation_accepted
-      where("1=1") & Relation.scoped.accepted
-    end
-    def relation_not_accepted
-      where("1=1") & Relation.scoped.not_accepted
-    end
-  end
   has_many :incoming_relations, :foreign_key => :destination_id, :class_name => "Relation", :dependent => :destroy
 
   has_many :sent_messages, :foreign_key => :from_id, :class_name => "Message", :dependent => :destroy

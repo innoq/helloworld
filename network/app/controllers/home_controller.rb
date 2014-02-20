@@ -15,7 +15,7 @@ class HomeController < ApplicationController
       order("random()").
       limit(10)
 
-    @unaccepted_contacts = current_user.profile.contacts.relation_not_accepted
+    @unaccepted_contacts = current_user.profile.relations.not_accepted.map(&:destination)
   end
 
   def header

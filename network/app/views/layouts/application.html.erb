@@ -11,8 +11,8 @@
 
     <!-- override for IE-->
     <!--[if IE 6]>
-	    <style type="text/css" media="all">@import "/stylesheets/ie6.css";</style>
-  	<![endif]-->
+      <style type="text/css" media="all">@import "/stylesheets/ie6.css";</style>
+    <![endif]-->
 
     <!--[if IE 7]>
       <style type="text/css" media="all">@import "/stylesheets/ie7.css";</style>
@@ -30,11 +30,13 @@
 
       <div id="content-holder">
 
-        <div class="flash_messages">
-          <% flash.each do |information_class, message| %>
-            <div class="<%= information_class %>"><%= message %></div>
-          <% end %>
-        </div>
+        <% if flash.any? %>
+          <div class="flash_messages">
+            <% flash.each do |information_class, message| %>
+              <div class="<%= information_class %>"><%= message %></div>
+            <% end %>
+          </div>
+        <% end %>
 
         <%= yield %>
       </div>

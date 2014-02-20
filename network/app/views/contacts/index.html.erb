@@ -14,4 +14,6 @@
 <div class="clear"><!-- clear --></div>
 
 <br />
-<%= link_to "Search contact", search_url(), :class => "button-blue" %>
+<% if search_uri = foreign_uri("http://helloworld.innoq.com/search", :q => "") %>
+  <%= link_to "Search contact", search_uri, :class => "button-blue" %>
+<% end %>
