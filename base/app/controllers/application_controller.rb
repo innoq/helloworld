@@ -25,8 +25,15 @@ class ApplicationController < ActionController::Base
       "http://helloworld.innoq.com/logout" => {
         "href" => auth_logout_url
       },
+      "http://helloworld.innoq.com/check_login_token" => {
+        "href-template" => CGI.unescape(auth_check_url("login_token" => "{login_token}")),
+        "href-vars" => {"login_token" => "http://helloworld.innoq.com/login_token"}
+      },
       "http://helloworld.innoq.com/about" => {
         "href" => about_url
+      },
+      "http://helloworld.innoq.com/statuses" => {
+        "href" => root_url
       }
     )
   end

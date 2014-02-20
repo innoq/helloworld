@@ -7,6 +7,7 @@ Helloworld::Application.routes.draw do
 
   get "auth/login"
   get "auth/logout"
+  get "auth/check"
   get "auth/register"
 
   post 'auth/register_user' => 'auth#register_user', :as => 'register_user'
