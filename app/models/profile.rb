@@ -1,4 +1,8 @@
 class Profile < ActiveRecord::Base
+
+  attr_accessible :first_name, :last_name, :profession, :company, :about
+  attr_accessible :private_address, :private_address_id, :business_address, :business_address_id, :photo
+
   belongs_to :user
   belongs_to :private_address, :class_name => 'Address', :dependent => :destroy
   belongs_to :business_address, :class_name => 'Address', :dependent => :destroy
@@ -84,8 +88,8 @@ class Profile < ActiveRecord::Base
 
   def self.search(word)
     where(["LOWER(#{self.table_name}.last_name) like :word OR LOWER(#{self.table_name}.first_name) like :word OR LOWER(#{self.table_name}.company) like :word", {:word => word.downcase}]).
-      select(:id).
-      map(&:id)
+        select(:id).
+        map(&:id)
   end
 
 end

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -24,8 +25,8 @@ ActiveRecord::Schema.define(:version => 20101022114834) do
     t.text     "body"
     t.integer  "from_id"
     t.integer  "to_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "profile_attributes", :force => true do |t|
@@ -41,8 +42,8 @@ ActiveRecord::Schema.define(:version => 20101022114834) do
     t.integer  "user_id"
     t.integer  "private_address_id"
     t.integer  "business_address_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.string   "first_name"
     t.string   "last_name"
     t.string   "photo_file_name"
@@ -55,22 +56,22 @@ ActiveRecord::Schema.define(:version => 20101022114834) do
     t.integer  "destination_id"
     t.string   "comment"
     t.boolean  "accepted"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "statuses", :force => true do |t|
     t.text     "message"
     t.integer  "profile_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
     t.string   "login"
     t.string   "password"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
