@@ -6,11 +6,10 @@
   <h2>My profile information</h2>
 
   <div class="profile-center profile-in-dashboard">
-    <% div_for current_user do %>
 
-		<div class="profile-center-contact-image">
-			<%= image_tag current_user.profile.photo.url, :alt => "username", :class=> "stream-image" %>
-		</div>
+      <div class="profile-center-contact-image">
+        <%= image_tag current_user.profile.photo.url, :alt => "username", :class=> "stream-image" %>
+      </div>
 
       <div class="profile-center-contact-label">Name:</div>
       <div class="profile-center-contact-data"><%= current_user.profile.full_name %></div>
@@ -39,7 +38,6 @@
 
       <!--<p><a href="#">Update status</a></p>-->
 
-    <% end %>
   </div>
 
   <h2>Stream of my contacts</h2>
@@ -57,7 +55,7 @@
     <%- end -%>
   </div>
 
-  
+
 </div>
 <!-- two-col-left -->
 

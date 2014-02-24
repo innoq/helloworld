@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   skip_before_filter :check_login, :only => [:about, :header]
 
   def dashboard
-    my_contact_ids = current_user.profile.relations.where(Relation.arel_table[:accepted].eq(true)).map(&:destination_id)
+    my_contact_ids = current_user.profile.relations.accepted.map(&:destination_id)
 
     # Load status list
     @statuses =  Status.
@@ -19,7 +19,7 @@ class HomeController < ApplicationController
       order("random()").
       limit(10)
 
-    @unaccepted_contacts = current_user.profile.contacts.relation_not_accepted
+    @unaccepted_contacts = current_user.profile.relations.accepted.map(&:destination)
   end
 
   def header

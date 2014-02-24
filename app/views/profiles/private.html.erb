@@ -61,15 +61,15 @@
   <!--
   <a href="#" title="" class="button-blue">Send Message</a>
   -->
-  
+
 </div>
 <!-- /col-two -->
 
 <div id="col-three">
-  <h2>User's contacts (<%= @profile.contacts.relation_accepted.count || 0 %>)</h2>
+  <h2>User's contacts (<%= @profile.relations.accepted.count || 0 %>)</h2>
 
   <div class="contact-list-small">
-    <%= render :partial => 'contact', :collection => @profile.contacts.relation_accepted %>
+    <%= render :partial => 'contact', :collection => @profile.relations.accepted.map(&:destination) %>
   </div>
   <!-- /contact-list-small -->
 </div>

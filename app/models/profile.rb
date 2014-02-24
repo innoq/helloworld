@@ -10,14 +10,6 @@ class Profile < ActiveRecord::Base
   has_many :profile_attributes, :dependent => :destroy
 
   has_many :relations, :foreign_key => :source_id, :dependent => :destroy
-  has_many :contacts, :through => :relations, :source => :destination do
-    def relation_accepted
-      where("1=1") & Relation.scoped.accepted
-    end
-    def relation_not_accepted
-      where("1=1") & Relation.scoped.not_accepted
-    end
-  end
   has_many :incoming_relations, :foreign_key => :destination_id, :class_name => "Relation", :dependent => :destroy
 
   has_many :sent_messages, :foreign_key => :from_id, :class_name => "Message", :dependent => :destroy
