@@ -13,7 +13,7 @@
   <div id="meta">
     <ul>
       <%- if current_user -%>
-        <li>Hallo <%= current_user.profile.first_name || current_user.profile.last_name %></li>
+        <li>Hello <%= current_user.profile.first_name || current_user.profile.last_name %></li>
         <li><%= link_to "Logout", auth_logout_path %></li>
       <%- else -%>
         <li><%= link_to "Login", auth_login_path %></li>
