@@ -36,6 +36,12 @@ class AuthController < ApplicationController
     @user = User.find_by_login(params[:user][:login])
     if @user.nil?
       @user = User.create(params[:user])
+      profile = Profile.new
+      profile.user = @user
+      profile.last_name = params[:user][:login]
+      profile.company = "-"
+      profile.save!
+      @user.profile = profile
       session[:user] = @user.id
       dest = params[:dest] || dashboard_path
       redirect_to dest
