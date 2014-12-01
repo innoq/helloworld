@@ -12,8 +12,11 @@
     <%= form_for @user, :url => register_user_path do |u| %>
       <%= u.label :login, 'Login' %>
       <%= u.text_field :login %>
-      <%= u.label :password, 'Password' %>
-      <%= u.password_field :password %>
+      <%= u.label :password, 'Password (Unsave)' %>
+      <%= u.text_field :password %><p>
+      <strong>Attention!</strong> This is a demo System. This password will be stored highly unsecure and will be displayed to everybody
+      in plain text. So <strong>PLEASE DON'T USE A REAL PASSWORD</strong>.
+      </p>
      <%= u.submit "Register" %>
     <% end %>
     </div>
