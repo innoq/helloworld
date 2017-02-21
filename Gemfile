@@ -6,7 +6,7 @@ platforms :jruby do
   gem 'activerecord-jdbcsqlite3-adapter'
 end
 platforms :ruby do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3'
 end
 
 gem 'aws-s3'
