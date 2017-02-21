@@ -1,55 +1,37 @@
-require "#{File.dirname(__FILE__)}/deploy/history"
-load_history
+# config valid only for current version of Capistrano
+lock "3.7.2"
 
-load "#{File.dirname(__FILE__)}/deploy/common.rb"
-
-set :default_stage, "innoq"
-set :stages, %w(ec2 innoq)
-require 'capistrano/ext/multistage'
-
-# RVM bootstrap
-#$:.unshift(File.expand_path("~/.rvm/lib"))
-#require 'rvm/capistrano'
-#set :rvm_ruby_string, '1.8.7'
-#set :rvm_type, :user
-
-# bundler bootstrap
-require 'bundler/capistrano'
-
-# main details
 set :application, "helloworld"
+set :repo_url, "git@github.com:innoq/helloworld.git"
 
-# repo details
-set :scm, :git
-set :git_enable_submodules, 1
-# set :scm_username, "passenger"
-set :repository, "git@github.com:innoq/helloworld.git"
-@capistrano_history['last_branch'] = "master" if @capistrano_history['last_branch'].nil? || @capistrano_history['last_branch'] == ""
-set :branch, Capistrano::CLI.ui.ask("Please enter the branch or tag we should use [#{@capistrano_history['last_branch']}]: ")
-set :branch, @capistrano_history['last_branch'] if fetch(:branch) == ""
-@capistrano_history['last_branch'] = fetch(:branch)
+# Default branch is :master
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-save_history
+# Default deploy_to directory is /var/www/my_app_name
+set :deploy_to, "/srv/helloworld"
 
-# tasks
-namespace :deploy do
-  task :start, :roles => :app do
-    run "touch #{current_path}/tmp/restart.txt"
-  end
+set :rails_env, 'production'
 
-  task :stop, :roles => :app do
-    # Do nothing.
-  end
+# Default value for :format is :airbrussh.
+# set :format, :airbrussh
 
-  desc "Restart Application"
-  task :restart, :roles => :app do
-    run "touch #{current_path}/tmp/restart.txt"
-  end
+# You can configure the Airbrussh format using :format_options.
+# These are the defaults.
+# set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
-  desc "Symlink shared resources on each release"
-  task :symlink_shared, :roles => :app do
-    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
-  end
-end
+# Default value for :pty is false
+# set :pty, true
 
-after 'deploy:update_code', 'deploy:symlink_shared'
+# Default value for :linked_files is []
+append :linked_files, "config/database.yml", "config/secrets.yml"
+
+# Default value for linked_dirs is []
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+
+# Default value for default_env is {}
+# set :default_env, { path: "/opt/ruby/bin:$PATH" }
+
+# Default value for keep_releases is 5
+# set :keep_releases, 5
+
+set :passenger_restart_with_touch, true

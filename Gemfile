@@ -21,6 +21,10 @@ gem 'cancan'
 
 group 'development' do
   gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
 end
 
 gem "jquery-rails"

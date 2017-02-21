@@ -16,7 +16,7 @@ Create and initialize Database
 
 Popoulate some data:
 
-    bundle exec rake db:populate
+    bundle exec rake db:populate_pexels
 
 Run the server:
 
