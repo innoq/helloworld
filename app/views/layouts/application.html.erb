@@ -30,7 +30,7 @@
 
         <div class="flash_messages">
           <% flash.each do |information_class, message| %>
-            <div class="<%= information_class %>"><%= message %></div>
+            <p class="<%= information_class %>"><%= message %></p>
           <% end %>
         </div>
 
