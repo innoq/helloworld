@@ -1,6 +1,6 @@
 class Profile < ActiveRecord::Base
 
-  attr_accessible :first_name, :last_name, :profession, :company, :about
+  attr_accessible :first_name, :last_name, :profession, :company, :about, :created_at, :updated_at
   attr_accessible :private_address, :private_address_id, :business_address, :business_address_id, :photo
 
   belongs_to :user

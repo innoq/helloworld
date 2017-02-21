@@ -1,44 +1,14 @@
-SPEAKER_DATA = YAML.load(File.open(Rails.root.join("data/speaker.yml")))
-
-PROFILE_COUNT = (ENV['USERS'] || SPEAKER_DATA.length).to_i
-RELATION_COUNT = (ENV['RELATIONS']|| 10).to_i
-MESSAGE_COUNT = (ENV['MESSAGES'] || 3).to_i
-STATUS_COUNT = (ENV['STATUS'] || PROFILE_COUNT * 3).to_i
-
+# Helpers
 def rand_time(days = 365)
   rand(days).days.ago - rand(24).hours - rand(60).minutes
 end
 
-def rand_profession
-  %w(CEO CFO CIO Entrepreneur Developer Assistant Manager Accountant Photographer).random
-end
-
-def random_boolean
-  [false, true].random
-end
-
-def maybe(&block)
-  yield if random_boolean
-end
-
-def photo_file_names
-  @photo_file_names ||= Dir.glob(Rails.root.join('data/photos/*.{png,jpg,gif}'))
-end
-
-def rand_type 
-  ProfileAttribute.types.random
-end
-
 def random_profile
   @profile_count ||= Profile.count
-  Profile.find(:first, :offset => rand(@profile_count))
+  Profile.offset(rand(@profile_count)).first
 end
 
-def random_set(count, limit)
-  a = Set.new
-  a.add(rand(limit)) until a.count == count  
-  a
-end
+# Test Factories
 
 def create_profile_attributes
   attrs = []
@@ -53,126 +23,88 @@ def create_profile_attributes
   attrs << (ProfileAttribute.new :attr_type => "private_phone",
     :value => Forgery(:address).phone)
 
-
   attrs
 end
 
-def create_address 
+def create_address
   Address.create!  :street => Forgery::Address.street_address,
-    :city => Forgery::Address.city,
-    :zip => Forgery::Address.zip,
-    :country => Forgery::Address.country
+      :city => Forgery::Address.city,
+      :zip => Forgery::Address.zip,
+      :country => Forgery::Address.country
 end
 
 def create_profiles
-  i=0
-  PROFILE_COUNT.times do
-    if i <  SPEAKER_DATA.length
-      data = SPEAKER_DATA[i].symbolize_keys
-      data[:profession] = "Speaker"
-    else
-      data[:first_name] = Forgery::Name.first_name
+  ['male', 'female'].each do |gender|
+    data = {}
+    Dir.glob(Rails.root.join("data/photos/pexels/#{gender}/*.{png,jpg,jpeg,gif}")).each do |photo_file|
+      data[:first_name] = Forgery::Name.send("#{gender}_first_name")
       data[:last_name] = Forgery::Name.last_name
-      data[:file] = photo_file_names[i % photo_file_names.count]
-      data[:profession] = rand_profession
-    end
-    data[:company] = Forgery::Name.company_name if data[:company].blank?
+      data[:file] = photo_file
+      data[:profession] = Forgery::Name.job_title
+      data[:company] = Forgery::Name.company_name
 
-    unless Profile.where(:last_name => data[:last_name], :first_name => data[:first_name]).first # Skip if already defined (Herkoku breaks the import)
       puts "#{data[:first_name]} #{data[:last_name]}"
 
       p = Profile.create! :last_name => data[:last_name],
-        :first_name => data[:first_name],
-        :company => data[:company],
-        :profession => data[:profession],
-        :about => Forgery::LoremIpsum.paragraph,
-        :created_at => rand_time,
-        :updated_at => rand_time
+          :first_name => data[:first_name],
+          :company => data[:company],
+          :profession => data[:profession],
+          :about => Forgery::LoremIpsum.paragraph,
+          :created_at => rand_time,
+          :updated_at => rand_time
       p.create_user :login => data[:first_name][0,1].downcase + data[:last_name].camelcase.downcase,
-        :password  => Forgery::Basic.password,
-        :created_at => rand_time,
-        :updated_at => rand_time
+          :password  => Forgery::Basic.password
 
       p.photo = File.new(data[:file])
 
-      maybe { p.private_address = create_address }
-      maybe { p.business_address = create_address }
+      p.private_address = create_address
+      p.business_address = create_address
       p.profile_attributes << create_profile_attributes
       p.save!
     end
-    i += 1
   end
 end
-
-def random_connections(count, &block) 
-  PROFILE_COUNT.times do
-    source = random_profile
-    random_set(rand(count), PROFILE_COUNT).each do |offset|
-      target = Profile.find(:first, :offset => offset)
-      yield source, target unless source == target
-    end
-  end
-end 
 
 def create_relations
-  random_connections(RELATION_COUNT) do |source, target|
-    Relation.create! :source => source, :destination => target,
-      :comment => Forgery::LoremIpsum.paragraph,
-      :accepted => true,
-      :created_at => rand_time,
-      :updated_at => rand_time
-    Relation.create! :source => target, :destination => source,
-      :comment => Forgery::LoremIpsum.paragraph,
-      :accepted => random_boolean,
-      :created_at => rand_time,
-      :updated_at => rand_time 
-  end
-end
-
-def create_messages
-  random_connections(MESSAGE_COUNT) do |source, target|
-    Message.create! :from => source, :to => target, 
-      :subject => Forgery::LoremIpsum.sentence,
-      :body => Forgery::LoremIpsum.paragraph,
-      :created_at => rand_time,
-      :updated_at => rand_time
+  Profile.all.each do |source|
+    (rand(5) + 5).times do
+      target = random_profile
+      source.relations.create! :destination => target,
+          :comment => Forgery::LoremIpsum.paragraph,
+          :accepted => true
+      target.relations.create! :destination => source,
+          :comment => Forgery::LoremIpsum.paragraph,
+          :accepted => rand > 0.3
+    end
   end
 end
 
 def create_statuses
-  STATUS_COUNT.times do
-    who = random_profile
-    Status.create! :profile => who,
-      :message => Forgery::LoremIpsum.sentence,
-      :created_at => rand_time
+  Profile.all.each do |source|
+    rand(5).times do
+      source.statuses.create! :message => Forgery::LoremIpsum.sentence,
+          :created_at => rand_time
+    end
   end
 end
 
-begin
-  namespace :db do    
-    desc "Populate the development database with some fake data, based on #{PROFILE_COUNT} users"
-    task :populate => :environment do
-      if (ENV['DESTROY'])
-        puts "** Destroying everything"
-        Profile.destroy_all
-        User.destroy_all
-      end
-      puts "** Creating profiles"
-      create_profiles
-      puts "** Creating statuses"
-      create_statuses
-      puts "** Creating relations"
-      create_relations
-      puts "** Creating messages"
-      create_messages
-    end
-    
-    task :seeds_created => :environment do
-      "touch ../../shared/.seeds_created"
-    end
-  end
-rescue LoadError
-  puts "Please run 'sudo gem install forgery' before executing this task"
-end
+# Task
 
+namespace :db do
+  desc "Populate the development database with some fake data, based on #{PROFILE_COUNT} users"
+  task :populate_pexels => :environment do
+    if (ENV['DESTROY'])
+      puts "** Destroying everything"
+      Profile.destroy_all
+      User.destroy_all
+    end
+    puts "** Creating profiles"
+    create_profiles
+    puts "** Creating statuses"
+    create_statuses
+    puts "** Creating relations"
+    create_relations
+  end
+
+end
 

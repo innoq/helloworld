@@ -2,10 +2,6 @@
 
 ### Setup
 
-Install rails:
-
-    gem install rails
-
 Clone Helloworld:
 
     git clone git@github.com:innoq/helloworld.git
@@ -25,6 +21,10 @@ Popoulate some data:
 Run the server:
 
     rails server
+
+### Deployment
+
+   bundle exec cap innoq deploy
 
 ### TODO
 

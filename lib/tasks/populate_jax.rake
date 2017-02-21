@@ -25,7 +25,7 @@ def photo_file_names
   @photo_file_names ||= Dir.glob(Rails.root.join('data/photos/*.{png,jpg,gif}'))
 end
 
-def rand_type 
+def rand_type
   ProfileAttribute.types.random
 end
 
@@ -36,7 +36,7 @@ end
 
 def random_set(count, limit)
   a = Set.new
-  a.add(rand(limit)) until a.count == count  
+  a.add(rand(limit)) until a.count == count
   a
 end
 
@@ -57,7 +57,7 @@ def create_profile_attributes
   attrs
 end
 
-def create_address 
+def create_address
   Address.create!  :street => Forgery::Address.street_address,
     :city => Forgery::Address.city,
     :zip => Forgery::Address.zip,
@@ -104,7 +104,7 @@ def create_profiles
   end
 end
 
-def random_connections(count, &block) 
+def random_connections(count, &block)
   PROFILE_COUNT.times do
     source = random_profile
     random_set(rand(count), PROFILE_COUNT).each do |offset|
@@ -112,7 +112,7 @@ def random_connections(count, &block)
       yield source, target unless source == target
     end
   end
-end 
+end
 
 def create_relations
   random_connections(RELATION_COUNT) do |source, target|
@@ -125,13 +125,13 @@ def create_relations
       :comment => Forgery::LoremIpsum.paragraph,
       :accepted => random_boolean,
       :created_at => rand_time,
-      :updated_at => rand_time 
+      :updated_at => rand_time
   end
 end
 
 def create_messages
   random_connections(MESSAGE_COUNT) do |source, target|
-    Message.create! :from => source, :to => target, 
+    Message.create! :from => source, :to => target,
       :subject => Forgery::LoremIpsum.sentence,
       :body => Forgery::LoremIpsum.paragraph,
       :created_at => rand_time,
@@ -149,9 +149,9 @@ def create_statuses
 end
 
 begin
-  namespace :db do    
+  namespace :db do
     desc "Populate the development database with some fake data, based on #{PROFILE_COUNT} users"
-    task :populate => :environment do
+    task :populate_jax => :environment do
       if (ENV['DESTROY'])
         puts "** Destroying everything"
         Profile.destroy_all
@@ -166,7 +166,7 @@ begin
       puts "** Creating messages"
       create_messages
     end
-    
+
     task :seeds_created => :environment do
       "touch ../../shared/.seeds_created"
     end

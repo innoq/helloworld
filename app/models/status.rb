@@ -1,6 +1,6 @@
 class Status < ActiveRecord::Base
 
-  attr_accessible :message
+  attr_accessible :message, :created_at, :updated_at
 
   belongs_to :profile
 
