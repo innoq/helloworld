@@ -91,7 +91,7 @@ end
 # Task
 
 namespace :db do
-  desc "Populate the development database with some fake data, based on #{PROFILE_COUNT} users"
+  desc "Populate the development database with some fake data, based on availiable images in data/photos/pexles"
   task :populate_pexels => :environment do
     if (ENV['DESTROY'])
       puts "** Destroying everything"
