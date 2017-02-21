@@ -1,5 +1,5 @@
 require 'net/http/purge'
-    
+
 class StatusesController < ApplicationController
 
   skip_before_filter :check_login, :only => [:index]
@@ -8,7 +8,7 @@ class StatusesController < ApplicationController
     authorize! :show, Status
 
     # Waste some time
-    sleep(1)
+    sleep(2)
 
     # Load status list
     @statuses =  Status.order(Status.arel_table[:created_at].desc).
@@ -16,12 +16,12 @@ class StatusesController < ApplicationController
       limit(25)
 
     # expires_in 2.minutes, :public => true
-      
+
   end
 
   def create
     authorize! :create, Status
-        
+
     @status = Status.create(params[:status])
     @status.profile_id = current_user.profile.id
 
@@ -38,7 +38,7 @@ class StatusesController < ApplicationController
       redirect_to statuses_url(:error => 1) # This URL won't be cached
 
     end
-    
+
   end
 
 end
