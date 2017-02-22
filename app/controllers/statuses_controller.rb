@@ -15,20 +15,22 @@ class StatusesController < ApplicationController
       includes(:profile).
       limit(25)
 
-    # expires_in 2.minutes, :public => true
+    # # Force Varnish to store this without touching the Cache-Control header (which is for the Client)
+    # response.headers['X-Reverse-Proxy-ttl'] = '120'
 
+    # # Register this to Varnish XKey tags
+    # response.headers['xkey'] = 'statuslist'
   end
 
   def create
     authorize! :create, Status
 
-    @status = Status.create(params[:status])
+    @status = Status.new(params[:status])
     @status.profile_id = current_user.profile.id
 
     if (@status.save) # Everything was fine
 
-      # Purge the reverse proxy
-      # Net::HTTP.new("localhost", "8080").request(Net::HTTP::Purge.new(statuses_path), "")
+      # response.headers['xkey-purge'] = 'statuslist'
 
       redirect_to statuses_url # This URL is beeing cached
 
