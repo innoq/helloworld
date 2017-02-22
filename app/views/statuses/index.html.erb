@@ -6,7 +6,7 @@
 
   <h2>What do you want to share with the world?</h2>
 
-  <%= form_for Status.new, :builder => Helloworld::FormBuilder, :class => 'status' do |f| %>
+  <%= form_for Status.new, :url => new_status_url(), :builder => Helloworld::FormBuilder, :class => 'status' do |f| %>
     <ul class="status-form">
 
       <%= f.block :message do %>

@@ -7,7 +7,8 @@ Helloworld::Application.routes.draw do
   end
   resources :contacts
   resources :messages
-  resources :statuses
+  get "statuses" => "statuses#index"
+  post "statuses/new" => "statuses#create", :as => "new_status"
 
   get "search" => "search#search"
 
