@@ -19,7 +19,16 @@ sub vcl_recv {
 
     # Force cache lookup for /statuses (ignoring Cookie-Header)
     if (req.method == "GET" && req.url ~ "^/statuses$") {
+        set req.http.X-Disabled-Cookie = req.http.Cookie;
         unset req.http.Cookie;
+    }
+    else {
+        # Has there been a Cookie in an erlier Request (meaning we are now
+        # recving an ESI request) which we need to restore?
+        if (req.http.X-Disabled-Cookie) {
+            set req.http.Cookie = req.http.X-Disabled-Cookie;
+            unset req.http.X-Disabled-Cookie;
+        }
     }
 }
 
