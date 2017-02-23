@@ -19,7 +19,7 @@ sub vcl_recv {
 
     # Force cache lookup for /statuses (ignoring Cookie-Header)
     if (req.method == "GET" && req.url ~ "^/statuses$") {
-    	unset req.http.Cookie;
+        unset req.http.Cookie;
     }
 }
 
@@ -31,15 +31,20 @@ sub vcl_backend_response {
 
     # Allow Backend to set ttl without missuage of Cache-Control Header
     if (beresp.http.x-reverse-proxy-ttl) {
-	set beresp.ttl = std.duration(beresp.http.x-reverse-proxy-ttl + "s", 0s);
+        set beresp.ttl = std.duration(beresp.http.x-reverse-proxy-ttl + "s", 0s);
 
-	# Delete Set-Cookie since varnish wont cache elsewise
-	unset beresp.http.Set-Cookie;
+        # Delete Set-Cookie since varnish wont cache elsewise
+        unset beresp.http.Set-Cookie;
 
-	# We'll have to disable the Cache-Control Header (ment for the Client)
-	# for a short while since it will overwrite our ttl
-	set beresp.http.X-Temp-Cache-Control = beresp.http.Cache-Control;
-	unset beresp.http.Cache-Control;
+        # We'll have to disable the Cache-Control Header (ment for the Client)
+        # for a short while since it will overwrite our ttl
+        set beresp.http.X-Temp-Cache-Control = beresp.http.Cache-Control;
+        unset beresp.http.Cache-Control;
+    }
+
+    # Check if we should process ESI or not
+    if (beresp.http.x-esi == "true") {
+        set beresp.do_esi = true;
     }
 }
 
