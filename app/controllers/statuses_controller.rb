@@ -3,7 +3,8 @@ require 'net/http/purge'
 class StatusesController < ApplicationController
 
   skip_before_filter :check_login, :only => [:index]
-
+  skip_before_filter :verify_authenticity_token
+  
   def index
     authorize! :show, Status
 

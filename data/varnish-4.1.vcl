@@ -38,11 +38,17 @@ sub vcl_backend_response {
     # Here you clean the response headers, removing silly Set-Cookie headers
     # and other mistakes your backend does.
 
+    # Delete all Set-Cookie attempts on ressources which had no Cookie sent by
+    # force since they will contain only unauthorized (session) cookies
+    if (bereq.http.X-Disabled-Cookie) {
+        unset beresp.http.Set-Cookie;
+    }
+
     # Allow Backend to set ttl without missuage of Cache-Control Header
     if (beresp.http.x-reverse-proxy-ttl) {
         set beresp.ttl = std.duration(beresp.http.x-reverse-proxy-ttl + "s", 0s);
 
-        # Delete Set-Cookie since varnish wont cache elsewise
+        # Delete Set-Cookie since varnish won't cache elsewise
         unset beresp.http.Set-Cookie;
 
         # We'll have to disable the Cache-Control Header (ment for the Client)
