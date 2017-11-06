@@ -16,12 +16,13 @@ class StatusesController < ApplicationController
       includes(:profile).
       limit(25)
 
-    # # Set `Cache-Control: max-age=1200, public`
+    # # Set `Cache-Control: max-age=3600, public`
     # expires_in 1.hour, :public => true
 
-    # # Alternatively:
-    # # Force Varnish to store this without touching the Cache-Control header (which is for the Client)
-    # response.headers['X-Reverse-Proxy-ttl'] = '120'
+    # # Alternatively (better):
+    # # Force Varnish to store this without touching the
+    # # Cache-Control header (which is for the Client)
+    # response.headers['X-Reverse-Proxy-ttl'] = '3600'
 
 
     # # Register this to Varnish XKey tags
