@@ -23,7 +23,7 @@ class Profile < ActiveRecord::Base
   validates :company, :presence => true
 
   paperclip_options = {
-    :default_url => "/images/:attachment/missing.png"
+    :default_url => "/assets/missing.png"
   }
   if ENV['S3_BUCKET']
     paperclip_options.merge!(
