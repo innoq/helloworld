@@ -1,6 +1,10 @@
 Helloworld::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  # Disable rails build-in 'rack-cache'
+  # elsewise this cache would react to Cache-Control headers
+  config.action_dispatch.rack_cache = nil
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
