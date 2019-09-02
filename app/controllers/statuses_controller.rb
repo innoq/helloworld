@@ -20,8 +20,8 @@ class StatusesController < ApplicationController
     # response.headers['Cache-Control'] = 'max-age=3600, public'
 
     # # Alternatively (better):
-    # use a Cache-Control ignored by the client
-    response.headers['Cache-Control'] = 'max-age=0, s-maxage=3600, public'
+    # # use a Cache-Control ignored by the client
+    # response.headers['Cache-Control'] = 'max-age=0, s-maxage=3600, public'
 
 
     # # Register this to Varnish XKey tags
