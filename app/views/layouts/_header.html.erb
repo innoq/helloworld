@@ -5,15 +5,13 @@
   </div>
   <!-- /logo -->
 
-  <div id="claim">
-    <%= image_tag 'claim.png', :alt => 'The demo community by innoQ' %>
-  </div>
+
   <!-- /logo -->
 
   <div id="meta">
     <ul>
       <%- if current_user -%>
-        <li>Hello <%= current_user.profile.first_name || current_user.profile.last_name %></li>
+        <li>Hello <%= current_user.profile&.first_name || current_user.profile&.last_name %></li>
         <li><%= link_to "Logout", auth_logout_path %></li>
       <%- else -%>
         <li><%= link_to "Login", auth_login_path %></li>
@@ -40,7 +38,7 @@
       <li><%= link_to "Dashboard", dashboard_path, :class => "first" %></li>
       <li><%= link_to "World status feed", statuses_path %></li>
       <li><%= link_to "Contacts", contacts_path %></li>
-      <li><%= link_to "Profile", (current_user && private_profile_path(current_user.profile)) || auth_login_path %></li>
+      <li><%= link_to "Profile", (current_user&.profile && private_profile_path(current_user.profile)) || auth_login_path %></li>
       <li><%= link_to "About", about_path, :class => "last" %></li>
     </ul>
     <!-- /menu -->
