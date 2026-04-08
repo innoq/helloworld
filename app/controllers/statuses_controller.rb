@@ -24,8 +24,8 @@ class StatusesController < ApplicationController
     # response.headers['Cache-Control'] = 'max-age=0, s-maxage=3600, public'
 
 
-    # # Register this to Varnish XKey tags
-    # response.headers['xkey'] = 'statuslist'
+    # # Register cache groups and let varnish act on them
+    # response.headers['Cache-Groups'] = 'statuslist'
   end
 
   def create
@@ -36,7 +36,7 @@ class StatusesController < ApplicationController
 
     if (@status.save) # Everything was fine
 
-      # response.headers['xkey-purge'] = 'statuslist'
+      # response.headers['Cache-Group-Invalidation'] = 'statuslist'
 
       redirect_to statuses_url # This URL is beeing cached
 

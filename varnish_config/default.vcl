@@ -66,6 +66,11 @@ sub vcl_backend_response {
     if (beresp.http.x-esi == "true") {
 	set beresp.do_esi = true;
     }
+
+    # Transfer Cache-Groups header to XKey so the xkey module acts on it
+    if (beresp.http.Cache-Groups) {
+	set beresp.http.xkey = beresp.http.Cache-Groups;
+    }
 }
 
 sub vcl_hit {
@@ -88,8 +93,8 @@ sub vcl_deliver {
     # You can do accounting or modifying the final object here.
 
     # See if there are any XKey tags to purge
-    if (resp.http.xkey-purge) {
-        set resp.http.xkey-purged = xkey.purge(resp.http.xkey-purge);
+    if (resp.http.Cache-Group-Invalidation) {
+        set resp.http.xkey-purged = xkey.purge(resp.http.Cache-Group-Invalidation);
     }
 
 }
