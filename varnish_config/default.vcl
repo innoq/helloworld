@@ -69,7 +69,7 @@ sub vcl_backend_response {
 
     # Transfer Cache-Groups header to XKey so the xkey module acts on it
     if (beresp.http.Cache-Groups) {
-	set beresp.http.xkey = beresp.http.Cache-Groups;
+        set beresp.http.xkey = beresp.http.Cache-Groups;
     }
 }
 
