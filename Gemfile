@@ -25,6 +25,8 @@ group 'development' do
   gem 'capistrano-rails'
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
+  gem 'ed25519'
+  gem 'bcrypt_pbkdf'
 end
 
 gem "jquery-rails"
